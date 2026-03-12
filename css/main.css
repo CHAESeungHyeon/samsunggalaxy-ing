@@ -7,9 +7,7 @@
   position: relative;
 }
 #banner .container{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  text-align: center;
   position: absolute;
   bottom: 180px;
   left: 50%;
@@ -25,10 +23,11 @@
   font-family: "Samsung Medium","Noto Sans Korean";
   font-weight: normal;
   font-size: 30px;
+  margin: 9px 0 6px;
 }
 #banner h2 img{
   height: 34px;
-  padding-left: 6px;
+  margin-left: 6px;
 }
 #banner p{
   color: #fff;
@@ -63,20 +62,19 @@
   flex: 1;
   background-color: #f4f4f4;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
   border-radius: 10px;
 }
-#items .container .box a{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#items .container .box a:first-child img{
+margin: 0 auto;
 }
 #items .container .box a h2{
   font-family: "Samsung Bold","Noto Sans Korean";
   font-size: 26px;
   color: #222;
-  padding-bottom: 30px;
+  margin-bottom   : 20px;
+  text-align: center;
 }
 #items .container .box a img{
   height: 171px;
@@ -85,23 +83,19 @@
 /* banner_2 */
 #banner_2{
   width: 100%;
-  min-width: 1200px;
-  height: 470px;
+  height: 27vw;
   background: url(../img/zfold7.png) center/cover;
-  position: relative;
-  display: inline-block;
 }
 #banner_2 .container{
-  height: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  position: relative;
 }
 #banner_2 .container .list{
-  position: relative;
-  bottom: 55px;
-  right: 20px;
+  position: absolute;
+  
 }
 #banner_2 h1{
   font-family: 'Samsung Bold';
