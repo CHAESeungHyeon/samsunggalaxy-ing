@@ -1,0 +1,69 @@
+/* zfold */
+#compare .row:nth-child(3) .cell .zfold_color .navy{
+  background-color: #001455;
+  box-shadow:inset 0 0 2px 0 rgba(0, 0, 0, 0.15), 0 0 0 2px rgb(46, 101, 164,1);
+  border: 1px solid #fff;
+}
+#compare .row:nth-child(3) .cell .zfold_color .black{
+  background-color: #111;
+}
+#compare .row:nth-child(3) .cell .zfold_color .silver{
+  background-color: #c9c9c9;
+}
+#compare .row:nth-child(3) .cell .zfold_color .green{
+  background-color: #99CEB9;
+}
+
+/* s25u */
+#compare .row:nth-child(3) .cell .s25u_color .jetblack{
+  background-color: #111;
+}
+#compare .row:nth-child(3) .cell .s25u_color .black{
+  background-color: #2f2f2f;
+}
+#compare .row:nth-child(3) .cell .s25u_color .gray{
+  background-color: #818181;
+}
+#compare .row:nth-child(3) .cell .s25u_color .skyblue{
+  background-color: #C9CFE1;
+  box-shadow:inset 0 0 2px 0 rgba(0, 0, 0, 0.15), 0 0 0 2px rgb(46, 101, 164,1);
+  border: 1px solid #fff;
+}
+#compare .row:nth-child(3) .cell .s25u_color .white{
+  background-color: #d5d5d5;
+}
+#compare .row:nth-child(3) .cell .s25u_color .green{
+  background-color: #B3D0A5;
+}
+#compare .row:nth-child(3) .cell .s25u_color .pink{
+  background-color: #DDA7CB;
+}
+
+/* s25e */
+#compare .row:nth-child(3) .cell .s25e_color .skyblue{
+  background-color: #C9CFE1;
+}
+#compare .row:nth-child(3) .cell .s25e_color .white{
+  background-color: #e2e2e2;
+  box-shadow:inset 0 0 2px 0 rgba(0, 0, 0, 0.15), 0 0 0 2px rgb(46, 101, 164,1);
+  border: 1px solid #fff;
+}
+#compare .row:nth-child(3) .cell .s25e_color .black{
+  background-color: #111;
+}
+
+/* zflip */
+#compare .row:nth-child(3) .cell .zflip_color .navy {
+  background-color: #001455;
+}
+#compare .row:nth-child(3) .cell .zflip_color .coral {
+  background-color: #F96C6E;
+  box-shadow:inset 0 0 2px 0 rgba(0, 0, 0, 0.15), 0 0 0 2px rgb(46, 101, 164,1);
+  border: 1px solid #fff;
+}
+#compare .row:nth-child(3) .cell .zflip_color .black {
+  background-color: #444444;
+}
+#compare .row:nth-child(3) .cell .zflip_color .green {
+  background-color: #99CEB9;
+}

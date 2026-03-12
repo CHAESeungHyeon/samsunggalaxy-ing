@@ -1,0 +1,762 @@
+/* banner */
+#banner{
+  width: 100%;
+  min-width: 1200px;
+  height: 475px;
+  background: url(../img/trifold.png) center/cover;
+  position: relative;
+}
+#banner .container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#banner h1{
+  color: #fff;
+  font-family: "Samsung Bold","Noto Sans Korean";
+  font-size: 40px;
+}
+#banner h2{
+  color: #fff;
+  font-family: "Samsung Medium","Noto Sans Korean";
+  font-weight: normal;
+  font-size: 30px;
+}
+#banner h2 img{
+  height: 34px;
+  padding-left: 6px;
+}
+#banner p{
+  color: #fff;
+  font-family: "Samsung Regular","Noto Sans Korean";
+  font-size: 16px;
+}
+#banner .btn{
+  margin-top: 25px;
+}
+#banner .btn a{
+  color: #fff;
+  display: inline-block;
+  padding: 8px 20px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* items */
+#items{
+  width: 100%;
+  min-width: 1200px;
+}
+#items .container{
+  width: 1190px;
+  padding: 30px 0;
+  display: flex;
+  gap: 10px;
+}
+#items .container .box {
+  height: 330px;
+  flex: 1;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+}
+#items .container .box a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#items .container .box a h2{
+  font-family: "Samsung Bold","Noto Sans Korean";
+  font-size: 26px;
+  color: #222;
+  padding-bottom: 30px;
+}
+#items .container .box a img{
+  height: 171px;
+}
+
+/* banner_2 */
+#banner_2{
+  width: 100%;
+  min-width: 1200px;
+  height: 470px;
+  background: url(../img/zfold7.png) center/cover;
+  position: relative;
+  display: inline-block;
+}
+#banner_2 .container{
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#banner_2 .container .list{
+  position: relative;
+  bottom: 55px;
+  right: 20px;
+}
+#banner_2 h1{
+  font-family: 'Samsung Bold';
+  color: #222;
+}
+#banner_2 h1:nth-child(1){
+  font-size: 40px;
+}
+#banner_2 h1:nth-child(2){
+  font-size: 33px;
+  font-weight: bold;
+}
+#banner_2 h2{
+  font-size: 30px;
+  margin-top: 10px;
+  color: #222;
+  font-family: 'Samsung Medium';
+  font-weight: 100;
+}
+#banner_2 h2 img{
+  height: 34px;
+  padding-left: 6px;
+  position: relative;
+  top: 5px;
+}
+#banner_2 p{
+  margin-top: 20px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+#banner_2 .btn{
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+#banner_2 .btn a{
+  color: #222;
+  display: inline-block;
+  padding: 6px 20px;
+  border: 1px solid #222;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* items_2 */
+#items_2{
+  width: 100%;
+  min-width: 1200px;
+}
+#items_2 .container{
+  width: 1190px;
+  padding: 30px 0;
+  display: flex;
+  gap: 10px;
+}
+#items_2 .container .box {
+  height: 330px;
+  flex: 1;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+}
+#items_2 .container .box a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#items_2 .container .box a h2{
+  font-family: "Samsung Bold","Noto Sans Korean";
+  font-size: 26px;
+  color: #222;
+  padding-bottom: 30px;
+}
+#items_2 .container .box a .img1{
+  height: 150px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+#items_2 .container .box a .img2{
+  height: 110px;
+  margin-top: 42px;
+  margin-bottom: 30px;
+}
+#items_2 .container .box a .img3{
+  height: 150px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+#items_2 .container .box a .img4{
+  height: 182px;
+}
+
+/* banner_3 */
+#banner_3{
+  width: 100%;
+  min-width: 1200px;
+  height: 590px;
+  background: url(../img/s25Edge.png) center/cover;
+  position: relative;
+  display: flex;
+}
+#banner_3 > .container{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 172px;
+  width: 100%;
+}
+#banner_3 .container .txt{
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  gap: 428px;
+  white-space: nowrap;
+}
+#banner_3 .container .txt .left{
+  font-family: 'Samsung Bold';
+}
+#banner_3 .container .txt .left h1{
+  color: #222;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+#banner_3 .container .txt .left h2{
+  color: #222;
+  font-size: 35px;
+  font-family: 'Samsung Medium';
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+#banner_3 .container .txt .left .btn a{
+  color: #222;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #222;
+  border-radius: 40px;
+  font-size: 15px;
+}
+#banner_3 .container .txt .left h2 img{
+  height: 34px;
+  padding-left: 6px;
+  position: relative;
+  top: 5px;
+}
+#banner_3 .container .txt .right h1{
+  color: #fff;
+  font-family: 'Samsung Regular';
+  font-size: 50px;
+  font-weight: 100;
+}
+
+/* layer_card */
+#layer_card{
+  width: 100%;
+  min-width: 1200px;
+  height: 740px;
+}
+#layer_card .container{
+  overflow: hidden;
+  width: 100%;
+  min-width: 1200px;
+  height: 100%;
+  padding-top: 90px;
+}
+#layer_card .container .txt{
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#layer_card .container h1{
+  margin-bottom: 70px;
+  margin-right: 70px;
+  font-size: 40px;
+  color: #222;
+  letter-spacing: -1px;
+}
+#layer_card .container .box{
+  gap: 24px;
+  display: flex;
+  height: 490px;
+}
+#layer_card .container .box .card{
+  width: 290px;
+}
+#layer_card .container .box .card a{
+  width: 290px;
+  background-color: #f4f4f4;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#layer_card .container .box .card h2{
+  font-size: 22px;
+  font-family: 'Samsung Bold', "Noto Sans Korean";
+  color: #333;
+  margin-top: 38px;
+  margin-bottom: 67px;
+}
+#layer_card .container .box .card b{
+  font-weight: normal;
+  font-size: 13px;
+  font-family: "Noto Sans Korean";
+  color: #666;
+  letter-spacing: -3%;
+}
+#layer_card .container .box .card p{
+  color: #333;
+  font-size: 19px;
+  font-family: 'Samsung Bold';
+  font-weight: bold;
+}
+#layer_card .container .box .card img{
+  height: 210px;
+}
+#layer_card .container .box .card:nth-child(5) img{
+  height: 240px;
+}
+#layer_card .container .box .card:last-child img{
+  height: 160px;
+}
+
+/* popup_card */
+#popup_card .container{
+  overflow: hidden;
+  width: 100%;
+  min-width: 1200px;
+}
+#popup_card .container .txt{
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#popup_card .container h1{
+  max-width: 1200px;
+  font-family: 'Samsung Bold';
+  font-size: 50px;
+  padding-bottom: 70px;
+}
+#popup_card .container .txtcard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+#popup_card .container .txtcard .card{
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+#popup_card .container .txtcard .card a {
+  width: 320px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  position: relative;
+}
+#popup_card .container .txtcard .card a b{
+  font: bold 14px 'Samsung Medium';
+  color: #444;
+  margin-top: 25px;
+  padding: 0 31px;
+  margin-bottom: 10px;
+}
+#popup_card .container .txtcard .card a strong{
+  font: bold 22px 'Samsung Bold';
+  padding: 0 31px;
+  margin-bottom: 10px;
+}
+#popup_card .container .txtcard .card a span{
+  font: normal 13px 'Samsung Medium';
+  color: #666;
+  padding: 0 31px;
+}
+#popup_card .container .txtcard .card:nth-child(1) a img{
+  width: 320px;
+  position: absolute;
+  bottom: 20px;
+}
+#popup_card .container .txtcard .card:nth-child(2) a img{
+  width: 200px;
+  position: absolute;
+  right: 60px;
+  bottom: 40px;
+}
+#popup_card .container .txtcard .card:nth-child(3) a img{
+  width: 232px;
+  position: absolute;
+  right: 44px;
+  bottom: 40px;
+}
+#popup_card .container .txtcard .card:nth-child(4) a img{
+  width: 286px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+#popup_card .container .txtcard .card:nth-child(5) a img{
+  width: 206px;
+  position: absolute;
+  right: 58px;
+  bottom: 0px;
+}
+#popup_card .container .txtcard .card a i{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 30px;
+}
+
+/* =============================================
+   MEDIA QUERIES
+   ============================================= */
+
+/* 1024px — 태블릿 가로 */
+@media screen and (max-width: 1024px) {
+  /* banner */
+  #banner,
+  #banner_2,
+  #banner_3,
+  #items,
+  #items_2,
+  #layer_card,
+  #popup_card {
+    min-width: 0;
+  }
+  #banner {
+    height: 380px;
+  }
+  #banner .container {
+    bottom: 120px;
+    white-space: nowrap;
+  }
+  #banner h1 { font-size: 34px; }
+  #banner h2 { font-size: 26px; }
+
+  /* items */
+  #items .container,
+  #items_2 .container {
+    width: 100%;
+    padding: 24px 20px;
+    gap: 8px;
+  }
+  #items .container .box,
+  #items_2 .container .box {
+    height: 280px;
+  }
+  #items .container .box a h2,
+  #items_2 .container .box a h2 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  #items .container .box a img { height: 140px; }
+  #items_2 .container .box a .img1 { height: 120px; }
+  #items_2 .container .box a .img2 { height: 90px; }
+  #items_2 .container .box a .img3 { height: 120px; }
+  #items_2 .container .box a .img4 { height: 150px; }
+
+  /* banner_2 */
+  #banner_2 { height: 380px; }
+  #banner_2 h1:nth-child(1) { font-size: 32px; }
+  #banner_2 h1:nth-child(2) { font-size: 26px; }
+  #banner_2 h2 { font-size: 24px; }
+  #banner_2 p { font-size: 12px; }
+
+  /* banner_3 */
+  #banner_3 { height: 460px; }
+  #banner_3 .container .txt { gap: 200px; }
+  #banner_3 .container .txt .left h1 { font-size: 38px; }
+  #banner_3 .container .txt .left h2 { font-size: 28px; }
+  #banner_3 .container .txt .right h1 { font-size: 38px; }
+
+  /* layer_card */
+  #layer_card { height: auto; padding-bottom: 40px; }
+  #layer_card .container { min-width: 0; height: auto; padding-top: 60px; }
+  #layer_card .container h1 { font-size: 32px; margin-right: 40px; margin-bottom: 50px; }
+  #layer_card .container .box {
+    padding: 0 20px;
+    gap: 16px;
+    height: auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  #layer_card .container .box .card { width: 240px; flex-shrink: 0; }
+  #layer_card .container .box .card a { width: 240px; height: 260px; }
+  #layer_card .container .box .card img { height: 180px; }
+  #layer_card .container .box .card h2 { font-size: 18px; margin-bottom: 40px; }
+  #layer_card .container .box .card:nth-child(5) img { height: 210px; }
+  #layer_card .container .box .card:last-child img { height: 140px; }
+
+  /* popup_card */
+  #popup_card .container { min-width: 0; }
+  #popup_card .container h1 { font-size: 38px; padding: 0 20px 50px; }
+  #popup_card .container .txtcard {
+    padding: 0 20px;
+    gap: 20px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start;
+  }
+  #popup_card .container .txtcard .card a { width: 280px; }
+}
+
+/* 768px — 태블릿 세로 */
+@media screen and (max-width: 768px) {
+  /* banner */
+  #banner {
+    height: 320px;
+    background-position: center center;
+  }
+  #banner .container {
+    bottom: 80px;
+    width: 100%;
+    align-items: flex-start;
+    padding-left: 24px;
+  }
+  #banner h1 { font-size: 28px; }
+  #banner h2 { font-size: 22px; }
+  #banner h2 img { height: 26px; }
+  #banner p { font-size: 13px; }
+  #banner .btn { margin-top: 16px; }
+
+  /* items — 2×2 그리드 */
+  #items .container {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px 16px;
+  }
+  #items .container .box {
+    flex: 0 0 calc(50% - 5px);
+    height: 240px;
+  }
+  #items .container .box a h2 { font-size: 18px; }
+  #items .container .box a img { height: 120px; }
+
+  /* banner_2 */
+  #banner_2 {
+    height: 320px;
+    background-position: left center;
+  }
+  #banner_2 .container { align-items: flex-start; padding-left: 24px; }
+  #banner_2 .container .list {
+    right: auto;
+    left: 0;
+    bottom: auto;
+    top: 30px;
+    position: relative;
+  }
+  #banner_2 h1:nth-child(1) { font-size: 26px; }
+  #banner_2 h1:nth-child(2) { font-size: 20px; }
+  #banner_2 h2 { font-size: 20px; margin-top: 6px; }
+  #banner_2 h2 img { height: 24px; }
+  #banner_2 p { font-size: 11px; text-align: left; }
+
+  /* items_2 — 2×2 그리드 */
+  #items_2 .container {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px 16px;
+  }
+  #items_2 .container .box {
+    flex: 0 0 calc(50% - 5px);
+    height: 240px;
+  }
+  #items_2 .container .box a h2 { font-size: 18px; }
+  #items_2 .container .box a .img1 { height: 100px; }
+  #items_2 .container .box a .img2 { height: 80px; margin-top: 28px; margin-bottom: 20px; }
+  #items_2 .container .box a .img3 { height: 100px; }
+  #items_2 .container .box a .img4 { height: 130px; }
+
+  /* banner_3 */
+  #banner_3 {
+    height: 360px;
+    background-position: right center;
+  }
+  #banner_3 > .container { height: 100%; align-items: flex-start; padding-top: 40px; }
+  #banner_3 .container .txt {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    white-space: normal;
+    padding-left: 24px;
+  }
+  #banner_3 .container .txt .left h1 { font-size: 30px; }
+  #banner_3 .container .txt .left h2 { font-size: 22px; }
+  #banner_3 .container .txt .left h2 img { height: 24px; }
+  #banner_3 .container .txt .right { display: none; }
+
+  /* layer_card */
+  #layer_card .container h1 { font-size: 26px; text-align: center; margin-right: 0; }
+  #layer_card .container .txt { justify-content: center; padding: 0 16px; }
+
+  /* popup_card */
+  #popup_card .container h1 { font-size: 28px; padding: 0 16px 40px; text-align: left; }
+  #popup_card .container .txt { justify-content: flex-start; padding-left: 16px; }
+}
+
+/* 657px — 대형 모바일 가로 */
+@media screen and (max-width: 657px) {
+  #banner { height: 280px; }
+  #banner h1 { font-size: 24px; }
+  #banner h2 { font-size: 18px; }
+  #banner h2 img { height: 22px; }
+
+  #items .container { gap: 8px; padding: 16px 12px; }
+  #items .container .box { flex: 0 0 calc(50% - 4px); height: 210px; }
+  #items .container .box a h2 { font-size: 15px; padding-bottom: 14px; }
+  #items .container .box a img { height: 100px; }
+
+  #banner_2 { height: 280px; }
+  #banner_2 h1:nth-child(1) { font-size: 22px; }
+
+  #items_2 .container { gap: 8px; padding: 16px 12px; }
+  #items_2 .container .box { flex: 0 0 calc(50% - 4px); height: 210px; }
+  #items_2 .container .box a h2 { font-size: 15px; padding-bottom: 14px; }
+
+  #banner_3 { height: 300px; }
+  #banner_3 .container .txt .left h1 { font-size: 24px; }
+  #banner_3 .container .txt .left h2 { font-size: 18px; }
+  #banner_3 .container .txt .left .btn a { font-size: 12px; padding: 8px 16px; }
+
+  #layer_card .container { padding-top: 40px; }
+  #layer_card .container h1 { font-size: 22px; margin-bottom: 30px; }
+  #layer_card .container .box { padding: 0 12px; gap: 12px; }
+  #layer_card .container .box .card { width: 200px; }
+  #layer_card .container .box .card a { width: 200px; height: 220px; }
+  #layer_card .container .box .card h2 { font-size: 15px; }
+  #layer_card .container .box .card img { height: 150px; }
+  #layer_card .container .box .card p { font-size: 15px; }
+
+  #popup_card .container h1 { font-size: 24px; }
+  #popup_card .container .txtcard { padding: 0 12px; gap: 14px; }
+  #popup_card .container .txtcard .card a { width: 240px; height: 340px; }
+  #popup_card .container .txtcard .card a strong { font-size: 18px; }
+}
+
+/* 481px — 스마트폰 */
+@media screen and (max-width: 481px) {
+  #banner { height: 240px; }
+  #banner .container { padding-left: 16px; bottom: 60px; }
+  #banner h1 { font-size: 22px; }
+  #banner h2 { font-size: 16px; }
+  #banner p { font-size: 12px; }
+  #banner .btn a { padding: 6px 14px; font-size: 11px; }
+
+  /* items — 1열 세로 스크롤 */
+  #items .container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 10px;
+    padding: 16px 16px;
+    width: 100%;
+  }
+  #items .container .box {
+    flex: 0 0 160px;
+    height: 200px;
+  }
+  #items .container .box a h2 { font-size: 13px; padding-bottom: 10px; }
+  #items .container .box a img { height: 90px; }
+
+  #banner_2 { height: 240px; }
+  #banner_2 .container { padding: 0 16px; }
+  #banner_2 .container .list { top: 20px; }
+  #banner_2 h1:nth-child(1) { font-size: 20px; }
+  #banner_2 h1:nth-child(2) { font-size: 16px; }
+  #banner_2 h2 { font-size: 16px; }
+  #banner_2 p { display: none; }
+
+  #items_2 .container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 10px;
+    padding: 16px 16px;
+    width: 100%;
+  }
+  #items_2 .container .box {
+    flex: 0 0 160px;
+    height: 200px;
+  }
+  #items_2 .container .box a h2 { font-size: 13px; padding-bottom: 10px; }
+  #items_2 .container .box a .img1 { height: 80px; margin-top: 8px; }
+  #items_2 .container .box a .img2 { height: 65px; margin-top: 18px; }
+  #items_2 .container .box a .img3 { height: 80px; margin-top: 8px; }
+  #items_2 .container .box a .img4 { height: 100px; }
+
+  #banner_3 { height: 260px; }
+  #banner_3 .container .txt .left h1 { font-size: 20px; }
+  #banner_3 .container .txt .left h2 { font-size: 15px; }
+
+  #layer_card .container { padding-top: 32px; }
+  #layer_card .container h1 { font-size: 20px; margin-bottom: 24px; }
+  #layer_card .container .box { padding: 0 16px; }
+  #layer_card .container .box .card { width: 180px; }
+  #layer_card .container .box .card a { width: 180px; height: 200px; }
+  #layer_card .container .box .card img { height: 130px; }
+  #layer_card .container .box .card h2 { font-size: 14px; margin-top: 20px; margin-bottom: 24px; }
+  #layer_card .container .box .card b { font-size: 11px; }
+  #layer_card .container .box .card p { font-size: 14px; }
+  #layer_card .container .box .card:nth-child(5) img { height: 160px; }
+  #layer_card .container .box .card:last-child img { height: 120px; }
+
+  #popup_card .container h1 { font-size: 22px; padding: 0 16px 30px; }
+  #popup_card .container .txtcard { padding: 0 16px; gap: 12px; }
+  #popup_card .container .txtcard .card a { width: 220px; height: 320px; }
+  #popup_card .container .txtcard .card a b { font-size: 12px; }
+  #popup_card .container .txtcard .card a strong { font-size: 16px; }
+  #popup_card .container .txtcard .card a span { font-size: 11px; }
+}
+
+/* 391px — 소형 스마트폰 */
+@media screen and (max-width: 391px) {
+  #banner { height: 210px; }
+  #banner h1 { font-size: 19px; }
+  #banner h2 { font-size: 14px; }
+  #banner .container { bottom: 50px; padding-left: 14px; }
+
+  #items .container { padding: 12px 12px; gap: 8px; }
+  #items .container .box { flex: 0 0 148px; height: 185px; }
+  #items .container .box a h2 { font-size: 12px; }
+  #items .container .box a img { height: 80px; }
+
+  #banner_2 { height: 210px; }
+  #banner_2 h1:nth-child(1) { font-size: 18px; }
+  #banner_2 h2 { font-size: 14px; }
+
+  #items_2 .container { padding: 12px 12px; gap: 8px; }
+  #items_2 .container .box { flex: 0 0 148px; height: 185px; }
+  #items_2 .container .box a h2 { font-size: 12px; }
+
+  #banner_3 { height: 220px; }
+  #banner_3 .container { padding-top: 28px; }
+  #banner_3 .container .txt { padding-left: 14px; }
+  #banner_3 .container .txt .left h1 { font-size: 18px; }
+  #banner_3 .container .txt .left h2 { font-size: 13px; }
+  #banner_3 .container .txt .left .btn a { font-size: 10px; padding: 6px 12px; }
+
+  #layer_card .container h1 { font-size: 18px; }
+  #layer_card .container .box { padding: 0 12px; gap: 8px; }
+  #layer_card .container .box .card { width: 160px; }
+  #layer_card .container .box .card a { width: 160px; height: 180px; }
+  #layer_card .container .box .card img { height: 115px; }
+  #layer_card .container .box .card h2 { font-size: 13px; }
+  #layer_card .container .box .card:nth-child(5) img { height: 145px; }
+  #layer_card .container .box .card:last-child img { height: 100px; }
+
+  #popup_card .container h1 { font-size: 18px; padding: 0 12px 24px; }
+  #popup_card .container .txtcard { padding: 0 12px; gap: 10px; }
+  #popup_card .container .txtcard .card a { width: 200px; height: 300px; }
+  #popup_card .container .txtcard .card a strong { font-size: 14px; }
+}

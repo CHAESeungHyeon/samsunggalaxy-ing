@@ -1,0 +1,783 @@
+/* banner */
+#title_banner{
+  width: 100%;
+  min-width: 1200px;
+  height: 270px;
+}
+#title_banner .container{
+  padding: 0;
+  width: 100%;
+  min-width: 1200px;
+  overflow: hidden;
+}
+#title_banner .container .gradient{
+  width: 200%;
+  height: 80px;
+  background: linear-gradient(to right, #2E69C9, #2E69C9, #33e4e1,#33e4e1);
+  box-shadow: inset 0 -40px 40px 10px rgb(255, 255, 255), inset 0 -20px 16px 0px rgb(255, 255, 255,1);
+}
+#title_banner .container .title{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 190px;
+}
+#title_banner .container .title h1{
+  display: inline-block;
+  line-height: 1.2;
+  font-size: 70px;
+  letter-spacing: -2%;
+  background: linear-gradient(to right, #2E69C9, #26D5D1);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+#title_banner .container .title img{
+  width: 71px;
+  height: 78px;
+}
+#title_banner .container .list{
+  display: flex;
+  padding: 78px 200px 0;
+  gap: 40px;
+}
+#title_banner .container .list li a{
+  font-size: 17px;
+  color: #333;
+  letter-spacing: -2%;
+  font-family: 'Samsung Medium';
+  white-space: nowrap;
+}
+#title_banner .container .list li:first-child{
+  font-weight: bold;
+  text-decoration-line: underline;
+  text-decoration-color: #333;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+/* phone */
+#phone{
+  width: 100%;
+  min-width: 1200px;
+  height: 645px;
+}
+#phone .container{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+#phone .container > h1{
+  padding: 50px 0 0 200px;
+  color: #666;
+  margin-bottom: 35px;
+  font-size: 28px;
+}
+#phone .container h1 b{
+  background: linear-gradient(to right, #2E69C9, #26D5D1);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+#phone .container .box{
+  width: 100%;
+  min-width: 1200px;
+  display: flex;
+  padding-left: 200px;
+  gap: 30px;
+  overflow: hidden;
+}
+#phone .container .box .card{
+  width: 400px;
+  height: 510px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  border: 1px solid rgba(0,0,0,.1);
+}
+#phone .container .box .card .txt{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-left: 35px;
+  margin-top: 35px;
+  gap: 20px;
+}
+#phone .container .box .card.card:nth-child(3) .txt{
+  gap: 10px;
+}
+#phone .container .box .card .txt li p{
+  color: #B54C00;
+  font-size: 12px;
+  font-family: 'Samsung Medium';
+}
+#phone .container .box .card .txt li h1{
+  color: #333;
+  font-size: 30px;
+}
+#phone .container .box .card img{
+  width: 400px;
+  height: 238px;
+  margin: 44px 0 10px;
+}
+#phone .container .box .card:nth-child(3) img{
+  margin-top: 10px;
+}
+#phone .container .box .card .color{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+#phone .container .box .card .color > li{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #111;
+}
+#phone .container .box .card .info{
+  margin: 30px 0 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+#phone .container .box .card .info li p{
+  font-family: 'Samsung Regular';
+  margin-left: 40px;
+}
+#phone .container .box .card .info a{
+  position: absolute;
+  right: 35px;
+  bottom: 0px;
+  font-size: 15px;
+  padding: 10px 20px;
+  background-color: #111;
+  color: #fff;
+  border-radius: 100px;
+}
+
+/* accessories */
+#accessories{
+  width: 100%;
+  min-width: 1200px;
+  height: 700px;
+}
+#accessories .container{
+  width: 100%;
+  min-width: 1200px;
+  height: 700px;
+  padding: 0;
+}
+#accessories .container > h1{
+  padding: 50px 0 0 200px;
+  color: #666;
+  margin-bottom: 35px;
+  font-size: 28px;
+}
+#accessories .container h1 b{
+  background: linear-gradient(to right, #2E69C9, #26D5D1);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+#accessories .container .box{
+  width: 100%;
+  min-width: 1200px;
+  display: flex;
+  padding-left: 200px;
+  gap: 30px;
+  overflow: hidden;
+}
+#accessories .box .card{
+  width: 400px;
+  height: 510px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid rgba(0,0,0,.1);
+}
+#accessories .box .card:nth-child(1) h2{
+  color: #333;
+  font-size: 25px;
+  padding: 55px 35px;
+}
+#accessories .card img{
+  width: 400px;
+  height: 241px;
+  margin-top: 40px;
+}
+#accessories .pic1 img{
+  margin: 0;
+  height: 354px;
+  width: 400px;
+}
+#accessories .container .box .card .color{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+#accessories .container .box .card .color > li{
+  margin: 10px 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #111;
+}
+#accessories .box .card .txt_box{
+  padding-left: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+}
+#accessories .box .card .txt li p{
+  color: #b54c00;
+  font-size: 12px;
+  padding-bottom: 5px;
+  font-family: 'Samsung Medium';
+}
+#accessories .box .card .txt li h2{
+  font-size: 20px;
+  height: 50px;
+  color: #333;
+  margin-bottom: 10px;
+}
+#accessories .box .card .info li p{
+  font-size: 15px;
+  font-family: 'Samsung Regular';
+  color: #333;
+}
+
+/* accessories_item */
+#accessories_item{
+  width: 100%;
+  min-width: 1200px;
+  height: 700px;
+}
+#accessories_item .container{
+  width: 100%;
+  min-width: 1200px;
+  height: 700px;
+  padding: 0;
+}
+#accessories_item .container > h1{
+  padding: 50px 0 0 200px;
+  color: #666;
+  margin-bottom: 35px;
+  font-size: 28px;
+}
+#accessories_item .container h1 b{
+  background: linear-gradient(to right, #2E69C9, #26D5D1);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+#accessories_item img{
+  width: 400px;
+  height: 217px;
+  margin: 0;
+}
+#accessories_item .container .box{
+  width: 100%;
+  min-width: 1200px;
+  display: flex;
+  padding-left: 200px;
+  gap: 30px;
+  overflow: hidden;
+}
+#accessories_item .box .card{
+  width: 400px;
+  height: 510px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid rgba(0,0,0,.1);
+  gap: 10px;
+}
+#accessories_item .container .box .card .color{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+#accessories_item .container .box .card .color > li{
+  margin: 10px 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+#accessories_item .box .card .txt_box{
+  padding-left: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+}
+#accessories_item .box .card .txt li p{
+  color: #b54c00;
+  font-size: 12px;
+  padding-bottom: 5px;
+  font-family: 'Samsung Medium';
+}
+#accessories_item .box .card .txt li h2{
+  font-size: 20px;
+  height: 50px;
+  color: #333;
+  margin-bottom: 10px;
+}
+#accessories_item .box .card .info li p{
+  font-size: 15px;
+  font-family: 'Samsung Regular';
+  color: #333;
+}
+
+/* service */
+#service{
+  width: 100%;
+  min-width: 1200px;
+  height: 700px;
+}
+#service .container{
+  padding: 0;
+  width: 100%;
+  min-width: 1200px;
+  height: 100%;
+}
+#service .container > h1{
+  padding: 50px 0 0 200px;
+  color: #666;
+  margin-bottom: 35px;
+  font-size: 28px;
+}
+#service .container h1 b{
+  background: linear-gradient(to right, #2E69C9, #26D5D1);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+#service .container .box{
+  display: flex;
+  padding-left: 200px;
+  gap: 30px;
+  overflow: hidden;
+}
+#service .box .card{
+  width: 370px;
+  height: 510px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+}
+#service .container .box .card .txt{
+  margin-left: 30px;
+}
+#service .container .box .card .txt li{
+  display: flex;
+  gap: 10px;
+}
+#service .txt li > h2{
+  font-size: 28px;
+}
+#service .container .box .card:nth-child(1) .txt img{
+  width: 37px;
+  height: 40px;
+}
+#service .container .box .card:nth-child(2) .txt img{
+  width: 49px;
+  height: 37px;
+}
+#service .container .box .card article img{
+  width: 370px;
+  height: 366px;
+}
+#service .card .txt li p{
+  font-size: 14px;
+  font-family: 'Samsung Regular';
+  font-weight: 400;
+}
+#service .box .card:nth-child(4){
+  background: url(../subimg/section_4.png) center/cover;
+  justify-content: start;
+}
+#service .card:nth-child(4) .txt{
+  margin-top: 50px;
+}
+#service .card:nth-child(4) .txt > li h2{ color: #fff; }
+#service .card:nth-child(4) .txt > li p{ color: #fff; }
+
+/* popup_card */
+#popup_card{
+  width: 100%;
+  min-width: 1200px;
+}
+#popup_card .container{
+  width: 100%;
+  min-width: 1200px;
+  overflow: hidden;
+}
+#popup_card .container .txt{
+  width: 100%;
+  display: flex;
+  padding-left: 200px;
+}
+#popup_card .container .txt .style{
+  padding-right: 10px;
+  background: linear-gradient(to right, #2E69C9, #26D5D1);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#popup_card .container .txt h1{
+  font-family: 'Samsung Bold';
+  font-size: 30px;
+  padding-bottom: 70px;
+  color: #666;
+}
+#popup_card .container .txtcard{
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+  gap: 40px;
+}
+#popup_card .container .txtcard .card{
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+#popup_card .container .txtcard .card a {
+  width: 320px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  position: relative;
+}
+#popup_card .container .txtcard .card a b{
+  font: bold 14px 'Samsung Medium';
+  color: #444;
+  margin-top: 25px;
+  padding: 0 31px;
+  margin-bottom: 10px;
+}
+#popup_card .container .txtcard .card a strong{
+  font: bold 22px 'Samsung Bold';
+  color: #111;
+  padding: 0 31px;
+  margin-bottom: 10px;
+}
+#popup_card .container .txtcard .card a span{
+  font: normal 13px 'Samsung Medium';
+  color: #666;
+  padding: 0 31px;
+}
+#popup_card .container .txtcard .card:nth-child(1) a img{
+  width: 320px;
+  position: absolute;
+  bottom: 20px;
+}
+#popup_card .container .txtcard .card:nth-child(2) a img{
+  width: 200px;
+  position: absolute;
+  right: 60px;
+  bottom: 40px;
+}
+#popup_card .container .txtcard .card:nth-child(3) a img{
+  width: 232px;
+  position: absolute;
+  right: 44px;
+  bottom: 40px;
+}
+#popup_card .container .txtcard .card:nth-child(4) a img{
+  width: 286px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+#popup_card .container .txtcard .card:nth-child(5) a img{
+  width: 206px;
+  position: absolute;
+  right: 58px;
+  bottom: 0px;
+}
+#popup_card .container .txtcard .card a i{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 30px;
+}
+
+/* =============================================
+   MEDIA QUERIES
+   ============================================= */
+
+/* 1024px — 태블릿 가로 */
+@media screen and (max-width: 1024px) {
+  #title_banner,
+  #phone,
+  #accessories,
+  #accessories_item,
+  #service,
+  #popup_card {
+    min-width: 0;
+  }
+
+  /* title_banner */
+  #title_banner { height: auto; }
+  #title_banner .container { min-width: 0; }
+  #title_banner .container .title { padding: 0 40px; }
+  #title_banner .container .title h1 { font-size: 52px; }
+  #title_banner .container .title img { width: 55px; height: 60px; }
+  #title_banner .container .list {
+    padding: 40px 40px 20px;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  #title_banner .container .list li a { font-size: 14px; }
+
+  /* phone */
+  #phone { height: auto; padding-bottom: 30px; }
+  #phone .container > h1 { padding: 40px 0 0 40px; font-size: 24px; }
+  #phone .container .box {
+    min-width: 0;
+    padding-left: 40px;
+    gap: 20px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  #phone .container .box .card { width: 320px; height: 460px; flex-shrink: 0; }
+  #phone .container .box .card img { width: 320px; height: 190px; }
+  #phone .container .box .card .txt li h1 { font-size: 24px; }
+  #phone .container .box .card .info a { font-size: 13px; padding: 8px 16px; }
+
+  /* accessories */
+  #accessories { height: auto; padding-bottom: 30px; }
+  #accessories .container { min-width: 0; height: auto; }
+  #accessories .container > h1 { padding: 40px 0 0 40px; font-size: 22px; }
+  #accessories .container .box {
+    min-width: 0;
+    padding-left: 40px;
+    gap: 20px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  #accessories .box .card { width: 320px; height: 460px; flex-shrink: 0; }
+  #accessories .card img { width: 320px; height: 193px; }
+  #accessories .pic1 img { width: 320px; height: 283px; }
+
+  /* accessories_item */
+  #accessories_item { height: auto; padding-bottom: 30px; }
+  #accessories_item .container { min-width: 0; height: auto; }
+  #accessories_item .container > h1 { padding: 40px 0 0 40px; font-size: 22px; }
+  #accessories_item .container .box {
+    min-width: 0;
+    padding-left: 40px;
+    gap: 20px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  #accessories_item .box .card { width: 320px; height: 460px; flex-shrink: 0; }
+  #accessories_item img { width: 320px; height: 174px; }
+
+  /* service */
+  #service { height: auto; padding-bottom: 30px; }
+  #service .container { min-width: 0; height: auto; }
+  #service .container > h1 { padding: 40px 0 0 40px; font-size: 22px; }
+  #service .container .box {
+    padding-left: 40px;
+    gap: 20px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  #service .box .card { width: 300px; height: 460px; flex-shrink: 0; }
+  #service .container .box .card article img { width: 300px; height: 296px; }
+  #service .txt li > h2 { font-size: 22px; }
+
+  /* popup_card */
+  #popup_card .container { min-width: 0; }
+  #popup_card .container .txt { padding-left: 40px; }
+  #popup_card .container .txt h1 { font-size: 24px; padding-bottom: 40px; }
+  #popup_card .container .txtcard {
+    padding-left: 40px;
+    gap: 20px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  #popup_card .container .txtcard .card a { width: 280px; }
+}
+
+/* 768px — 태블릿 세로 */
+@media screen and (max-width: 768px) {
+  /* title_banner */
+  #title_banner .container .gradient { height: 60px; }
+  #title_banner .container .title { padding: 0 24px; }
+  #title_banner .container .title h1 { font-size: 40px; }
+  #title_banner .container .title img { width: 44px; height: 48px; }
+  #title_banner .container .list {
+    padding: 24px 24px 20px;
+    gap: 16px;
+  }
+  #title_banner .container .list li a { font-size: 13px; }
+
+  /* phone */
+  #phone .container > h1 { padding: 30px 0 0 24px; font-size: 20px; margin-bottom: 24px; }
+  #phone .container .box { padding-left: 24px; gap: 16px; }
+  #phone .container .box .card { width: 280px; height: 420px; }
+  #phone .container .box .card img { width: 280px; height: 168px; margin: 28px 0 8px; }
+  #phone .container .box .card .txt { margin-left: 24px; margin-top: 24px; gap: 12px; }
+  #phone .container .box .card .txt li h1 { font-size: 20px; }
+  #phone .container .box .card .info { margin-top: 20px; }
+  #phone .container .box .card .info li p { font-size: 13px; margin-left: 24px; }
+  #phone .container .box .card .info a { font-size: 12px; padding: 8px 14px; right: 24px; }
+
+  /* accessories */
+  #accessories .container > h1 { padding: 30px 0 0 24px; font-size: 18px; margin-bottom: 20px; }
+  #accessories .container .box { padding-left: 24px; gap: 16px; }
+  #accessories .box .card { width: 260px; height: 400px; }
+  #accessories .box .card:nth-child(1) h2 { font-size: 20px; padding: 40px 24px; }
+  #accessories .card img { width: 260px; height: 156px; }
+  #accessories .pic1 img { width: 260px; height: 260px; }
+  #accessories .box .card .txt_box { padding-left: 24px; }
+  #accessories .box .card .txt li h2 { font-size: 16px; height: auto; }
+
+  /* accessories_item */
+  #accessories_item .container > h1 { padding: 30px 0 0 24px; font-size: 18px; margin-bottom: 20px; }
+  #accessories_item .container .box { padding-left: 24px; gap: 16px; }
+  #accessories_item .box .card { width: 260px; height: 400px; }
+  #accessories_item img { width: 260px; height: 141px; }
+  #accessories_item .box .card .txt_box { padding-left: 24px; }
+  #accessories_item .box .card .txt li h2 { font-size: 16px; height: auto; }
+
+  /* service */
+  #service .container > h1 { padding: 30px 0 0 24px; font-size: 18px; margin-bottom: 20px; }
+  #service .container .box { padding-left: 24px; gap: 16px; }
+  #service .box .card { width: 260px; height: 420px; }
+  #service .container .box .card article img { width: 260px; height: 258px; }
+  #service .txt li > h2 { font-size: 20px; }
+  #service .container .box .card .txt { margin-left: 20px; }
+
+  /* popup_card */
+  #popup_card .container .txt { padding-left: 24px; }
+  #popup_card .container .txt h1 { font-size: 20px; padding-bottom: 30px; }
+  #popup_card .container .txtcard { padding-left: 24px; gap: 16px; }
+  #popup_card .container .txtcard .card a { width: 260px; height: 360px; }
+  #popup_card .container .txtcard .card a b { font-size: 12px; }
+  #popup_card .container .txtcard .card a strong { font-size: 18px; }
+}
+
+/* 657px — 대형 모바일 가로 */
+@media screen and (max-width: 657px) {
+  #title_banner .container .title h1 { font-size: 32px; }
+  #title_banner .container .title img { width: 36px; height: 40px; }
+  #title_banner .container .list { gap: 12px; flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; }
+  #title_banner .container .list li a { font-size: 12px; }
+
+  #phone .container > h1 { font-size: 18px; }
+  #phone .container .box .card { width: 240px; height: 390px; }
+  #phone .container .box .card img { width: 240px; height: 144px; }
+  #phone .container .box .card .txt li h1 { font-size: 18px; }
+
+  #accessories .container > h1 { font-size: 16px; }
+  #accessories .box .card { width: 220px; height: 370px; }
+  #accessories .card img { width: 220px; height: 132px; }
+  #accessories .pic1 img { width: 220px; height: 220px; }
+
+  #accessories_item .container > h1 { font-size: 16px; }
+  #accessories_item .box .card { width: 220px; height: 370px; }
+  #accessories_item img { width: 220px; height: 120px; }
+
+  #service .container > h1 { font-size: 16px; }
+  #service .box .card { width: 220px; height: 380px; }
+  #service .container .box .card article img { width: 220px; height: 218px; }
+  #service .txt li > h2 { font-size: 17px; }
+
+  #popup_card .container .txt h1 { font-size: 18px; }
+  #popup_card .container .txtcard .card a { width: 230px; height: 340px; }
+  #popup_card .container .txtcard .card a strong { font-size: 16px; }
+  #popup_card .container .txtcard .card a span { font-size: 11px; }
+}
+
+/* 481px — 스마트폰 */
+@media screen and (max-width: 481px) {
+  #title_banner .container .gradient { height: 50px; }
+  #title_banner .container .title { padding: 0 16px; }
+  #title_banner .container .title h1 { font-size: 26px; }
+  #title_banner .container .title img { width: 28px; height: 30px; }
+  #title_banner .container .list { padding: 16px 16px 16px; gap: 16px; }
+  #title_banner .container .list li a { font-size: 11px; }
+
+  #phone .container > h1 { padding: 24px 0 0 16px; font-size: 16px; margin-bottom: 16px; }
+  #phone .container .box { padding-left: 16px; gap: 12px; }
+  #phone .container .box .card { width: 210px; height: 360px; }
+  #phone .container .box .card img { width: 210px; height: 126px; margin: 20px 0 6px; }
+  #phone .container .box .card .txt { margin-left: 16px; margin-top: 16px; gap: 8px; }
+  #phone .container .box .card .txt li h1 { font-size: 16px; }
+  #phone .container .box .card .info a { font-size: 11px; right: 16px; padding: 7px 12px; }
+
+  #accessories .container > h1 { padding: 24px 0 0 16px; font-size: 15px; margin-bottom: 16px; }
+  #accessories .container .box { padding-left: 16px; gap: 12px; }
+  #accessories .box .card { width: 190px; height: 340px; }
+  #accessories .box .card:nth-child(1) h2 { font-size: 16px; padding: 30px 16px; }
+  #accessories .card img { width: 190px; height: 114px; margin-top: 24px; }
+  #accessories .pic1 img { width: 190px; height: 190px; }
+  #accessories .box .card .txt_box { padding-left: 16px; gap: 10px; }
+  #accessories .box .card .txt li h2 { font-size: 13px; }
+  #accessories .box .card .info li p { font-size: 13px; }
+
+  #accessories_item .container > h1 { padding: 24px 0 0 16px; font-size: 15px; margin-bottom: 16px; }
+  #accessories_item .container .box { padding-left: 16px; gap: 12px; }
+  #accessories_item .box .card { width: 190px; height: 340px; }
+  #accessories_item img { width: 190px; height: 103px; }
+  #accessories_item .box .card .txt_box { padding-left: 16px; gap: 10px; }
+  #accessories_item .box .card .txt li h2 { font-size: 13px; }
+  #accessories_item .box .card .info li p { font-size: 13px; }
+
+  #service .container > h1 { padding: 24px 0 0 16px; font-size: 15px; margin-bottom: 16px; }
+  #service .container .box { padding-left: 16px; gap: 12px; }
+  #service .box .card { width: 190px; height: 340px; }
+  #service .container .box .card article img { width: 190px; height: 188px; }
+  #service .txt li > h2 { font-size: 15px; }
+  #service .container .box .card .txt { margin-left: 14px; }
+  #service .card .txt li p { font-size: 12px; }
+
+  #popup_card .container .txt { padding-left: 16px; }
+  #popup_card .container .txt h1 { font-size: 16px; padding-bottom: 24px; }
+  #popup_card .container .txtcard { padding-left: 16px; gap: 10px; }
+  #popup_card .container .txtcard .card a { width: 200px; height: 310px; }
+  #popup_card .container .txtcard .card a b { font-size: 11px; padding: 0 20px; }
+  #popup_card .container .txtcard .card a strong { font-size: 14px; padding: 0 20px; }
+  #popup_card .container .txtcard .card a span { font-size: 10px; padding: 0 20px; }
+}
+
+/* 391px — 소형 스마트폰 */
+@media screen and (max-width: 391px) {
+  #title_banner .container .title h1 { font-size: 22px; }
+  #title_banner .container .title img { width: 24px; height: 26px; }
+  #title_banner .container .list li a { font-size: 10px; }
+
+  #phone .container .box .card { width: 188px; height: 330px; }
+  #phone .container .box .card img { width: 188px; height: 112px; }
+  #phone .container .box .card .txt li h1 { font-size: 14px; }
+
+  #accessories .box .card { width: 170px; height: 310px; }
+  #accessories .card img { width: 170px; height: 102px; }
+  #accessories .pic1 img { width: 170px; height: 170px; }
+  #accessories .box .card .txt li h2 { font-size: 12px; }
+
+  #accessories_item .box .card { width: 170px; height: 310px; }
+  #accessories_item img { width: 170px; height: 92px; }
+  #accessories_item .box .card .txt li h2 { font-size: 12px; }
+
+  #service .box .card { width: 170px; height: 310px; }
+  #service .container .box .card article img { width: 170px; height: 168px; }
+  #service .txt li > h2 { font-size: 13px; }
+
+  #popup_card .container .txtcard .card a { width: 178px; height: 290px; }
+  #popup_card .container .txtcard .card a strong { font-size: 13px; }
+}

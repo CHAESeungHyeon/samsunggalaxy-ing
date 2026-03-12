@@ -1,0 +1,891 @@
+/* banner */
+#banner{
+  width: 100%;
+  min-width: 1200px;
+}
+#banner .container{
+  width: 100%;
+  min-width: 1200px;
+  padding: 35px 0 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+#banner .container .banner_box{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 60px;
+  width: 100%;
+  height: 900px;
+}
+#banner .box{
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#banner .box img{
+  width: 1200px;
+  margin-top: 40px;
+}
+#banner .box ul{
+  position: absolute;
+  right: 400px;
+  top: 30px;
+}
+#banner .box ul li{
+  display: flex;
+  justify-content: center;
+}
+#banner .box ul li h1{
+  font-size: 70px;
+}
+#banner .box ul li h2{
+  font-size: 50px;
+  font-family: 'Samsung Medium';
+  font-weight: 200;
+  height: 64px;
+  margin-left: 50px;
+}
+#banner .box ul li p{
+  font-size: 25px;
+}
+#banner .box ul li > img{
+  width: 57px;
+  height: 63px;
+  margin-top: 0;
+  margin-left: 10px;
+}
+#banner .box ul .button{
+  position: absolute;
+  right: -3%;
+  bottom: -60%;
+}
+#banner .box ul .button button{
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#banner .box ul li i{
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* 옵션 리스트 */
+#banner .list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#banner .list .option{
+  display: flex;
+  flex-direction: column;
+}
+#banner .list .option ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+#banner .list .option li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border: 1px solid #666;
+  border-radius: 13px;
+}
+#banner .list .option li a h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+#banner .list .option li a h3:first-child {
+  position: relative;
+  padding-right: 30px;
+  margin-right: 16px;
+}
+#banner .list .option li a h3:first-child::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 14px;
+  background: #666;
+}
+#banner .list .option > p{
+  font-size: 22px;
+  font-family: 'Samsung Medium';
+  margin-bottom: 10px;
+}
+#banner .list .option li a p {
+  margin-left: 20px;
+  margin-bottom: 4px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #666;
+  font-size: 18px;
+  font-family: 'Samsung Medium';
+  white-space: nowrap;
+}
+#banner .list .option li a h3:nth-child(1){
+  font-size: 20px;
+  color: #333;
+}
+#banner .list .option li a h3:nth-child(2){
+  font-size: 20px;
+  color: #666;
+}
+#banner .color_option p{
+  font-size: 22px;
+  font-family: 'Samsung Medium';
+}
+#banner .color_option ul{
+  display: flex;
+  gap: 36px;
+  margin-top: 36px;
+}
+#banner .color_option ul li{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#banner .color_option ul .blue{ background-color: #485577; }
+#banner .color_option ul .black{ background-color: #1a1a1a; }
+#banner .color_option ul .silver{ background-color: #d0d0d0; }
+
+/* middle banner */
+#middle_banner img{
+  width: 22px;
+  height: 16px;
+  display: block;
+  margin-top: 2px;
+  margin-left: 5px;
+}
+#middle_banner .container{
+  width: 100%;
+  min-width: 1200px;
+  height: 855px;
+  padding: 0;
+  overflow: hidden;
+}
+#middle_banner .middle_top{
+  padding: 0 350px 60px;
+}
+#middle_banner .title img{
+  width: 50px;
+  height: 37px;
+  margin: 6px 6px 0 0;
+}
+#middle_banner .title {
+  display: flex;
+  gap: 5px;
+  padding: 60px 0 50px;
+}
+#middle_banner .title .blackfont{
+  font-size: 32px;
+  margin-top: 6px;
+}
+#middle_banner .title h4{
+  font-size: 32px;
+}
+#middle_banner .title .grayfont{
+  font-size: 32px;
+  color: #666;
+  font-weight: 400;
+  font-family: 'Samsung Medium';
+}
+#middle_banner .box{
+  display: flex;
+  gap: 12px;
+  opacity: 50%;
+}
+#middle_banner .box > article{
+  width: 440px;
+  height: 160px;
+  border-radius: 20px;
+  border: 1px solid #999;
+}
+#middle_banner .box > article li:nth-child(1){
+  display: flex;
+  flex-direction: column;
+}
+#middle_banner .box .box1 ul{
+  margin: 15px 20px;
+}
+#middle_banner .box .box1 ul li{
+  font-size: 12px;
+}
+#middle_banner .box .box1 strong{
+  display: flex;
+  font-size: 16px;
+  margin-bottom: 7px;
+  color: #333;
+}
+#middle_banner .box .box1 p{
+  color: #666;
+  font-family: 'Samsung Regular';
+  font-weight: 400;
+}
+#middle_banner .box .box1 li:nth-child(1) p{
+  margin-bottom: 10px;
+}
+#middle_banner .box .box1 .line{
+  width: 100%;
+  height: 1px;
+  background-color: #999;
+  margin-bottom: 10px;
+}
+#middle_banner .box .box1 li:nth-child(3){
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: 'Samsung Regular';
+  font-weight: 400;
+  white-space: nowrap;
+}
+#middle_banner .box2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#middle_banner .box2 h4{
+  display: flex;
+  font-size: 16px;
+  margin-bottom: 7px;
+  color: #333;
+  font-size: 16px;
+}
+#middle_banner .box2 h4:nth-child(1) {
+  font-size: 18px;
+}
+#middle_banner .box .box3{
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  text-align: left;
+  background-color: #f4f4f4;
+  border: none;
+  color: #222;
+  font-size: 12px;
+  margin: 0 40px;
+  transform: translateY(-12px) translateX(18px);
+  white-space: nowrap;
+  position: relative;
+}
+#middle_banner .box .box3 strong{
+  padding: 14px 14px 0;
+}
+#middle_banner .box .box3 p{
+  padding: 0 14px 14px;
+}
+#middle_banner .box3 button{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  font-size: 10px;
+  right: 14px;
+  top: 10px;
+  border: 1px solid #999;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* middle_bottom */
+#middle_banner .middle_bottom{
+  padding: 0 350px;
+  background-color: #f4f4f4;
+  display: flex;
+  gap: 50px;
+}
+.middle_bottom .img{
+  padding-top: 40px;
+}
+.middle_bottom .img .txt{
+  font-size: 40px;
+}
+.middle_bottom .img .pic{
+  padding: 40px 0 0 45px;
+}
+#middle_banner .middle_bottom .img .pic img{
+  width: 293px;
+  height: 292px;
+}
+#middle_banner .middle_bottom .description .price{
+  padding: 60px 0 40px;
+  border-bottom: 1px solid #bbb;
+}
+#middle_banner .middle_bottom .description .price h3{
+  font-size: 20px;
+  color: #333;
+}
+#middle_banner .middle_bottom .description .bookmark{
+  padding-top: 30px;
+}
+#middle_banner .middle_bottom .description .bookmark > p{
+  color: #666;
+  opacity: 50%;
+}
+#middle_banner .middle_bottom .description .bookmark .symbol{
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px solid #bbb;
+}
+#middle_banner .middle_bottom .symbol i{
+  margin-top: 5px;
+  color: #0075d5;
+  opacity: 50%;
+}
+#middle_banner .middle_bottom .symbol p{
+  color: #0075d5;
+  opacity: 50%;
+}
+#middle_banner .middle_bottom .description .info p{
+  padding-top: 27px;
+  color: #444;
+  font-weight: 500;
+}
+#middle_banner .middle_bottom .buy{
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+#middle_banner .middle_bottom .buy .delivery{
+  display: flex;
+  gap: 5px;
+  padding-bottom: 24px;
+}
+#middle_banner .middle_bottom .buy .delivery p{
+  color: #333;
+  font-size: 14px;
+}
+#middle_banner .middle_bottom .buy .delivery img{
+  width: 30px;
+  height: 18px;
+}
+#middle_banner .middle_bottom .buy .store{
+  color: #333;
+  font-size: 13px;
+}
+#middle_banner .middle_bottom .buy .store{
+  display: flex;
+  gap: 5px;
+  padding-bottom: 48px;
+}
+#middle_banner .middle_bottom .buy .store img{
+  width: 30px;
+  height: 18px;
+}
+#middle_banner .middle_bottom .buy .continue{
+  padding: 13px 135px;
+  background-color: #0084f0;
+  border-radius: 10px;
+  opacity: 50%;
+}
+#middle_banner .middle_bottom .buy .continue p{
+  white-space: nowrap;
+  color: #fff;
+  font-size: 13px;
+}
+
+/* config */
+#config .container{
+  width: 100%;
+  min-width: 1200px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#config .container > h1{
+  font-size: 40px;
+  padding: 65px 0;
+}
+#config .container .item_box {
+  width: 989px;
+  height: 472px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 138px;
+}
+#config .container .item_box img:first-child{
+  width: 323px;
+  height: 357px;
+}
+#config .container .item_box img:last-child{
+  width: 89px;
+  height: 306px;
+}
+#config .container .item_card ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  margin: 30px 0 127px 120px;
+}
+#config .container .item_card ul li{
+  font-size: 18px;
+  color: #333;
+}
+#config .container > p{
+  font-size: 13px;
+  color: #888;
+  text-align: left;
+  font-family: 'Samsung Regular';
+  font-weight: 500;
+  padding: 20px;
+  border: 1px solid #bbb;
+  border-radius: 15px;
+}
+
+/* compare */
+#compare {
+  width: 1200px;
+  margin: 0 auto;
+}
+#compare .container{
+  padding: 70px 0;
+}
+#compare .container h1{
+  font-size: 42px;
+  text-align: center;
+  color: #333;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.cell {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 14px;
+  font-family: 'Samsung Medium';
+  white-space: nowrap;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+}
+.row:nth-child(5) .cell::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 60%;
+  height: 1px;
+  background: #999;
+}
+.row:not(:nth-child(5)) .cell {
+  border-bottom: none;
+}
+#compare .container .row img{
+  width: 106px;
+}
+#compare .row:nth-child(2) .cell{
+  margin: 0;
+  padding-bottom: 0;
+}
+#compare .row:nth-child(2) .cell:nth-child(4){
+  margin: 20px 0;
+}
+#compare .container .row:nth-child(2) .cell img{
+  width: 250px;
+}
+#compare .row:nth-child(3) .cell{
+  padding: 0;
+}
+#compare .row:nth-child(3) .cell ul{
+  display: flex;
+  padding: 0;
+  gap: 10px;
+}
+#compare .row:nth-child(3) .cell ul li{
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+.cell span{
+  font-size: 18px;
+  color: #333;
+  font-weight: normal;
+}
+.cell p{
+  color: #666;
+  font-family: 'Samsung Regular';
+  font-size: 16px;
+  font-weight: 400;
+}
+.row:nth-child(4) .cell{
+  padding-bottom: 30px;
+}
+.row:nth-child(5) .cell{
+  padding-top: 0;
+}
+.row:nth-child(6) .cell span{
+  line-height: 1.8;
+  letter-spacing: -1px;
+}
+.row:not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(5)):not(:nth-child(6)) .cell img{
+  margin-bottom: 30px;
+}
+
+/* faq */
+#faq{
+  width: 1200px;
+  margin: auto;
+}
+#faq .container{
+  padding: 120px 0;
+  width: 1000px;
+}
+#faq h1{
+  font-size: 50px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ccc;
+}
+#faq .faq_question{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+#faq .faq_question article{
+  border-bottom: 1px solid #ccc;
+  padding: 25px 0;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  position: relative;
+}
+#faq .faq_question article button{
+  background-color: transparent;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+}
+#faq .faq_question article button i{
+  font-size: 15px;
+}
+
+/* faq 답변 패널 (JS 연동용) */
+.faq_answer {
+  display: none;
+  padding: 16px 0 20px;
+  font-size: 14px;
+  color: #666;
+  font-weight: normal;
+  font-family: 'Samsung Regular';
+  line-height: 1.7;
+}
+.faq_answer.is-open {
+  display: block;
+}
+/* JS에서 article.is-open 토글 시 화살표 회전 */
+#faq .faq_question article.is-open button i {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+/* footer */
+#footer{
+  background-color: #eee;
+  width: 100%;
+  min-width: 1200px;
+}
+body #footer .container .top_foot{
+  border-top: none;
+}
+
+/* =============================================
+   MEDIA QUERIES
+   ============================================= */
+
+/* 1024px — 태블릿 가로 */
+@media screen and (max-width: 1024px) {
+  #banner,
+  #middle_banner,
+  #config,
+  #compare,
+  #faq,
+  #footer {
+    min-width: 0;
+  }
+
+  /* banner */
+  #banner .container { min-width: 0; padding: 24px 0 0; }
+  #banner .container .banner_box { height: auto; gap: 40px; padding-bottom: 40px; }
+  #banner .box img { width: 100%; max-width: 900px; }
+  #banner .box ul { right: 200px; top: 24px; }
+  #banner .box ul li h1 { font-size: 52px; }
+  #banner .box ul li h2 { font-size: 38px; height: 48px; margin-left: 30px; }
+  #banner .box ul li p { font-size: 20px; }
+  #banner .box ul li > img { width: 44px; height: 48px; }
+
+  #banner .list { flex-direction: row; gap: 40px; padding: 0 40px; }
+  #banner .list .option > p { font-size: 18px; }
+  #banner .list .option li a { padding: 12px 16px; }
+  #banner .list .option li a h3:nth-child(1),
+  #banner .list .option li a h3:nth-child(2) { font-size: 16px; }
+  #banner .list .option li a p { font-size: 14px; }
+  #banner .color_option p { font-size: 18px; }
+  #banner .color_option ul { gap: 24px; margin-top: 24px; }
+  #banner .color_option ul li { width: 32px; height: 32px; }
+
+  /* middle banner */
+  #middle_banner .container { min-width: 0; height: auto; }
+  #middle_banner .middle_top { padding: 0 80px 50px; }
+  #middle_banner .title { padding: 40px 0 36px; }
+  #middle_banner .title .blackfont,
+  #middle_banner .title h4,
+  #middle_banner .title .grayfont { font-size: 26px; }
+  #middle_banner .box { flex-wrap: wrap; justify-content: center; }
+  #middle_banner .box > article { width: 360px; }
+  #middle_banner .box .box3 { margin: 0; transform: none; width: 80%; }
+
+  #middle_banner .middle_bottom { padding: 0 80px; gap: 30px; flex-wrap: wrap; justify-content: center; }
+  .middle_bottom .img .txt { font-size: 32px; }
+  #middle_banner .middle_bottom .img .pic img { width: 240px; height: 239px; }
+  #middle_banner .middle_bottom .buy .continue { padding: 13px 80px; }
+
+  /* config */
+  #config .container { min-width: 0; }
+  #config .container > h1 { font-size: 32px; padding: 50px 0; }
+  #config .container .item_box { width: 100%; max-width: 800px; height: 380px; gap: 80px; }
+  #config .container .item_box img:first-child { width: 260px; height: 287px; }
+  #config .container .item_box img:last-child { width: 72px; height: 246px; }
+  #config .container .item_card ul { gap: 140px; margin: 24px 0 80px 80px; }
+  #config .container > p { font-size: 12px; margin: 0 20px 40px; }
+
+  /* compare */
+  #compare { width: 100%; }
+  #compare .container { padding: 50px 20px; }
+  #compare .container h1 { font-size: 32px; }
+  .cell { font-size: 22px; padding: 30px 0; margin: 0 8px; white-space: normal; }
+  .cell span { font-size: 14px; }
+  .cell p { font-size: 13px; }
+  #compare .container .row img { width: 80px; }
+  #compare .container .row:nth-child(2) .cell img { width: 180px; }
+
+  /* faq */
+  #faq { width: 100%; }
+  #faq .container { width: 100%; padding: 80px 40px; }
+  #faq h1 { font-size: 38px; }
+  #faq .faq_question article { font-size: 14px; padding: 20px 0; }
+}
+
+/* 768px — 태블릿 세로 */
+@media screen and (max-width: 768px) {
+  /* banner */
+  #banner .container .banner_box { gap: 30px; }
+  #banner .box img { max-width: 100%; }
+  #banner .box ul { right: 60px; top: 20px; }
+  #banner .box ul li h1 { font-size: 38px; }
+  #banner .box ul li h2 { font-size: 28px; height: 36px; margin-left: 20px; }
+  #banner .box ul li p { font-size: 16px; }
+  #banner .box ul li > img { width: 34px; height: 38px; }
+
+  #banner .list { flex-direction: column; align-items: flex-start; padding: 0 24px; gap: 32px; }
+  #banner .list .option ul { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  #banner .list .option li a { padding: 10px 14px; }
+  #banner .list .option li a h3:nth-child(1),
+  #banner .list .option li a h3:nth-child(2) { font-size: 15px; }
+  #banner .list .option li a p { font-size: 13px; margin-left: 10px; }
+  #banner .color_option ul { gap: 20px; }
+  #banner .color_option ul li { width: 28px; height: 28px; }
+
+  /* middle banner */
+  #middle_banner .middle_top { padding: 0 24px 40px; }
+  #middle_banner .title { flex-wrap: wrap; padding: 30px 0 24px; gap: 4px; }
+  #middle_banner .title .blackfont,
+  #middle_banner .title h4,
+  #middle_banner .title .grayfont { font-size: 22px; }
+  #middle_banner .box > article { width: 300px; }
+  #middle_banner .box .box1 ul { margin: 12px 16px; }
+  #middle_banner .box .box1 li:nth-child(3) { white-space: normal; font-size: 11px; }
+  #middle_banner .box .box3 { white-space: normal; width: 90%; font-size: 11px; }
+
+  #middle_banner .middle_bottom { padding: 0 24px; gap: 20px; }
+  .middle_bottom .img .txt { font-size: 26px; }
+  .middle_bottom .img .pic { padding: 30px 0 0 20px; }
+  #middle_banner .middle_bottom .img .pic img { width: 200px; height: 199px; }
+  #middle_banner .middle_bottom .description .price h3 { font-size: 17px; }
+  #middle_banner .middle_bottom .buy { padding-top: 40px; }
+  #middle_banner .middle_bottom .buy .continue { padding: 13px 60px; }
+
+  /* config */
+  #config .container > h1 { font-size: 28px; padding: 40px 0; }
+  #config .container .item_box { max-width: 600px; height: 300px; gap: 40px; }
+  #config .container .item_box img:first-child { width: 200px; height: 221px; }
+  #config .container .item_box img:last-child { width: 55px; height: 190px; }
+  #config .container .item_card ul { gap: 80px; margin: 20px 0 60px 60px; }
+  #config .container .item_card ul li { font-size: 15px; }
+  #config .container > p { font-size: 11px; margin: 0 16px 30px; }
+
+  /* compare - 가로 스크롤 */
+  #compare .container { overflow-x: auto; padding: 40px 16px; }
+  #compare .container > h1 { font-size: 26px; }
+  .row { min-width: 600px; }
+  .cell { font-size: 18px; padding: 24px 0; margin: 0 6px; }
+  .cell span { font-size: 13px; }
+  #compare .container .row img { width: 70px; }
+  #compare .container .row:nth-child(2) .cell img { width: 140px; }
+
+  /* faq */
+  #faq .container { padding: 60px 24px; }
+  #faq h1 { font-size: 30px; }
+  #faq .faq_question article { font-size: 13px; padding: 18px 0; }
+  #faq .faq_question article button { right: 0; }
+}
+
+/* 657px — 대형 모바일 가로 */
+@media screen and (max-width: 657px) {
+  #banner .box ul { right: 30px; }
+  #banner .box ul li h1 { font-size: 30px; }
+  #banner .box ul li h2 { font-size: 22px; height: 30px; margin-left: 10px; }
+  #banner .box ul li p { font-size: 14px; }
+
+  #banner .list .option ul { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  #banner .list .option li a { padding: 8px 10px; }
+  #banner .list .option li a h3:nth-child(1),
+  #banner .list .option li a h3:nth-child(2) { font-size: 13px; }
+  #banner .list .option li a p { font-size: 12px; }
+
+  #middle_banner .middle_bottom { flex-wrap: wrap; }
+  .middle_bottom .img { width: 100%; display: flex; align-items: center; gap: 20px; }
+  .middle_bottom .img .pic { padding: 24px 0 0; }
+  #middle_banner .middle_bottom .img .pic img { width: 160px; height: 159px; }
+  #middle_banner .middle_bottom .description { width: 100%; }
+  #middle_banner .middle_bottom .buy { width: 100%; flex-direction: row; flex-wrap: wrap; gap: 20px; padding-top: 24px; padding-bottom: 30px; }
+  #middle_banner .middle_bottom .buy .continue { padding: 13px 40px; }
+
+  #config .container .item_box { max-width: 480px; height: 250px; gap: 24px; }
+  #config .container .item_box img:first-child { width: 160px; height: 177px; }
+  #config .container .item_box img:last-child { width: 44px; height: 152px; }
+
+  #compare .container > h1 { font-size: 22px; }
+  .cell { font-size: 15px; }
+  .cell span { font-size: 12px; }
+
+  #faq h1 { font-size: 26px; }
+  #faq .faq_question article { font-size: 12px; padding: 16px 0; }
+}
+
+/* 481px — 스마트폰 */
+@media screen and (max-width: 481px) {
+  /* banner */
+  #banner .container { padding: 16px 0 0; }
+  #banner .container .banner_box { gap: 24px; padding-bottom: 30px; }
+  #banner .box ul { right: 16px; top: 12px; }
+  #banner .box ul li h1 { font-size: 24px; }
+  #banner .box ul li h2 { font-size: 17px; height: 24px; margin-left: 6px; }
+  #banner .box ul li p { font-size: 12px; }
+  #banner .box ul li > img { width: 24px; height: 26px; }
+  #banner .box ul .button button { width: 36px; height: 36px; }
+
+  #banner .list { padding: 0 16px; gap: 24px; }
+  #banner .list .option ul { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  #banner .list .option > p { font-size: 16px; }
+  #banner .list .option li a { padding: 7px 8px; border-radius: 10px; }
+  #banner .list .option li a h3:nth-child(1),
+  #banner .list .option li a h3:nth-child(2) { font-size: 12px; }
+  #banner .list .option li a p { font-size: 11px; margin-left: 6px; }
+  #banner .color_option p { font-size: 16px; }
+  #banner .color_option ul { gap: 16px; margin-top: 16px; }
+  #banner .color_option ul li { width: 24px; height: 24px; }
+
+  /* middle banner */
+  #middle_banner .middle_top { padding: 0 16px 32px; }
+  #middle_banner .title .blackfont,
+  #middle_banner .title h4,
+  #middle_banner .title .grayfont { font-size: 18px; }
+  #middle_banner .box { gap: 8px; }
+  #middle_banner .box > article { width: 260px; height: auto; min-height: 140px; }
+  #middle_banner .box .box3 { margin: 0; transform: none; font-size: 10px; }
+
+  #middle_banner .middle_bottom { padding: 0 16px; gap: 16px; }
+  .middle_bottom .img .txt { font-size: 22px; }
+  #middle_banner .middle_bottom .img .pic img { width: 140px; height: 139px; }
+  #middle_banner .middle_bottom .description .price h3 { font-size: 16px; }
+  #middle_banner .middle_bottom .buy .continue { padding: 13px 30px; }
+
+  /* config */
+  #config .container > h1 { font-size: 24px; padding: 30px 0; }
+  #config .container .item_box { max-width: 100%; padding: 0 16px; width: calc(100% - 32px); height: 200px; gap: 16px; }
+  #config .container .item_box img:first-child { width: 130px; height: 143px; }
+  #config .container .item_box img:last-child { width: 36px; height: 123px; }
+  #config .container .item_card ul { gap: 40px; margin: 16px 0 48px 30px; font-size: 13px; }
+  #config .container > p { font-size: 10px; margin: 0 16px 24px; line-height: 1.8; }
+
+  /* compare */
+  #compare .container { padding: 30px 0; }
+  #compare .container > h1 { font-size: 20px; padding: 0 16px 20px; text-align: left; }
+  .row { min-width: 520px; }
+  .cell { font-size: 13px; padding: 18px 0; margin: 0 4px; }
+  .cell span { font-size: 11px; line-height: 1.6; }
+  .cell p { font-size: 11px; }
+  #compare .container .row img { width: 56px; }
+  #compare .container .row:nth-child(2) .cell img { width: 110px; }
+  #compare .row:nth-child(3) .cell ul li { width: 10px; height: 10px; }
+
+  /* faq */
+  #faq .container { padding: 40px 16px; }
+  #faq h1 { font-size: 22px; padding-bottom: 24px; }
+  #faq .faq_question article { font-size: 12px; padding: 15px 0; }
+  #faq .faq_question article button { width: 26px; height: 26px; }
+}
+
+/* 391px — 소형 스마트폰 */
+@media screen and (max-width: 391px) {
+  #banner .box ul li h1 { font-size: 20px; }
+  #banner .box ul li h2 { font-size: 14px; height: 20px; }
+  #banner .box ul li p { font-size: 11px; }
+  #banner .list .option li a h3:nth-child(1),
+  #banner .list .option li a h3:nth-child(2) { font-size: 11px; }
+  #banner .list .option li a p { font-size: 10px; }
+
+  #middle_banner .middle_top { padding: 0 12px 24px; }
+  #middle_banner .title .blackfont,
+  #middle_banner .title h4,
+  #middle_banner .title .grayfont { font-size: 15px; }
+  #middle_banner .box > article { width: 230px; }
+  #middle_banner .middle_bottom { padding: 0 12px; }
+  .middle_bottom .img .txt { font-size: 18px; }
+  #middle_banner .middle_bottom .img .pic img { width: 120px; height: 119px; }
+  #middle_banner .middle_bottom .buy .continue { padding: 12px 24px; }
+  #middle_banner .middle_bottom .buy .continue p { font-size: 12px; }
+
+  #config .container > h1 { font-size: 20px; }
+  #config .container .item_box { height: 170px; padding: 0 12px; width: calc(100% - 24px); }
+  #config .container .item_box img:first-child { width: 110px; height: 121px; }
+  #config .container .item_box img:last-child { width: 30px; height: 103px; }
+  #config .container .item_card ul { gap: 24px; margin-left: 20px; }
+  #config .container > p { font-size: 9px; margin: 0 12px 20px; }
+
+  .cell { font-size: 12px; padding: 14px 0; }
+  .cell span { font-size: 10px; }
+  #compare .container .row img { width: 48px; }
+  #compare .container .row:nth-child(2) .cell img { width: 90px; }
+
+  #faq h1 { font-size: 20px; }
+  #faq .faq_question article { font-size: 11px; padding: 13px 0; }
+}

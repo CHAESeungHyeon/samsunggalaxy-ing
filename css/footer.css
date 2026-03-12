@@ -1,0 +1,215 @@
+/* footer */
+#footer{
+  background-color: #eee;
+  width: 100%;
+  min-width: 1200px;
+}
+#footer .container{
+  width: 100%;
+  min-width: 1200px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+#footer .container .top_foot{
+  width: 1200px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 26px 0;
+  font-size: 11px;
+  line-height: 2.5;
+  letter-spacing: -1px;
+  white-space: nowrap;
+  font-weight: 500;
+}
+#footer .container .top_foot p { color: #666; }
+#footer .container .middle_foot p { color: #666; }
+#footer .container .middle_foot{
+  width: 1200px;
+  font-size: 11px;
+  padding: 26px 0;
+  border-bottom: 1px solid #ddd;
+}
+#footer .container .bottom_foot{
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 28px;
+}
+#footer .container .bottom_foot .menu{
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  color: #333;
+  font-size: 11px;
+}
+#footer .container .bottom_foot .menu .language{
+  padding-right: 28px;
+  border-right: 1px solid #cecece;
+  font-size: 11px;
+  color: #333;
+}
+#footer .container .bottom_foot .menu li i {
+  padding-left: 10px;
+}
+#footer .container .bottom_foot .menu li:last-child {
+  color: #0077ff;
+}
+#footer .container .bottom_foot .sns li:nth-child(1){
+  font-size: 11px;
+}
+#footer .container .bottom_foot .sns{
+  display: flex;
+  color: #111;
+  gap: 11px;
+}
+
+/* =============================================
+   MEDIA QUERIES
+   ============================================= */
+
+/* 1024px — 태블릿 가로 */
+@media screen and (max-width: 1024px) {
+  #footer {
+    min-width: 0;
+  }
+  #footer .container {
+    min-width: 0;
+    padding: 0 24px;
+  }
+  #footer .container .top_foot,
+  #footer .container .middle_foot,
+  #footer .container .bottom_foot {
+    width: 100%;
+    white-space: normal;
+    word-break: keep-all;
+  }
+  #footer .container .top_foot {
+    line-height: 2;
+    font-size: 11px;
+  }
+}
+
+/* 768px — 태블릿 세로 */
+@media screen and (max-width: 768px) {
+  #footer .container {
+    padding: 0 20px;
+  }
+  #footer .container .top_foot {
+    font-size: 10px;
+    line-height: 2;
+    padding: 20px 0;
+  }
+  #footer .container .middle_foot {
+    font-size: 10px;
+    padding: 20px 0;
+  }
+  #footer .container .bottom_foot {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px 0 24px;
+  }
+  #footer .container .bottom_foot .menu {
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    font-size: 10px;
+  }
+  #footer .container .bottom_foot .menu .language {
+    padding-right: 20px;
+    font-size: 10px;
+  }
+  #footer .container .bottom_foot .sns {
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+  #footer .container .bottom_foot .sns li:nth-child(1) {
+    width: 100%;
+    font-size: 10px;
+  }
+}
+
+/* 657px — 대형 모바일 가로 */
+@media screen and (max-width: 657px) {
+  #footer .container {
+    padding: 0 16px;
+  }
+  #footer .container .top_foot {
+    font-size: 10px;
+    line-height: 1.9;
+    padding: 18px 0;
+  }
+  #footer .container .bottom_foot .menu {
+    gap: 10px 16px;
+  }
+  #footer .container .bottom_foot .sns {
+    gap: 10px;
+  }
+}
+
+/* 481px — 스마트폰 */
+@media screen and (max-width: 481px) {
+  #footer .container {
+    padding: 0 14px;
+  }
+  #footer .container .top_foot {
+    font-size: 9.5px;
+    line-height: 1.8;
+    padding: 16px 0;
+  }
+  #footer .container .middle_foot {
+    font-size: 9.5px;
+    padding: 16px 0;
+  }
+  #footer .container .bottom_foot {
+    padding: 16px 0 20px;
+    gap: 14px;
+  }
+  #footer .container .bottom_foot .menu {
+    gap: 8px 14px;
+    font-size: 9.5px;
+  }
+  #footer .container .bottom_foot .menu .language {
+    font-size: 9.5px;
+    padding-right: 14px;
+  }
+  #footer .container .bottom_foot .sns {
+    font-size: 14px;
+    gap: 8px;
+  }
+  #footer .container .bottom_foot .sns li:nth-child(1) {
+    font-size: 9.5px;
+  }
+}
+
+/* 391px — 소형 스마트폰 */
+@media screen and (max-width: 391px) {
+  #footer .container {
+    padding: 0 12px;
+  }
+  #footer .container .top_foot {
+    font-size: 9px;
+    line-height: 1.75;
+  }
+  #footer .container .bottom_foot .menu {
+    gap: 7px 12px;
+    font-size: 9px;
+  }
+  #footer .container .bottom_foot .menu .language {
+    font-size: 9px;
+    width: 100%;
+    border-right: none;
+    padding-right: 0;
+    border-bottom: 1px solid #cecece;
+    padding-bottom: 8px;
+    margin-bottom: 2px;
+  }
+  #footer .container .bottom_foot .sns {
+    gap: 7px;
+    font-size: 13px;
+  }
+}

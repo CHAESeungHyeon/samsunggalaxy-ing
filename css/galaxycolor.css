@@ -1,0 +1,137 @@
+/* zfold */
+#phone .container .box .card .pic1 .color > .color1{
+  background-color: #001455;
+}
+
+#phone .container .box .card .pic1 .color > .color2{
+  background-color: #111;
+}
+
+#phone .container .box .card .pic1 .color > .color3{
+  background-color: #c9c9c9;
+}
+/* s25u */
+#phone .container .box .card .pic2 .color > .color1{
+  background-color: #111;
+}
+
+#phone .container .box .card .pic2 .color > .color2{
+  background-color: #2f2f2f;
+}
+
+#phone .container .box .card .pic2 .color > .color3{
+  background-color: #818181;
+}
+#phone .container .box .card .pic2 .color > .color4{
+background-color: #C9CFE1;
+}
+#phone .container .box .card .pic2 .color > .color5{
+background-color: #D5D5D5;
+}
+#phone .container .box .card .pic2 .color > .color6{
+background-color: #B3D0A5;
+}
+#phone .container .box .card .pic2 .color > .color7{
+background-color: #DDA7CB;
+}
+/* s25 */
+#phone .container .box .card .pic3 .color > .color1{
+  background-color: #C9CFE1;
+}
+#phone .container .box .card .pic3 .color > .color2{
+  background-color: #2F2F2F;
+}
+#phone .container .box .card .pic3 .color > .color3{
+  background-color: #001455;
+}
+#phone .container .box .card .pic3 .color > .color4{
+  background-color: #99CEB9;
+}
+
+/* s25e */
+#phone .container .box .card .pic4 .color > .color1{
+  background-color: #C9CFE1;
+}
+#phone .container .box .card .pic4 .color > .color2{
+  background-color: #E2E2E2;
+}
+#phone .container .box .card .pic4 .color > .color3{
+  background-color: #111111;
+}
+
+/* zflip */
+#phone .container .box .card .pic5 .color > .color1{
+  background-color: #002499;
+}
+#phone .container .box .card .pic5 .color > .color2{
+  background-color: #F96C6E;
+}
+#phone .container .box .card .pic5 .color > .color3{
+  background-color: #444444;
+}
+#phone .container .box .card .pic5 .color > .color4{
+  background-color: #99CEB9;
+}
+
+/* s25fe */
+#phone .container .box .card .pic6 .color > .color1{
+  background-color: #001455;
+}
+#phone .container .box .card .pic6 .color > .color2{
+  background-color: #C9CFE1;
+}
+#phone .container .box .card .pic6 .color > .color3{
+  background-color: #111111;
+}
+#phone .container .box .card .pic6 .color > .color4{
+  background-color: #D8D8D8;
+}
+
+/* a36 */
+#phone .container .box .card .pic7 .color > .color1{
+  background-color: #D6D7EE;
+}
+#phone .container .box .card .pic7 .color > .color2{
+  background-color: #4B4444;
+}
+#phone .container .box .card .pic7 .color > .color3{
+  background-color: #394D91;
+}
+
+/* case */
+
+#accessories .box .card .pic2 .color .color1{
+background-color: #d5d5d5;}
+#accessories .box .card .pic3 .color .color1{
+background-color: #F3C774;}
+#accessories .box .card .pic4 .color .color1{
+background-color: #111111;}
+#accessories .box .card .pic4 .color .color2{
+background-color: #AAAAAA;}
+#accessories .box .card .pic4 .color .color3{
+background-color: #BBC4D3;}
+#accessories .box .card .pic4 .color .color4{
+background-color: #A46B00;}
+#accessories .box .card .pic5 .color .color1{background-color: #111111;}
+#accessories .box .card .pic5 .color .color2{background-color: #AAAAAA;}
+#accessories .box .card .pic5 .color .color3{background-color: #A0A9C4;}
+#accessories .box .card .pic5 .color .color4{background-color: #B3D0A5;}
+#accessories .box .card .pic5 .color .color5{background-color: #B43131;}
+#accessories .box .card .pic5 .color .color6{background-color: #2B4199;}
+#accessories .box .card .pic6 .color .color1{background-color: #111111;}
+#accessories .box .card .pic6 .color .color2{background-color: #C9CFE1;}
+#accessories .box .card .pic6 .color .color3{background-color: #D5D5D5;}
+#accessories .box .card .pic7 .color .color1{background-color: #111111;}
+#accessories .box .card .pic7 .color .color2{background-color: #C9CFE1;}
+#accessories .box .card .pic7 .color .color3{background-color: #D5D5D5;}
+
+/* accessoties_item */
+#accessories_item .box .card .pic1 .color .color1{background-color: #717376;}
+#accessories_item .box .card .pic1 .color .color2{background-color: #D5D5D5;}
+#accessories_item .box .card .pic2 .color .color1{background-color: #2E2E2E;}
+#accessories_item .box .card .pic2 .color .color2{background-color: #D5D5D5;}
+#accessories_item .box .card .pic3 .color .color1{background-color: #D5D5D5;}
+#accessories_item .box .card .pic3 .color .color2{background-color: #303030;}
+#accessories_item .box .card .pic6 .color .color1{background-color: #E0CA48;}
+#accessories_item .box .card .pic6 .color .color2{background-color: #1E1E1E;}
+#accessories_item .box .card .pic6 .color .color3{background-color: #D5D5D5;}
