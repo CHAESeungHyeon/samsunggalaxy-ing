@@ -1,16 +1,6 @@
 /* banner */
-#banner{
-  width: 100%;
-  min-width: 1200px;
-}
 #banner .container{
-  width: 100%;
-  min-width: 1200px;
-  padding: 35px 0 0;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* overflow: hidden; */
   position: relative;
 }
 #banner .container .banner_box{
@@ -19,22 +9,19 @@
   flex-direction: column;
   gap: 60px;
   width: 100%;
-  height: 900px;
 }
 #banner .box{
-  background-color: #f4f4f4;
+  margin-top: 20px;
+  height: 64vh;
+  border-radius: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  background: #f4f4f4 url(../zfoldimg/zfold.png) no-repeat center/contain;
   position: relative;
 }
-#banner .box img{
-  width: 1200px;
-  margin-top: 40px;
-}
+
 #banner .box ul{
   position: absolute;
-  right: 400px;
+  right: 50px;
   top: 30px;
 }
 #banner .box ul li{
@@ -46,7 +33,7 @@
 }
 #banner .box ul li h2{
   font-size: 50px;
-  font-family: 'Samsung Medium';
+  
   font-weight: 200;
   height: 64px;
   margin-left: 50px;
@@ -123,7 +110,7 @@
 }
 #banner .list .option > p{
   font-size: 22px;
-  font-family: 'Samsung Medium';
+  
   margin-bottom: 10px;
 }
 #banner .list .option li a p {
@@ -133,7 +120,7 @@
   letter-spacing: 1px;
   color: #666;
   font-size: 18px;
-  font-family: 'Samsung Medium';
+  
   white-space: nowrap;
 }
 #banner .list .option li a h3:nth-child(1){
@@ -146,7 +133,7 @@
 }
 #banner .color_option p{
   font-size: 22px;
-  font-family: 'Samsung Medium';
+  
 }
 #banner .color_option ul{
   display: flex;
@@ -173,7 +160,6 @@
 }
 #middle_banner .container{
   width: 100%;
-  min-width: 1200px;
   height: 855px;
   padding: 0;
   overflow: hidden;
@@ -202,7 +188,7 @@
   font-size: 32px;
   color: #666;
   font-weight: 400;
-  font-family: 'Samsung Medium';
+  
 }
 #middle_banner .box{
   display: flex;
@@ -233,7 +219,6 @@
 }
 #middle_banner .box .box1 p{
   color: #666;
-  font-family: 'Samsung Regular';
   font-weight: 400;
 }
 #middle_banner .box .box1 li:nth-child(1) p{
@@ -249,7 +234,7 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
-  font-family: 'Samsung Regular';
+  
   font-weight: 400;
   white-space: nowrap;
 }
@@ -446,7 +431,7 @@
   font-size: 13px;
   color: #888;
   text-align: left;
-  font-family: 'Samsung Regular';
+  
   font-weight: 500;
   padding: 20px;
   border: 1px solid #bbb;
@@ -477,7 +462,7 @@
   align-items: center;
   text-align: center;
   margin: 0 14px;
-  font-family: 'Samsung Medium';
+  
   white-space: nowrap;
   font-size: 30px;
   font-weight: bold;
@@ -528,7 +513,7 @@
 }
 .cell p{
   color: #666;
-  font-family: 'Samsung Regular';
+  
   font-size: 16px;
   font-weight: 400;
 }
@@ -594,7 +579,7 @@
   font-size: 14px;
   color: #666;
   font-weight: normal;
-  font-family: 'Samsung Regular';
+  
   line-height: 1.7;
 }
 .faq_answer.is-open {
@@ -604,16 +589,6 @@
 #faq .faq_question article.is-open button i {
   transform: rotate(180deg);
   transition: transform 0.3s ease;
-}
-
-/* footer */
-#footer{
-  background-color: #eee;
-  width: 100%;
-  min-width: 1200px;
-}
-body #footer .container .top_foot{
-  border-top: none;
 }
 
 /* =============================================

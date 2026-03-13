@@ -1,13 +1,10 @@
 /* footer */
 #footer{
-  background-color: #eee;
+  margin-top: 70px;
+
   width: 100%;
-  min-width: 1200px;
 }
 #footer .container{
-  width: 100%;
-  min-width: 1200px;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;

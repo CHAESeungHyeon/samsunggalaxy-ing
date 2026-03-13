@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 @font-face {
-  font-family: 'Samsung Regular';
+  font-family: 'Samsung';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
   src: local('Samsung Sharp Sans Regular'), url(../font/samsungsharpsans.otf)format(truetype),url('../font/samsungsharpsans.woff') format('woff');
 }
     
 
 @font-face {
-  font-family: 'Samsung Medium';
+  font-family: 'Samsung';
   font-style: normal;
   font-weight: normal;
   src: local('Samsung Sharp Sans Medium'), url(../font/samsungsharpsans-medium.otf)format(truetype), url('../font/samsungsharpsans-medium.woff') format('woff');
@@ -16,15 +16,15 @@
     
 
 @font-face {
-  font-family: 'Samsung Bold';
+  font-family: 'Samsung';
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   src: local('Samsung Sharp Sans Bold'), url(../font/samsungsharpsans-bold.otf)format(truetype), url('../font/samsungsharpsans-bold.woff') format('woff');
 }
 *{
   margin: 0; padding: 0;
   box-sizing: border-box;
-  color: #111;
+  color: #333;
 outline: 1px solid rgba(255,0,0,0.5);
 }
 ul,li{
@@ -39,10 +39,9 @@ button{
 }
 
 .container{
-font-family: "Samsung Bold";
+font-family: "Samsung";
 width: 1200px;
 margin: auto;
-/* padding: 100px 20px; */
 }
 img {
   max-width: 100%;
@@ -51,7 +50,7 @@ img {
 main {
   width: 100%;
   margin:auto;
-  padding-top: 100px;
+  padding-top: 68px;
 }
 
 
