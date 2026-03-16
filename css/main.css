@@ -1,244 +1,315 @@
-/* banner */
-#banner{
+/* ==============================================
+   BANNER (#banner — Galaxy Z Trifold)
+   height: 항상 뷰포트 너비 기준 비율 유지 (39.6vw)
+   최대 475px, 최소 160px
+   ============================================== */
+
+#banner {
   width: 100%;
-  height: 475px;
-  background: url(../img/trifold.png) center/cover;
+  height: clamp(160px, 39.6vw, 475px);
+  background: url(../img/trifold.png) center / cover;
   position: relative;
 }
-#banner .container{
+
+#banner .container {
   position: absolute;
-  top: 12px;
+  top: clamp(6px, 1vw, 12px);
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
 }
-#banner h1{
+
+#banner h1 {
   color: #fff;
-  font-size: 40px;
+  font-size: clamp(14px, 3.33vw, 40px);
 }
-#banner h2{
+
+#banner h2 {
   display: flex;
+  justify-content: center;
   color: #fff;
   font-weight: normal;
-  font-size: 30px;
-  margin: 9px 0 6px;
-  justify-content: center;
+  font-size: clamp(11px, 2.5vw, 30px);
+  margin: clamp(4px, 0.75vw, 9px) 0 clamp(3px, 0.5vw, 6px);
 }
-#banner h2 img{
-  height: 34px;
+
+#banner h2 img {
+  height: clamp(14px, 2.83vw, 34px);
   margin-left: 6px;
 }
-#banner p{
+
+#banner p {
   color: #fff;
-  font-size: 16px;
+  font-size: clamp(10px, 1.33vw, 16px);
   font-weight: 200;
 }
-#banner .btn{
-  margin-top: 25px;
+
+#banner .btn {
+  margin-top: clamp(10px, 2vw, 25px);
 }
-#banner .btn a{
+
+#banner .btn a {
   color: #fff;
   display: inline-block;
-  padding: 8px 20px;
+  padding: clamp(4px, 0.67vw, 8px) clamp(10px, 1.67vw, 20px);
   border: 2px solid #fff;
   border-radius: 20px;
-  font-size: 12px;
+  font-size: clamp(9px, 1vw, 12px);
   font-weight: normal;
 }
 
-/* items */
-#items{
-  width: 100%;
-}
-#items .container{
+/* ==============================================
+   ITEMS (#items)
+   ============================================== */
+
+#items { width: 100%; }
+
+#items .container {
   padding: 30px 0;
   display: flex;
   gap: 10px;
 }
+
 #items .container .box {
-  height: 330px;
   flex: 1;
+  min-width: 0;
+  height: 330px;
   background-color: #f4f4f4;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-}
-#items .container .box a:first-child img{
-margin: 0 auto;
-}
-#items .container .box a h2{
-  font-size: 26px;
-  color: #222;
-  margin-bottom   : 20px;
-  text-align: center;
-}
-#items .container .box a img{
-  height: 171px;
+  overflow: hidden;
 }
 
-/* banner_2 */
-#banner_2{
-  width: 100%;
-  height: 470px;
-  background: url(../img/zfold7.png) center/cover;
+#items .container .box a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#banner_2 .container{
+
+#items .container .box a h2 {
+  font-size: 26px;
+  color: #222;
+  margin-bottom: 20px;
   text-align: center;
+}
+
+#items .container .box a img {
+  height: 171px;
+  width: auto;
+  max-width: 100%;
+  display: block;
+}
+
+/* ==============================================
+   BANNER 2 (#banner_2 — Galaxy Z Fold7)
+   ============================================== */
+
+#banner_2 {
+  width: 100%;
+  height: clamp(160px, 39.2vw, 470px);
+  background: url(../img/zfold7.png) center / cover;
+  display: flex;
+  justify-content: center;
+}
+
+#banner_2 .container {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-}
-#banner_2 .container .list{
-  margin-top: 45px;
-}
-#banner_2 h1{
-  color: #222;
-  font-size: 40px;
-}
-#banner_2 h2{
-  display: flex;
-  justify-content: center;
-  font-size: 30px;
-  margin-top: 10px;
-  font-weight: normal;
-}
-#banner_2 h2 img{
-  height: 34px;
-  margin-left: 6px;
-}
-#banner_2 .btn{
-  margin-top: 20px;
-  margin-bottom: 16px;
-}
-#banner_2 .btn a{
-  color: #222;
-  padding: 6px 20px;
-  border: 1px solid #222;
-  border-radius: 20px;
-  font-size: 12px;
-}
-#banner_2 h3{
-  font-size: 33px;
-}
-#banner_2 p{
-  margin-top: 20px;
+  justify-content: flex-start;
   text-align: center;
-  color: #666;
-  font-size: 14px;
 }
 
-/* items_2 */
-#items_2{
-  width: 100%;
+#banner_2 .container .list { margin-top: clamp(12px, 3.75vw, 45px); }
+
+#banner_2 h1 {
+  color: #222;
+  font-size: clamp(10px, 3.33vw, 40px);
 }
-#items_2 .container{
+
+#banner_2 h2 {
+  display: flex;
+  justify-content: center;
+  font-size: clamp(8px, 2.5vw, 30px);
+  margin-top: clamp(3px, 0.83vw, 10px);
+  font-weight: normal;
+}
+
+#banner_2 h2 img {
+  height: clamp(10px, 2.83vw, 34px);
+  margin-left: 6px;
+}
+
+#banner_2 .btn {
+  margin-top: clamp(6px, 1.67vw, 20px);
+  margin-bottom: clamp(4px, 1.33vw, 16px);
+}
+
+#banner_2 .btn a {
+  color: #222;
+  padding: clamp(2px, 0.5vw, 6px) clamp(8px, 1.67vw, 20px);
+  border: 1px solid #222;
+  border-radius: 20px;
+  font-size: clamp(7px, 1vw, 12px);
+}
+
+#banner_2 h3 { font-size: clamp(10px, 2.75vw, 33px); }
+
+#banner_2 p {
+  margin-top: clamp(6px, 1.67vw, 20px);
+  text-align: center;
+  color: #666;
+  font-size: clamp(8px, 1.17vw, 14px);
+}
+
+/* ==============================================
+   ITEMS 2 (#items_2)
+   ============================================== */
+
+#items_2 { width: 100%; }
+
+#items_2 .container {
   padding: 30px 0;
   display: flex;
   gap: 12px;
 }
+
 #items_2 .container .box {
+  flex: 1;
+  min-width: 0;
   height: 330px;
-  width: 291px;
   background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   border-radius: 10px;
+  overflow: hidden;
 }
-#items_2 .container .box a{
-  margin: auto;
+
+#items_2 .container .box a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#items_2 .container .box a h2{
+
+#items_2 .container .box a h2 {
   text-align: center;
   font-size: 26px;
   margin-bottom: 30px;
 }
-#items_2 .container .box a img{
+
+#items_2 .container .box a img {
   height: 165px;
-  margin: 0 auto;
-}
-#items_2 .container .box:last-child a h2{
-  margin-bottom: 13px;
-}
-#items_2 .container .box a .img4{
-  height: 182px;
+  width: auto;
+  max-width: 100%;
+  display: block;
 }
 
+#items_2 .container .box:last-child a h2 { margin-bottom: 13px; }
+#items_2 .container .box a .img4 { height: 182px; }
 
-/* banner_3 */
-#banner_3{
+/* ==============================================
+   BANNER 3 (#banner_3 — Galaxy S25 Edge)
+   ============================================== */
+
+/* ==============================================
+   BANNER 3 (#banner_3 — Galaxy S25 Edge)
+   ============================================== */
+
+#banner_3 {
   width: 100%;
-  height: 590px;
-  background: url(../img/s25Edge.png) center/cover;
+  height: clamp(220px, 49.2vw, 590px);
+  background: url(../img/s25Edge.png) center / cover;
   position: relative;
 }
-#banner_3 .container{
+
+#banner_3 .container {
   text-align: center;
   width: 100%;
+  max-width: 1200px;
   position: absolute;
-  top: 196px;
+  top: clamp(70px, 16.3vw, 196px);
+  left: 50%;
+  transform: translateX(-50%);
 }
-#banner_3 .container .txt{
+
+#banner_3 .container .txt {
   display: flex;
   justify-content: center;
-  gap: 428px;
+  gap: clamp(30px, 35.7vw, 428px);
 }
-#banner_3 .container .txt .left h1{
-  font-size: 50px;
-  margin-bottom: 10px;
+
+#banner_3 .container .txt .left h1 {
+  font-size: clamp(16px, 4.17vw, 50px);
+  margin-bottom: clamp(4px, 0.83vw, 10px);
 }
-#banner_3 .container .txt .left h2{
-  font-size: 35px;
+
+#banner_3 .container .txt .left h2 {
+  font-size: clamp(12px, 2.92vw, 35px);
   display: flex;
   justify-content: center;
   font-weight: 300;
-  margin-bottom: 12px;
+  margin-bottom: clamp(5px, 1vw, 12px);
 }
-#banner_3 .container .txt .left .btn a{
-  padding: 10px 20px;
-  border: 2px solid #222;
-  border-radius: 40px;
-  font-size: 15px;
-}
-#banner_3 .container .txt .left h2 img{
-  height: 34px;
+
+#banner_3 .container .txt .left h2 img {
+  height: clamp(12px, 2.83vw, 34px);
   margin-left: 6px;
 }
-#banner_3 .container .txt .right{
+
+#banner_3 .container .txt .left .btn a {
+  padding: clamp(5px, 0.83vw, 10px) clamp(10px, 1.67vw, 20px);
+  border: 2px solid #222;
+  border-radius: 40px;
+  font-size: clamp(9px, 1.25vw, 15px);
+}
+
+#banner_3 .container .txt .right {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 50px;
+  font-size: clamp(16px, 4.17vw, 50px);
   font-weight: 100;
 }
 
-/* layer_card */
-#layer_card{
+/* ==============================================
+   LAYER CARD (#layer_card)
+   구조 변경: left:50% + translateX(-50%) 제거 → left:0
+   JS(swipe.js)가 container offset 기준으로 translateX 처리
+   ============================================== */
+
+#layer_card {
   width: 100%;
   height: 740px;
   position: relative;
+  overflow: hidden;
+  margin-bottom: 0;
 }
-#layer_card .container{
-  margin-top: 90px;
-}
-#layer_card .container .title{
+
+#layer_card .container { margin-top: 90px; }
+
+#layer_card .container .title {
   margin-bottom: 70px;
   font-size: 40px;
 }
-#layer_card .container .box{
+
+#layer_card .container .box {
   display: flex;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;                  /* JS가 translateX로 위치 처리 */
   gap: 24px;
   height: 490px;
 }
-#layer_card .container .box .card{
-  width: 290px;
-}
-#layer_card .container .box .card a{
+
+#layer_card .container .box .card { width: 290px; }
+
+#layer_card .container .box .card a {
   background: #f4f4f4;
   height: 300px;
   border-radius: 10px;
@@ -246,47 +317,52 @@ margin: 0 auto;
   align-items: center;
   justify-content: center;
 }
-#layer_card .container .box .card h2{
+
+#layer_card .container .box .card h2 {
   font-size: 22px;
   margin-top: 38px;
   margin-bottom: 67px;
 }
-#layer_card .container .box .card b{
+
+#layer_card .container .box .card b {
   font-weight: 400;
   font-size: 13px;
   color: #666;
 }
-#layer_card .container .box .card p{
-  font-size: 19px;
-}
-#layer_card .container .box .card img{
-  height: 210px;
-}
-#layer_card .container .box .card:nth-child(5) img{
-  height: 240px;
-}
-#layer_card .container .box .card:last-child img{
-  height: 160px;
-}
 
-/* popup_card */
+#layer_card .container .box .card p { font-size: 19px; }
+
+#layer_card .container .box .card img { height: 210px; }
+
+#layer_card .container .box .card:nth-child(5) img { height: 240px; }
+#layer_card .container .box .card:last-child img   { height: 160px; }
+
+/* ==============================================
+   POPUP CARD (#popup_card)
+   구조 변경: left:50% + translateX(-50%) 제거 → left:0
+   ============================================== */
+
 #popup_card {
   width: 100%;
   height: 645px;
   position: relative;
+  overflow: hidden;
+  margin-bottom: 124px;
 }
-#popup_card .container .title{
+
+#popup_card .container .title {
   font-size: 50px;
   margin-bottom: 70px;
 }
-#popup_card .txtcard{
+
+#popup_card .txtcard {
   position: absolute;
   display: flex;
   gap: 40px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;                  /* JS가 translateX로 위치 처리 */
 }
-#popup_card .container .txtcard .card{
+
+#popup_card .container .txtcard .card {
   background-color: #f4f4f4;
   border-radius: 10px;
   width: 320px;
@@ -295,79 +371,300 @@ margin: 0 auto;
   flex-direction: column;
   position: relative;
 }
-#popup_card .container .txtcard .card .card-txt{
+
+#popup_card .container .txtcard .card .card-txt {
   margin: 25px 30px 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-#popup_card .container .txtcard .card b{
-  font: bold 14px;
+
+#popup_card .container .txtcard .card b {
+  font: bold 14px/1 sans-serif;
   color: #444;
 }
-#popup_card .container .txtcard .card strong{
-  font: bold 22px;
+
+#popup_card .container .txtcard .card strong {
+  font: bold 22px/1.2 sans-serif;
 }
-#popup_card .container .txtcard .card span{
-  font: normal 12px;
+
+#popup_card .container .txtcard .card span {
+  font-size: 12px;
+  font-weight: normal;
   color: #666;
 }
-#popup_card .container .txtcard .card:nth-child(1) img{
-  width: 320px;
+
+/* 이미지 비율: 카드 너비(320px) 기준 % → 카드가 줄어도 자동 축소 */
+#popup_card .container .txtcard .card:nth-child(1) img {
+  width: 100%;                     /* 320/320 = 100% */
   position: absolute;
   bottom: 20px;
 }
-#popup_card .container .txtcard .card:nth-child(2)  img{
-  width: 200px;
+
+#popup_card .container .txtcard .card:nth-child(2) img {
+  width: 62.5%;                    /* 200/320 = 62.5% */
   position: absolute;
-  right: 60px;
+  right: 18.75%;                   /* 60/320 */
   bottom: 40px;
 }
-#popup_card .container .txtcard .card:nth-child(3)  img{
-  width: 232px;
+
+#popup_card .container .txtcard .card:nth-child(3) img {
+  width: 72.5%;                    /* 232/320 = 72.5% */
   position: absolute;
-  right: 44px;
+  right: 13.75%;                   /* 44/320 */
   bottom: 40px;
 }
-#popup_card .container .txtcard .card:nth-child(4)  img{
-  width: 286px;
+
+#popup_card .container .txtcard .card:nth-child(4) img {
+  width: 89.4%;                    /* 286/320 = 89.4% */
   position: absolute;
-  right: 20px;
+  right: 6.25%;                    /* 20/320 */
   bottom: 20px;
 }
-#popup_card .container .txtcard .card:nth-child(5)  img{
-  width: 206px;
+
+#popup_card .container .txtcard .card:nth-child(5) img {
+  width: 64.4%;                    /* 206/320 = 64.4% */
   position: absolute;
-  right: 58px;
-  bottom: 0px;
+  right: 18.1%;                    /* 58/320 */
+  bottom: 0;
 }
-#popup_card .container .txtcard .card i{
+
+#popup_card .container .txtcard .card i {
   position: absolute;
   bottom: 20px;
   right: 20px;
   font-size: 30px;
 }
 
-/* =============================================
+/* ==============================================
    MEDIA QUERIES
-   ============================================= */
+   ============================================== */
 
-/* 1024px — 태블릿 가로 */
+/* ── 1024px ─────────────────────────────────── */
 @media screen and (max-width: 1024px) {
+
+  /* items → 2×2, 명시적 크기 */
+  #items .container {
+    flex-wrap: wrap;
+    padding: 24px 0;
+    gap: 10px;
+  }
+  #items .container .box {
+    flex: 0 0 calc(50% - 5px);
+    height: 260px;
+  }
+  #items .container .box a h2 { font-size: 22px; margin-bottom: 16px; }
+  #items .container .box a img { height: 135px; }
+
+  /* items_2 → 2×2 */
+  #items_2 .container {
+    flex-wrap: wrap;
+    padding: 24px 0;
+    gap: 10px;
+  }
+  #items_2 .container .box {
+    flex: 0 0 calc(50% - 5px);
+    height: 260px;
+  }
+  #items_2 .container .box a h2 { font-size: 22px; margin-bottom: 16px; }
+  #items_2 .container .box a img { height: 130px; }
+  #items_2 .container .box a .img4 { height: 145px; }
+
+  /* layer_card */
+  #layer_card { height: auto; min-height: 580px; }
+  #layer_card .container { margin-top: 70px; }
+  #layer_card .container .title { font-size: 34px; margin-bottom: 50px; }
+  #layer_card .container .box { gap: 16px; height: 460px; }
+  #layer_card .container .box .card { width: 240px; }
+  #layer_card .container .box .card a { height: 240px; }
+  #layer_card .container .box .card h2 { font-size: 18px; margin-top: 20px; margin-bottom: 20px; }
+  #layer_card .container .box .card b  { font-size: 12px; }
+  #layer_card .container .box .card p  { font-size: 16px; }
+  #layer_card .container .box .card img { height: 155px; }
+  #layer_card .container .box .card:nth-child(5) img { height: 175px; }
+  #layer_card .container .box .card:last-child img   { height: 120px; }
+
+  /* popup_card */
+  #popup_card { height: auto; min-height: 500px; }
+  #popup_card .container .title { font-size: 38px; margin-bottom: 50px; }
+  #popup_card .txtcard { gap: 20px; }
+  #popup_card .container .txtcard .card { width: 260px; height: 320px; }
+  #popup_card .container .txtcard .card .card-txt { margin: 20px 20px 0; gap: 8px; }
+  #popup_card .container .txtcard .card b      { font-size: 13px; }
+  #popup_card .container .txtcard .card strong { font-size: 18px; }
+  #popup_card .container .txtcard .card span   { font-size: 11px; }
 }
 
-/* 657px — 대형 모바일 가로 */
-@media screen and (max-width: 780px) {
+/* ── 768px ─────────────────────────────────── */
+@media screen and (max-width: 768px) {
 
+  /* items */
+  #items .container .box { height: 220px; }
+  #items .container .box a h2 { font-size: 19px; margin-bottom: 14px; }
+  #items .container .box a img { height: 110px; }
+
+  /* items_2 */
+  #items_2 .container .box { height: 220px; }
+  #items_2 .container .box a h2 { font-size: 19px; margin-bottom: 14px; }
+  #items_2 .container .box a img { height: 105px; }
+  #items_2 .container .box a .img4 { height: 120px; }
+
+  #layer_card { min-height: 500px; }
+  #layer_card .container .title { font-size: 28px; }
+  #layer_card .container .box { height: 400px; }
+  #layer_card .container .box .card { width: 200px; }
+  #layer_card .container .box .card a { height: 200px; }
+  #layer_card .container .box .card h2 { font-size: 16px; margin-top: 18px; margin-bottom: 18px; }
+  #layer_card .container .box .card b  { font-size: 12px; }
+  #layer_card .container .box .card p  { font-size: 14px; }
+  #layer_card .container .box .card img { height: 125px; }
+  #layer_card .container .box .card:nth-child(5) img { height: 142px; }
+  #layer_card .container .box .card:last-child img   { height: 96px; }
+
+  #popup_card { min-height: 440px; }
+  #popup_card .container .title { font-size: 32px; }
+  #popup_card .txtcard { gap: 16px; }
+  #popup_card .container .txtcard .card { width: 220px; height: 280px; }
+  #popup_card .container .txtcard .card .card-txt { margin: 18px 18px 0; gap: 7px; }
+  #popup_card .container .txtcard .card b      { font-size: 12px; }
+  #popup_card .container .txtcard .card strong { font-size: 16px; }
+  #popup_card .container .txtcard .card span   { font-size: 10px; }
 }
-/* 657px — 대형 모바일 가로 */
+
+/* ── 657px ─────────────────────────────────── */
 @media screen and (max-width: 657px) {
+
+  /* items */
+  #items .container { gap: 8px; }
+  #items .container .box {
+    flex: 0 0 calc(50% - 4px);
+    height: 185px;
+  }
+  #items .container .box a h2 { font-size: 16px; margin-bottom: 12px; }
+  #items .container .box a img { height: 90px; }
+
+  /* items_2 */
+  #items_2 .container { gap: 8px; }
+  #items_2 .container .box {
+    flex: 0 0 calc(50% - 4px);
+    height: 185px;
+  }
+  #items_2 .container .box a h2 { font-size: 16px; margin-bottom: 12px; }
+  #items_2 .container .box a img { height: 86px; }
+  #items_2 .container .box a .img4 { height: 98px; }
+
+  #layer_card { min-height: 440px; }
+  #layer_card .container { margin-top: 50px; }
+  #layer_card .container .title { font-size: 24px; margin-bottom: 36px; }
+  #layer_card .container .box { height: 350px; }
+  #layer_card .container .box .card { width: 170px; }
+  #layer_card .container .box .card a { height: 170px; }
+  #layer_card .container .box .card h2 { font-size: 14px; margin-top: 14px; margin-bottom: 14px; }
+  #layer_card .container .box .card b  { font-size: 11px; }
+  #layer_card .container .box .card p  { font-size: 13px; }
+  #layer_card .container .box .card img { height: 106px; }
+  #layer_card .container .box .card:nth-child(5) img { height: 120px; }
+  #layer_card .container .box .card:last-child img   { height: 82px; }
+
+  #popup_card { min-height: 380px; }
+  #popup_card .container .title { font-size: 26px; margin-bottom: 36px; }
+  #popup_card .txtcard { gap: 12px; }
+  #popup_card .container .txtcard .card { width: 185px; height: 240px; }
+  #popup_card .container .txtcard .card .card-txt { margin: 16px 16px 0; gap: 6px; }
+  #popup_card .container .txtcard .card b      { font-size: 11px; }
+  #popup_card .container .txtcard .card strong { font-size: 14px; }
+  #popup_card .container .txtcard .card span   { font-size: 9px; }
+  #popup_card .container .txtcard .card i { font-size: 22px; bottom: 14px; right: 14px; }
 }
 
-/* 481px — 스마트폰 */
+/* ── 481px — 1장씩 ─────────────────────────── */
 @media screen and (max-width: 481px) {
+#banner_2 .list p{display: none;}
+  /* items */
+  #items .container { gap: 6px; padding: 16px 0; }
+  #items .container .box {
+    flex: 0 0 calc(50% - 3px);
+    height: 155px;
+  }
+  #items .container .box a h2 { font-size: 13px; margin-bottom: 10px; }
+  #items .container .box a img { height: 75px; }
+
+  /* items_2 */
+  #items_2 .container { gap: 6px; padding: 16px 0; }
+  #items_2 .container .box {
+    flex: 0 0 calc(50% - 3px);
+    height: 155px;
+  }
+  #items_2 .container .box a h2 { font-size: 13px; margin-bottom: 10px; }
+  #items_2 .container .box a img { height: 72px; }
+  #items_2 .container .box a .img4 { height: 82px; }
+
+  /* layer_card — 1장씩 */
+  #layer_card { min-height: 500px; }
+  #layer_card .container { margin-top: 40px; }
+  #layer_card .container .title { font-size: 20px; margin-bottom: 28px; }
+  #layer_card .container .box { gap: 12px; height: 420px; }
+  #layer_card .container .box .card { width: 280px; }
+  #layer_card .container .box .card a    { height: 220px; }
+  #layer_card .container .box .card h2   { font-size: 16px; margin-top: 16px; margin-bottom: 16px; }
+  #layer_card .container .box .card b    { font-size: 12px; }
+  #layer_card .container .box .card p    { font-size: 15px; }
+  #layer_card .container .box .card img  { height: 145px; }
+  #layer_card .container .box .card:nth-child(5) img { height: 165px; }
+  #layer_card .container .box .card:last-child img   { height: 110px; }
+
+  /* popup_card — 1장씩 */
+  #popup_card { min-height: 420px; }
+  #popup_card .container .title { font-size: 22px; margin-bottom: 28px; }
+  #popup_card .txtcard { gap: 12px; }
+  #popup_card .container .txtcard .card { width: 280px; height: 340px; }
+  #popup_card .container .txtcard .card .card-txt { margin: 22px 22px 0; gap: 8px; }
+  #popup_card .container .txtcard .card b      { font-size: 13px; }
+  #popup_card .container .txtcard .card strong { font-size: 18px; }
+  #popup_card .container .txtcard .card span   { font-size: 11px; }
+  #popup_card .container .txtcard .card i { font-size: 26px; }
 }
 
-/* 391px — 소형 스마트폰 */
+/* ── 391px ─────────────────────────────────── */
 @media screen and (max-width: 391px) {
+
+  /* items */
+  #items .container { gap: 5px; padding: 12px 0; }
+  #items .container .box {
+    flex: 0 0 calc(50% - 3px);
+    height: 125px;
+  }
+  #items .container .box a h2 { font-size: 11px; margin-bottom: 8px; }
+  #items .container .box a img { height: 60px; }
+
+  /* items_2 */
+  #items_2 .container { gap: 5px; padding: 12px 0; }
+  #items_2 .container .box {
+    flex: 0 0 calc(50% - 3px);
+    height: 125px;
+  }
+  #items_2 .container .box a h2 { font-size: 11px; margin-bottom: 8px; }
+  #items_2 .container .box a img { height: 58px; }
+  #items_2 .container .box a .img4 { height: 66px; }
+
+  /* layer_card */
+  #layer_card .container .title { font-size: 18px; }
+  #layer_card .container .box { height: 380px; }
+  #layer_card .container .box .card { width: 240px; }
+  #layer_card .container .box .card a   { height: 190px; }
+  #layer_card .container .box .card h2  { font-size: 14px; margin-top: 12px; margin-bottom: 12px; }
+  #layer_card .container .box .card b   { font-size: 11px; }
+  #layer_card .container .box .card p   { font-size: 14px; }
+  #layer_card .container .box .card img { height: 118px; }
+  #layer_card .container .box .card:nth-child(5) img { height: 134px; }
+  #layer_card .container .box .card:last-child img   { height: 92px; }
+
+  /* popup_card */
+  #popup_card .container .title { font-size: 19px; }
+  #popup_card .container .txtcard .card { width: 240px; height: 300px; }
+  #popup_card .container .txtcard .card .card-txt { margin: 18px 18px 0; gap: 7px; }
+  #popup_card .container .txtcard .card b      { font-size: 12px; }
+  #popup_card .container .txtcard .card strong { font-size: 16px; }
+  #popup_card .container .txtcard .card span   { font-size: 10px; }
+  #popup_card .container .txtcard .card i { font-size: 24px; }
 }

@@ -1,90 +1,132 @@
 /**
  * swipe.js
- * 마우스 드래그 & 가로 휠(Shift+휠 / 가로 스크롤) 스와이프
- * 대상 섹션: #phone, #accessories, #accessories_item, #service, #popup_card
+ * 가로 스와이프 — 드래그 · 터치 · Shift+휠 / 가로휠
+ *
+ * 동작 모드 (뷰포트 기준)
+ *   1025px+    : 자유 스크롤 (관성 적용)
+ *   657~1024px : 2장 표시 · 1장씩 스냅
+ *   ~481px     : 1장 표시 · 1장씩 스냅
  */
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // ─── 스와이프 대상 설정 ─────────────────────────────────────────
   const TRACKS = [
-    { section: '#phone',            box: '#phone .box'            },
-    { section: '#accessories',      box: '#accessories .box'      },
-    { section: '#accessories_item', box: '#accessories_item .box' },
-    { section: '#service',          box: '#service .box'          },
-    { section: '#popup_card',       box: '#popup_card .txtcard'   },
+    /* galaxyphone.html */
+    { section: '#phone',            box: '#phone .box'                  },
+    { section: '#accessories',      box: '#accessories .box'            },
+    { section: '#accessories_item', box: '#accessories_item .box'       },
+    { section: '#service',          box: '#service .box'                },
+    /* 공통 (index.html / galaxyphone.html) */
+    { section: '#popup_card',       box: '#popup_card .txtcard'         },
+    /* index.html */
+    { section: '#layer_card',       box: '#layer_card .container .box'  },
   ];
 
-  // ─── 각 트랙 초기화 ────────────────────────────────────────────
+  const seen = new Set();
+
   TRACKS.forEach(({ section: sectionSel, box: boxSel }) => {
+    if (seen.has(sectionSel)) return;
+    seen.add(sectionSel);
+
     const section   = document.querySelector(sectionSel);
     const box       = document.querySelector(boxSel);
     if (!section || !box) return;
 
-    // .container 의 좌측 여백을 카드 시작 위치로 사용
-    // (section 은 100% 너비, container 는 중앙 정렬되어 있으므로
-    //  container.offsetLeft = (뷰포트 - 1200px) / 2 + section의 왼쪽 패딩)
     const container = section.querySelector('.container');
+
+    /* ── 헬퍼 ─────────────────────────────────────────── */
+
+    const getMode = () => {
+      const w = window.innerWidth;
+      if (w <= 481) return 'snap1';   // 1장
+      if (w <= 1024) return 'snap2';  // 2장
+      return 'free';
+    };
+
+    /* 섹션 기준으로 컨테이너 시작 X 좌표 */
     const getStartX = () =>
       container
-        ? container.getBoundingClientRect().left - section.getBoundingClientRect().left
+        ? container.getBoundingClientRect().left -
+          section.getBoundingClientRect().left
         : 0;
 
-    // box 를 absolute 기준 left:0 으로 고정한 뒤 translateX 로만 이동
+    /* 카드 1장 너비 + gap */
+    const getCardStep = () => {
+      const first = box.firstElementChild;
+      if (!first) return 0;
+      const gap = parseFloat(getComputedStyle(box).gap) || 0;
+      return first.offsetWidth + gap;
+    };
+
     box.style.left = '0px';
 
-    let startX     = getStartX();   // 컨테이너 시작 오프셋
-    let translateX = startX;        // 현재 오프셋 (startX 에서 시작)
+    let startX     = getStartX();
+    let translateX = startX;
     let isDragging = false;
     let dragStartX = 0;
     let velocity   = 0;
     let lastX      = 0;
     let rafId      = null;
 
-    // 드래그 가능한 최소값 (끝까지 당겼을 때)
-    // startX ─────────────────── minX
-    //         ← box.scrollWidth - (section.offsetWidth - startX) →
     const getMinX = () =>
-      startX - (box.scrollWidth - (section.offsetWidth - startX));
+      startX - Math.max(0, box.scrollWidth - (section.offsetWidth - startX));
 
-    const clamp = (v) =>
-      Math.max(getMinX(), Math.min(startX, v));
+    const clamp = (v) => Math.max(getMinX(), Math.min(startX, v));
 
     const applyTranslate = (x, animated = false) => {
       translateX = clamp(x);
-      box.style.transition = animated ? 'transform 0.3s ease' : 'none';
-      box.style.transform  = `translateX(${translateX}px)`;
+      box.style.transition = animated
+        ? 'transform 0.35s cubic-bezier(0.25,0.1,0.25,1)'
+        : 'none';
+      box.style.transform = `translateX(${translateX}px)`;
     };
 
-    // 초기 위치 적용
-    applyTranslate(startX);
+    /* ── 스냅 ─────────────────────────────────────────── */
+    const snap = () => {
+      const mode = getMode();
+      if (mode === 'free') { startInertia(); return; }
 
-    // ─── 관성 애니메이션 ─────────────────────────────────────────
+      const step = getCardStep();
+      if (step <= 0) return;
+
+      const scrolled = startX - translateX;
+      let idx = Math.round(scrolled / step);
+
+      if (Math.abs(velocity) > 2) {
+        idx = velocity < 0
+          ? Math.ceil(scrolled / step)
+          : Math.floor(scrolled / step);
+      }
+
+      idx = Math.max(0, idx);
+      applyTranslate(startX - idx * step, true);
+      velocity = 0;
+    };
+
+    /* ── 관성 (free 전용) ─────────────────────────────── */
     const startInertia = () => {
       cancelAnimationFrame(rafId);
-
       const tick = () => {
         velocity *= 0.93;
-        if (Math.abs(velocity) < 0.5) return;
-
+        if (Math.abs(velocity) < 0.4) return;
         const next    = translateX + velocity;
         const clamped = clamp(next);
-        if (clamped !== next) velocity *= -0.2;   // 경계 바운스
+        if (clamped !== next) velocity *= -0.2;
         applyTranslate(clamped);
-
         rafId = requestAnimationFrame(tick);
       };
       rafId = requestAnimationFrame(tick);
     };
 
-    // ─── 마우스 드래그 ────────────────────────────────────────────
+    applyTranslate(startX);
+
+    /* ── 마우스 드래그 ────────────────────────────────── */
     section.addEventListener('mousedown', (e) => {
       cancelAnimationFrame(rafId);
       isDragging = true;
       dragStartX = e.clientX - translateX;
       lastX      = e.clientX;
       velocity   = 0;
-
       section.style.cursor     = 'grabbing';
       section.style.userSelect = 'none';
       e.preventDefault();
@@ -97,36 +139,65 @@ document.addEventListener('DOMContentLoaded', () => {
       applyTranslate(e.clientX - dragStartX);
     });
 
-    const stopDrag = () => {
+    const stopMouse = () => {
       if (!isDragging) return;
       isDragging = false;
       section.style.cursor     = 'grab';
       section.style.userSelect = '';
-      startInertia();
+      snap();
     };
 
-    document.addEventListener('mouseup',    stopDrag);
-    document.addEventListener('mouseleave', stopDrag);
+    document.addEventListener('mouseup',    stopMouse);
+    document.addEventListener('mouseleave', stopMouse);
 
-    // ─── 휠 가로 스크롤 ───────────────────────────────────────────
-    // 가로 휠(트랙패드 스와이프 · deltaX) 또는 Shift+세로휠 일 때만 동작
-    // 일반 세로 휠은 페이지 스크롤로 그대로 흘려보냄
+    /* ── 터치 ─────────────────────────────────────────── */
+    let touchOriginX = 0;
+    let touchOriginY = 0;
+    let isTouchSlide = false;
+
+    section.addEventListener('touchstart', (e) => {
+      cancelAnimationFrame(rafId);
+      const t      = e.touches[0];
+      touchOriginX = t.clientX - translateX;
+      touchOriginY = t.clientY;
+      lastX        = t.clientX;
+      velocity     = 0;
+      isTouchSlide = false;
+    }, { passive: true });
+
+    section.addEventListener('touchmove', (e) => {
+      const t  = e.touches[0];
+      const dx = Math.abs(t.clientX - (touchOriginX + translateX));
+      const dy = Math.abs(t.clientY - touchOriginY);
+
+      if (!isTouchSlide && dy > dx) return;
+      isTouchSlide = true;
+
+      velocity = t.clientX - lastX;
+      lastX    = t.clientX;
+      applyTranslate(t.clientX - touchOriginX);
+      e.preventDefault();
+    }, { passive: false });
+
+    section.addEventListener('touchend', () => {
+      if (isTouchSlide) snap();
+    });
+
+    /* ── 휠 (가로 / Shift+세로) ───────────────────────── */
     section.addEventListener('wheel', (e) => {
-      const isHorizontal = Math.abs(e.deltaX) > Math.abs(e.deltaY); // 가로 스크롤
-      const isShiftWheel = e.shiftKey && e.deltaY !== 0;             // Shift + 휠
+      const isH  = Math.abs(e.deltaX) > Math.abs(e.deltaY);
+      const isSW = e.shiftKey && e.deltaY !== 0;
+      if (!isH && !isSW) return;
 
-      if (!isHorizontal && !isShiftWheel) return; // 일반 세로 휠 → 통과
-
-      const delta = isHorizontal ? e.deltaX : e.deltaY;
+      const delta = isH ? e.deltaX : e.deltaY;
       cancelAnimationFrame(rafId);
       applyTranslate(translateX - delta);
       e.preventDefault();
     }, { passive: false });
 
-    // ─── 커서 스타일 ──────────────────────────────────────────────
+    /* ── 커서 & 리사이즈 ─────────────────────────────── */
     section.style.cursor = 'grab';
 
-    // ─── 창 크기 변경 시 재계산 ───────────────────────────────────
     window.addEventListener('resize', () => {
       startX     = getStartX();
       translateX = clamp(translateX);

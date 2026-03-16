@@ -1,9 +1,7 @@
 /* ==============================================
-   BANNER
+   BANNER (#banner)
    ============================================== */
-#banner{
-  margin-top: 20px;
-}
+
 #banner .container .banner_box {
   height: 64vh;
   border-radius: 20px;
@@ -24,9 +22,7 @@
   text-align: center;
 }
 
-#banner .box h1 {
-  font-size: 70px;
-}
+#banner .box h1 { font-size: 70px; }
 
 #banner .box h2 {
   font-size: 50px;
@@ -43,9 +39,7 @@
   margin-left: 10px;
 }
 
-#banner .box p {
-  font-size: 25px;
-}
+#banner .box p { font-size: 25px; }
 
 #banner .box button {
   position: absolute;
@@ -112,9 +106,7 @@
   background: #666;
 }
 
-#banner .list .option .ram {
-  color: #666;
-}
+#banner .list .option .ram   { color: #666; }
 
 #banner .list .option .price {
   font-weight: 500;
@@ -146,9 +138,8 @@
 #banner .color_option ul .black  { background-color: #1a1a1a; }
 #banner .color_option ul .silver { background-color: #d0d0d0; }
 
-
 /* ==============================================
-   MIDDLE BANNER
+   MIDDLE BANNER (#middle_banner)
    ============================================== */
 
 #middle_banner img {
@@ -158,14 +149,10 @@
   margin-left: 5px;
 }
 
-#middle_banner .container {
-  height: 855px;
-}
+#middle_banner .container { height: 855px; }
 
-/* Samsung Care+ 상단 영역 */
-#middle_banner .middle_top {
-  margin: 60px 0;
-}
+/* Samsung Care+ 상단 */
+#middle_banner .middle_top { margin: 60px 0; }
 
 #middle_banner .title {
   display: flex;
@@ -184,9 +171,7 @@
   font-size: 32px;
 }
 
-#middle_banner .title h4 {
-  font-size: 32px;
-}
+#middle_banner .title h4    { font-size: 32px; }
 
 #middle_banner .title .grayfont {
   font-size: 32px;
@@ -201,9 +186,7 @@
   opacity: 50%;
 }
 
-#middle_banner .box1.on {
-  opacity: 100%;
-}
+#middle_banner .box1.on { opacity: 100%; }
 
 #middle_banner .box > button {
   width: 440px;
@@ -219,9 +202,7 @@
   padding: 0 20px;
 }
 
-#middle_banner .box .box1 div {
-  font-size: 12px;
-}
+#middle_banner .box .box1 div    { font-size: 12px; }
 
 #middle_banner .box .box1 strong {
   display: flex;
@@ -235,9 +216,7 @@
   font-weight: 400;
 }
 
-#middle_banner .box .box1 div:nth-child(1) p {
-  margin-bottom: 10px;
-}
+#middle_banner .box .box1 div:nth-child(1) p { margin-bottom: 10px; }
 
 #middle_banner .box .box1 .line {
   width: 100%;
@@ -278,13 +257,8 @@
   position: relative;
 }
 
-#middle_banner .box .box3 strong {
-  padding: 14px 14px 0;
-}
-
-#middle_banner .box .box3 p {
-  padding: 0 14px 14px;
-}
+#middle_banner .box .box3 strong { padding: 14px 14px 0; }
+#middle_banner .box .box3 p      { padding: 0 14px 14px; }
 
 #middle_banner .box3 span {
   width: 20px;
@@ -301,29 +275,18 @@
   cursor: pointer;
 }
 
-/* 구매 요약 하단 영역 */
+/* 구매 요약 하단 */
 #middle_banner .middle_bottom {
   background-color: #f4f4f4;
   display: flex;
   gap: 50px;
 }
 
-.middle_bottom .img {
-  padding-top: 40px;
-}
+.middle_bottom .img          { padding-top: 40px; }
+.middle_bottom .img .txt     { font-size: 40px; }
+.middle_bottom .img .pic     { padding: 40px 0 0 45px; }
 
-.middle_bottom .img .txt {
-  font-size: 40px;
-}
-
-.middle_bottom .img .pic {
-  padding: 40px 0 0 45px;
-}
-
-#middle_banner .middle_bottom .img .pic img {
-  width: 293px;
-  height: 292px;
-}
+#middle_banner .middle_bottom .img .pic img { width: 293px; height: 292px; }
 
 #middle_banner .middle_bottom .description .price {
   padding: 60px 0 40px;
@@ -335,9 +298,7 @@
   color: #333;
 }
 
-#middle_banner .middle_bottom .description .bookmark {
-  padding-top: 30px;
-}
+#middle_banner .middle_bottom .description .bookmark { padding-top: 30px; }
 
 #middle_banner .middle_bottom .description .bookmark > p {
   color: #666;
@@ -379,15 +340,8 @@
   padding-bottom: 24px;
 }
 
-#middle_banner .middle_bottom .buy .delivery img {
-  width: 30px;
-  height: 18px;
-}
-
-#middle_banner .middle_bottom .buy .delivery p {
-  color: #333;
-  font-size: 14px;
-}
+#middle_banner .middle_bottom .buy .delivery img { width: 30px; height: 18px; }
+#middle_banner .middle_bottom .buy .delivery p   { color: #333; font-size: 14px; }
 
 #middle_banner .middle_bottom .buy .store {
   display: flex;
@@ -397,10 +351,7 @@
   font-size: 13px;
 }
 
-#middle_banner .middle_bottom .buy .store img {
-  width: 30px;
-  height: 18px;
-}
+#middle_banner .middle_bottom .buy .store img { width: 30px; height: 18px; }
 
 #middle_banner .middle_bottom .buy .continue {
   padding: 13px 135px;
@@ -415,9 +366,8 @@
   font-size: 13px;
 }
 
-
 /* ==============================================
-   제품 구성
+   제품 구성 (#config)
    ============================================== */
 
 #config .container {
@@ -445,15 +395,8 @@
   gap: 138px;
 }
 
-#config .container .item_box img:first-child {
-  width: 323px;
-  height: 357px;
-}
-
-#config .container .item_box img:last-child {
-  width: 89px;
-  height: 306px;
-}
+#config .container .item_box img:first-child { width: 323px; height: 357px; }
+#config .container .item_box img:last-child  { width: 89px;  height: 306px; }
 
 #config .container .item_card ul {
   display: flex;
@@ -478,9 +421,8 @@
   border-radius: 15px;
 }
 
-
 /* ==============================================
-   비교하기
+   비교하기 (#compare)
    ============================================== */
 
 #compare {
@@ -488,9 +430,7 @@
   margin: 0 auto;
 }
 
-#compare .container {
-  padding: 70px 0;
-}
+#compare .container { padding: 70px 0; }
 
 #compare .container h1 {
   font-size: 42px;
@@ -528,7 +468,6 @@
   font-weight: 400;
 }
 
-/* 구분선 (디스플레이 row 하단) */
 .row:nth-child(5) .cell::after {
   content: "";
   position: absolute;
@@ -539,28 +478,18 @@
   background: #999;
 }
 
-#compare .container .row img {
-  width: 106px;
-}
+#compare .container .row img { width: 106px; }
 
-/* 제품 이미지 row */
 #compare .row:nth-child(2) .cell {
   margin: 0;
   padding-bottom: 0;
 }
 
-#compare .row:nth-child(2) .cell:nth-child(4) {
-  margin: 20px 0;
-}
+#compare .row:nth-child(2) .cell:nth-child(4) { margin: 20px 0; }
 
-#compare .container .row:nth-child(2) .cell img {
-  width: 250px;
-}
+#compare .container .row:nth-child(2) .cell img { width: 250px; }
 
-/* 색상 row */
-#compare .row:nth-child(3) .cell {
-  padding: 0;
-}
+#compare .row:nth-child(3) .cell { padding: 0; }
 
 #compare .row:nth-child(3) .cell ul {
   display: flex;
@@ -574,29 +503,20 @@
   height: 12px;
 }
 
-/* 가격 row */
-.row:nth-child(4) .cell {
-  padding-bottom: 30px;
-}
+.row:nth-child(4) .cell { padding-bottom: 30px; }
+.row:nth-child(5) .cell { padding-top: 0; }
 
-.row:nth-child(5) .cell {
-  padding-top: 0;
-}
-
-/* 프레임 row */
 .row:nth-child(6) .cell span {
   line-height: 1.8;
   letter-spacing: -1px;
 }
 
-/* 아이콘 하단 여백 (이미지 있는 row, 예외 제외) */
 .row:not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(5)):not(:nth-child(6)) .cell img {
   margin-bottom: 30px;
 }
 
-
 /* ==============================================
-   FAQ
+   FAQ (#faq)
    ============================================== */
 
 #faq {
@@ -618,7 +538,6 @@
 #faq .faq_question {
   display: flex;
   flex-direction: column;
-  justify-content: start;
 }
 
 #faq .faq_question article {
@@ -641,11 +560,8 @@
   right: 20px;
 }
 
-#faq .faq_question article button i {
-  font-size: 15px;
-}
+#faq .faq_question article button i { font-size: 15px; }
 
-/* FAQ 답변 패널 */
 .faq_answer {
   display: none;
   padding: 16px 0 20px;
@@ -655,42 +571,235 @@
   line-height: 1.7;
 }
 
-.faq_answer.is-open {
-  display: block;
-}
+.faq_answer.is-open { display: block; }
 
-/* 열린 상태: 화살표 회전 */
 #faq .faq_question article.is-open button i {
   transform: rotate(180deg);
   transition: transform 0.3s ease;
 }
 
-
 /* ==============================================
    MEDIA QUERIES
    ============================================== */
 
-/* 1024px — 태블릿 가로 */
+/* ── 1024px ─────────────────────────────────── */
 @media screen and (max-width: 1024px) {
 
+  /* banner */
+  #banner .box { right: 30px; top: 20px; }
+  #banner .box h1 { font-size: 52px; }
+  #banner .box h2 { font-size: 38px; height: 50px; }
+  #banner .box h2 img { width: 44px; height: 48px; }
+  #banner .box p { font-size: 20px; }
+  #banner .list .title { font-size: 18px; }
+  #banner .list .ssd-select { padding: 12px 16px; gap: 14px; }
+  #banner .list .ssd-select h3 { font-size: 17px; }
+  #banner .list .option .price { font-size: 15px; }
+  #banner .color_option p { font-size: 18px; }
+  #banner .color_option ul { gap: 24px; margin-top: 24px; }
+  #banner .color_option ul li { width: 32px; height: 32px; }
+
+  /* middle_banner */
+  #middle_banner .title .blackfont,
+  #middle_banner .title h4,
+  #middle_banner .title .grayfont { font-size: 26px; }
+  #middle_banner .box > button { width: 360px; }
+  #middle_banner .middle_bottom { gap: 30px; }
+  .middle_bottom .img .txt { font-size: 30px; }
+  #middle_banner .middle_bottom .img .pic img { width: 230px; height: 229px; }
+  #middle_banner .middle_bottom .buy .continue { padding: 13px 90px; }
+
+  /* config */
+  #config .container { min-width: 0; }
+  #config .container > h1 { font-size: 34px; padding: 50px 0; }
+  #config .container .item_box { width: 780px; height: 380px; gap: 100px; }
+  #config .container .item_box img:first-child { width: 260px; height: 287px; }
+  #config .container .item_box img:last-child  { width: 72px;  height: 246px; }
+  #config .container .item_card ul { gap: 160px; margin: 24px 0 90px 90px; }
+  #config .container .item_card ul li { font-size: 16px; }
+  #config .container > p { font-size: 12px; }
+
+  /* compare */
+  #compare { width: 100%; padding: 0 20px; box-sizing: border-box; }
+  #compare .container h1 { font-size: 34px; }
+  .cell { margin: 0 8px; font-size: 22px; }
+  .cell span { font-size: 14px; }
+  .cell p    { font-size: 13px; }
+  #compare .container .row img { width: 84px; }
+  #compare .container .row:nth-child(2) .cell img { width: 200px; }
+
+  /* faq */
+  #faq { width: 100%; padding: 0 20px; box-sizing: border-box; }
+  #faq .container { width: 100%; padding: 80px 0; }
+  #faq h1 { font-size: 40px; }
 }
 
-/* 768px — 태블릿 세로 */
+/* ── 768px ─────────────────────────────────── */
 @media screen and (max-width: 768px) {
 
+  /* banner */
+  #banner .box h1 { font-size: 40px; }
+  #banner .box h2 { font-size: 30px; height: 40px; }
+  #banner .box h2 img { width: 34px; height: 37px; }
+  #banner .box p  { font-size: 16px; }
+  #banner .list   { flex-direction: column; gap: 24px; }
+  #banner .list .option { gap: 12px; }
+  #banner .list .ssd-select { padding: 10px 14px; }
+
+  /* middle_banner */
+  #middle_banner .container { height: auto; }
+  #middle_banner .title { flex-direction: column; gap: 8px; }
+  #middle_banner .title .blackfont,
+  #middle_banner .title h4,
+  #middle_banner .title .grayfont { font-size: 22px; }
+  #middle_banner .box { flex-direction: column; align-items: flex-start; }
+  #middle_banner .box > button { width: 100%; }
+  #middle_banner .middle_bottom { flex-direction: column; gap: 20px; }
+  .middle_bottom .img .pic { padding: 20px 0 0 20px; }
+  #middle_banner .middle_bottom .img .pic img { width: 200px; height: 200px; }
+  .middle_bottom .img .txt { font-size: 28px; }
+
+  /* config */
+  #config .container .item_box { width: 100%; height: auto; padding: 30px 0; }
+  #config .container .item_card ul { gap: 80px; margin: 20px 0 60px 40px; }
+
+  /* compare — 가로 스크롤 */
+  #compare { overflow-x: auto; }
+  #compare .container { padding: 50px 0; }
+  #compare .container h1 { font-size: 28px; }
+  .row { min-width: 640px; }
+  .cell { padding: 36px 0; font-size: 18px; margin: 0 6px; }
+  .cell span { font-size: 12px; }
+  .cell p    { font-size: 11px; }
+  #compare .container .row img { width: 70px; }
+  #compare .container .row:nth-child(2) .cell img { width: 160px; }
+
+  /* faq */
+  #faq .container { padding: 60px 0; }
+  #faq h1 { font-size: 32px; }
+  #faq .faq_question article { font-size: 14px; }
 }
 
-/* 657px — 대형 모바일 가로 */
+/* ── 657px ─────────────────────────────────── */
 @media screen and (max-width: 657px) {
 
+  /* banner */
+  #banner .box { right: 16px; top: 14px; }
+  #banner .box h1 { font-size: 30px; }
+  #banner .box h2 { font-size: 22px; height: 32px; }
+  #banner .box h2 img { width: 26px; height: 28px; }
+  #banner .box p  { font-size: 13px; }
+  #banner .list .title { font-size: 16px; }
+  #banner .list .ssd-select h3 { font-size: 14px; }
+  #banner .list .option .price { font-size: 13px; }
+
+  /* middle_banner */
+  #middle_banner .title .blackfont,
+  #middle_banner .title h4,
+  #middle_banner .title .grayfont { font-size: 18px; }
+  .middle_bottom .img .txt { font-size: 22px; }
+  #middle_banner .middle_bottom .img .pic img { width: 170px; height: 170px; }
+  #middle_banner .middle_bottom .description .price h3 { font-size: 17px; }
+  #middle_banner .middle_bottom .buy .continue { padding: 12px 60px; }
+
+  /* config */
+  #config .container > h1 { font-size: 28px; padding: 36px 0; }
+  #config .container .item_box { gap: 60px; }
+  #config .container .item_box img:first-child { width: 200px; height: 220px; }
+  #config .container .item_box img:last-child  { width: 56px;  height: 190px; }
+  #config .container .item_card ul { gap: 60px; margin: 16px 0 50px 20px; }
+  #config .container .item_card ul li { font-size: 14px; }
+  #config .container > p { font-size: 11px; }
+
+  /* compare */
+  .cell { font-size: 14px; }
+  .cell span { font-size: 11px; }
+
+  /* faq */
+  #faq .container { padding: 44px 0; }
+  #faq h1 { font-size: 28px; }
+  #faq .faq_question article { font-size: 13px; padding: 20px 0; }
+  .faq_answer { font-size: 13px; }
 }
 
-/* 481px — 스마트폰 */
+/* ── 481px ─────────────────────────────────── */
 @media screen and (max-width: 481px) {
 
+  /* banner */
+  #banner .box h1 { font-size: 22px; }
+  #banner .box h2 { font-size: 17px; height: 26px; }
+  #banner .box h2 img { width: 20px; height: 22px; }
+  #banner .box p  { font-size: 11px; }
+  #banner .list .ssd-select { padding: 8px 10px; gap: 8px; }
+  #banner .list .ssd-select h3 { font-size: 12px; }
+  #banner .list .option .price { font-size: 11px; }
+  #banner .color_option ul { gap: 16px; }
+  #banner .color_option ul li { width: 26px; height: 26px; }
+
+  /* middle_banner */
+  #middle_banner .middle_top { margin: 36px 0; }
+  #middle_banner .title .blackfont,
+  #middle_banner .title h4,
+  #middle_banner .title .grayfont { font-size: 16px; }
+  #middle_banner .box .box1 strong { font-size: 13px; }
+  #middle_banner .box2 h4 { font-size: 14px; }
+  .middle_bottom .img .txt { font-size: 18px; }
+  #middle_banner .middle_bottom .img .pic img { width: 140px; height: 140px; }
+
+  /* config */
+  #config .container > h1 { font-size: 24px; }
+  #config .container .item_box {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 24px;
+  }
+  #config .container .item_box img:first-child { width: 180px; height: 198px; }
+  #config .container .item_box img:last-child  { width: 48px;  height: 166px; }
+  #config .container .item_card ul { flex-direction: column; gap: 8px; margin: 16px 0 36px; }
+
+  /* compare */
+  #compare { padding: 0 12px; }
+  .cell { padding: 24px 0; font-size: 12px; }
+  .cell span { font-size: 10px; }
+  #compare .container .row img { width: 56px; }
+  #compare .container .row:nth-child(2) .cell img { width: 130px; }
+
+  /* faq */
+  #faq { padding: 0 12px; }
+  #faq .container { padding: 36px 0; }
+  #faq h1 { font-size: 24px; padding-bottom: 28px; }
+  #faq .faq_question article { font-size: 12px; padding: 16px 0; }
+  #faq .faq_question article button { width: 26px; height: 26px; }
 }
 
-/* 391px — 소형 스마트폰 */
+/* ── 391px ─────────────────────────────────── */
 @media screen and (max-width: 391px) {
 
+  /* banner */
+  #banner .box h1 { font-size: 18px; }
+  #banner .box h2 { font-size: 14px; height: 22px; }
+  #banner .box h2 img { width: 16px; height: 18px; }
+  #banner .list .option { gap: 8px; }
+
+  /* middle_banner */
+  .middle_bottom .img .txt { font-size: 15px; }
+  #middle_banner .middle_bottom .img .pic img { width: 120px; height: 120px; }
+  #middle_banner .middle_bottom .buy .continue { padding: 10px 40px; }
+
+  /* config */
+  #config .container > h1 { font-size: 20px; padding: 28px 0; }
+
+  /* compare */
+  #compare { padding: 0 8px; }
+  .cell { font-size: 11px; margin: 0 4px; }
+  .cell span { font-size: 9px; }
+  #compare .container .row img { width: 48px; }
+  #compare .container .row:nth-child(2) .cell img { width: 110px; }
+
+  /* faq */
+  #faq .container { padding: 28px 0; }
+  #faq h1 { font-size: 20px; }
+  #faq .faq_question article { font-size: 11px; }
+  .faq_answer { font-size: 12px; }
 }
