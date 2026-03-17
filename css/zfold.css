@@ -1,7 +1,9 @@
 /* ==============================================
    BANNER (#banner)
    ============================================== */
-
+#banner{
+  padding-top: 10px;
+}
 #banner .container .banner_box {
   height: 64vh;
   border-radius: 20px;
@@ -139,93 +141,91 @@
 #banner .color_option ul .silver { background-color: #d0d0d0; }
 
 /* ==============================================
-   MIDDLE BANNER (#middle_banner)
+   MIDDLE BANNER (#middle_list)
    ============================================== */
 
-#middle_banner img {
+#middle_list img {
   width: 22px;
   height: 17px;
   margin-top: 2px;
   margin-left: 5px;
 }
 
-#middle_banner .container { height: 855px; }
-
 /* Samsung Care+ 상단 */
-#middle_banner .middle_top { margin: 60px 0; }
+#middle_list .middle_top { margin: 60px 0; }
 
-#middle_banner .title {
+#middle_list .title {
   display: flex;
   gap: 5px;
   margin-bottom: 50px;
 }
 
-#middle_banner .title img {
+#middle_list .title img {
   width: 50px;
   height: 37px;
   margin: 6px 6px 0 0;
 }
 
-#middle_banner .title .blackfont {
+#middle_list .title .blackfont {
   display: flex;
   font-size: 32px;
 }
 
-#middle_banner .title h4    { font-size: 32px; }
+#middle_list .title h4    { font-size: 32px; }
 
-#middle_banner .title .grayfont {
+#middle_list .title .grayfont {
   font-size: 32px;
   color: #666;
   font-weight: 400;
 }
 
 /* Care+ 선택 박스 */
-#middle_banner .box {
+#middle_list .box {
   display: flex;
   gap: 12px;
   opacity: 50%;
 }
 
-#middle_banner .box1.on { opacity: 100%; }
+#middle_list .box1.on { opacity: 100%; }
 
-#middle_banner .box > button {
+#middle_list .box > button {
   width: 440px;
   height: 160px;
   border-radius: 20px;
   border: 1px solid #999;
 }
 
-#middle_banner .box .box1 {
+#middle_list .box .box1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 20px;
 }
 
-#middle_banner .box .box1 div    { font-size: 12px; }
+#middle_list .box .box1 div    { font-size: 12px; }
 
-#middle_banner .box .box1 strong {
+#middle_list .box .box1 strong {
   display: flex;
   font-size: 16px;
   margin-bottom: 7px;
   color: #333;
 }
 
-#middle_banner .box .box1 p {
+#middle_list .box .box1 p {
   color: #666;
   font-weight: 400;
 }
 
-#middle_banner .box .box1 div:nth-child(1) p { margin-bottom: 10px; }
+#middle_list .box .box1 div:nth-child(1) p { margin-bottom: 10px; }
 
-#middle_banner .box .box1 .line {
+#middle_list .box .box1 .line {
   width: 100%;
   height: 1px;
   background-color: #999;
   margin-bottom: 10px;
 }
 
-#middle_banner .box .box1 div:nth-child(3) {
+#middle_list .box .box1 div:nth-child(3) {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -233,34 +233,33 @@
   white-space: nowrap;
 }
 
-#middle_banner .box2 {
+#middle_list .box2 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#middle_banner .box2 h4 {
+#middle_list .box2 h4 {
   display: flex;
   align-items: center;
   font-size: 18px;
 }
 
-#middle_banner .box .box3 {
+#middle_list .box .box3 {
   height: 80px;
   display: flex;
   flex-direction: column;
-  text-align: left;
   background-color: #f4f4f4;
   color: #222;
   font-size: 12px;
-  margin: 0 40px;
+  margin-left: 40px;
   position: relative;
 }
 
-#middle_banner .box .box3 strong { padding: 14px 14px 0; }
-#middle_banner .box .box3 p      { padding: 0 14px 14px; }
+#middle_list .box .box3 strong { padding: 14px 14px 0; }
+#middle_list .box .box3 p      { padding: 0 14px 14px; }
 
-#middle_banner .box3 span {
+#middle_list .box3 span {
   width: 20px;
   height: 20px;
   display: flex;
@@ -276,74 +275,74 @@
 }
 
 /* 구매 요약 하단 */
-#middle_banner .middle_bottom {
+#delivery-list{
   background-color: #f4f4f4;
+}
+#delivery-list .container{
   display: flex;
   gap: 50px;
 }
+#delivery-list .img          { padding-top: 40px; }
+#delivery-list .img .txt     { font-size: 40px; }
+#delivery-list .img .pic     { padding: 40px 0 0 45px; }
 
-.middle_bottom .img          { padding-top: 40px; }
-.middle_bottom .img .txt     { font-size: 40px; }
-.middle_bottom .img .pic     { padding: 40px 0 0 45px; }
+#delivery-list .img .pic img { width: 293px; height: 292px; }
 
-#middle_banner .middle_bottom .img .pic img { width: 293px; height: 292px; }
-
-#middle_banner .middle_bottom .description .price {
+#delivery-list .description .price {
   padding: 60px 0 40px;
   border-bottom: 1px solid #bbb;
 }
 
-#middle_banner .middle_bottom .description .price h3 {
+#delivery-list .description .price h3 {
   font-size: 20px;
   color: #333;
 }
+#delivery-list .description .bookmark { padding-top: 30px; }
 
-#middle_banner .middle_bottom .description .bookmark { padding-top: 30px; }
-
-#middle_banner .middle_bottom .description .bookmark > p {
+#delivery-list .description .bookmark > p {
   color: #666;
   opacity: 50%;
 }
 
-#middle_banner .middle_bottom .description .bookmark .symbol {
+#delivery-list .description .bookmark .symbol {
   display: flex;
   padding: 20px 0;
   border-bottom: 1px solid #bbb;
 }
 
-#middle_banner .middle_bottom .symbol i {
+#delivery-list .symbol i {
   margin-top: 5px;
   color: #0075d5;
   opacity: 50%;
 }
 
-#middle_banner .middle_bottom .symbol p {
+#delivery-list .symbol p {
   color: #0075d5;
   opacity: 50%;
 }
 
-#middle_banner .middle_bottom .description .info p {
+#delivery-list .description .info p {
   padding-top: 27px;
   color: #444;
   font-weight: 500;
 }
 
-#middle_banner .middle_bottom .buy {
+#delivery-list .buy {
   padding-top: 60px;
   display: flex;
   flex-direction: column;
 }
 
-#middle_banner .middle_bottom .buy .delivery {
+#delivery-list .buy .delivery {
   display: flex;
   gap: 5px;
   padding-bottom: 24px;
 }
 
-#middle_banner .middle_bottom .buy .delivery img { width: 30px; height: 18px; }
-#middle_banner .middle_bottom .buy .delivery p   { color: #333; font-size: 14px; }
+#delivery-list .buy .delivery img { width: 30px; height: 18px; }
+#delivery-list .buy .delivery p   { color: #333; font-size: 14px; }
 
-#middle_banner .middle_bottom .buy .store {
+#delivery-list .buy .store {
   display: flex;
   gap: 5px;
   padding-bottom: 48px;
@@ -351,16 +350,16 @@
   font-size: 13px;
 }
 
-#middle_banner .middle_bottom .buy .store img { width: 30px; height: 18px; }
+#delivery-list .buy .store img { width: 30px; height: 18px; }
 
-#middle_banner .middle_bottom .buy .continue {
+#delivery-list .buy .continue {
   padding: 13px 135px;
   background-color: #0084f0;
   border-radius: 10px;
   opacity: 50%;
 }
 
-#middle_banner .middle_bottom .buy .continue p {
+#delivery-list .buy .continue p {
   white-space: nowrap;
   color: #fff;
   font-size: 13px;
@@ -600,14 +599,14 @@
   #banner .color_option ul li { width: 32px; height: 32px; }
 
   /* middle_banner */
-  #middle_banner .title .blackfont,
-  #middle_banner .title h4,
-  #middle_banner .title .grayfont { font-size: 26px; }
-  #middle_banner .box > button { width: 360px; }
-  #middle_banner .middle_bottom { gap: 30px; }
+  #middle_list .title .blackfont,
+  #middle_list .title h4,
+  #middle_list .title .grayfont { font-size: 26px; }
+  #middle_list .box > button { width: 360px; }
+  #middle_list .middle_bottom { gap: 30px; }
   .middle_bottom .img .txt { font-size: 30px; }
-  #middle_banner .middle_bottom .img .pic img { width: 230px; height: 229px; }
-  #middle_banner .middle_bottom .buy .continue { padding: 13px 90px; }
+  #middle_list .middle_bottom .img .pic img { width: 230px; height: 229px; }
+  #middle_list .middle_bottom .buy .continue { padding: 13px 90px; }
 
   /* config */
   #config .container { min-width: 0; }
@@ -647,16 +646,16 @@
   #banner .list .ssd-select { padding: 10px 14px; }
 
   /* middle_banner */
-  #middle_banner .container { height: auto; }
-  #middle_banner .title { flex-direction: column; gap: 8px; }
-  #middle_banner .title .blackfont,
-  #middle_banner .title h4,
-  #middle_banner .title .grayfont { font-size: 22px; }
-  #middle_banner .box { flex-direction: column; align-items: flex-start; }
-  #middle_banner .box > button { width: 100%; }
-  #middle_banner .middle_bottom { flex-direction: column; gap: 20px; }
+  #middle_list .container { height: auto; }
+  #middle_list .title { flex-direction: column; gap: 8px; }
+  #middle_list .title .blackfont,
+  #middle_list .title h4,
+  #middle_list .title .grayfont { font-size: 22px; }
+  #middle_list .box { flex-direction: column; align-items: flex-start; }
+  #middle_list .box > button { width: 100%; }
+  #middle_list .middle_bottom { flex-direction: column; gap: 20px; }
   .middle_bottom .img .pic { padding: 20px 0 0 20px; }
-  #middle_banner .middle_bottom .img .pic img { width: 200px; height: 200px; }
+  #middle_list .middle_bottom .img .pic img { width: 200px; height: 200px; }
   .middle_bottom .img .txt { font-size: 28px; }
 
   /* config */
@@ -694,13 +693,13 @@
   #banner .list .option .price { font-size: 13px; }
 
   /* middle_banner */
-  #middle_banner .title .blackfont,
-  #middle_banner .title h4,
-  #middle_banner .title .grayfont { font-size: 18px; }
+  #middle_list .title .blackfont,
+  #middle_list .title h4,
+  #middle_list .title .grayfont { font-size: 18px; }
   .middle_bottom .img .txt { font-size: 22px; }
-  #middle_banner .middle_bottom .img .pic img { width: 170px; height: 170px; }
-  #middle_banner .middle_bottom .description .price h3 { font-size: 17px; }
-  #middle_banner .middle_bottom .buy .continue { padding: 12px 60px; }
+  #middle_list .middle_bottom .img .pic img { width: 170px; height: 170px; }
+  #middle_list .middle_bottom .description .price h3 { font-size: 17px; }
+  #middle_list .middle_bottom .buy .continue { padding: 12px 60px; }
 
   /* config */
   #config .container > h1 { font-size: 28px; padding: 36px 0; }
@@ -737,14 +736,14 @@
   #banner .color_option ul li { width: 26px; height: 26px; }
 
   /* middle_banner */
-  #middle_banner .middle_top { margin: 36px 0; }
-  #middle_banner .title .blackfont,
-  #middle_banner .title h4,
-  #middle_banner .title .grayfont { font-size: 16px; }
-  #middle_banner .box .box1 strong { font-size: 13px; }
-  #middle_banner .box2 h4 { font-size: 14px; }
+  #middle_list .middle_top { margin: 36px 0; }
+  #middle_list .title .blackfont,
+  #middle_list .title h4,
+  #middle_list .title .grayfont { font-size: 16px; }
+  #middle_list .box .box1 strong { font-size: 13px; }
+  #middle_list .box2 h4 { font-size: 14px; }
   .middle_bottom .img .txt { font-size: 18px; }
-  #middle_banner .middle_bottom .img .pic img { width: 140px; height: 140px; }
+  #middle_list .middle_bottom .img .pic img { width: 140px; height: 140px; }
 
   /* config */
   #config .container > h1 { font-size: 24px; }
@@ -784,8 +783,8 @@
 
   /* middle_banner */
   .middle_bottom .img .txt { font-size: 15px; }
-  #middle_banner .middle_bottom .img .pic img { width: 120px; height: 120px; }
-  #middle_banner .middle_bottom .buy .continue { padding: 10px 40px; }
+  #middle_list .middle_bottom .img .pic img { width: 120px; height: 120px; }
+  #middle_list .middle_bottom .buy .continue { padding: 10px 40px; }
 
   /* config */
   #config .container > h1 { font-size: 20px; padding: 28px 0; }
