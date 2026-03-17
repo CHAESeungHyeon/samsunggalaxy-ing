@@ -25,7 +25,7 @@
   margin: 0; padding: 0;
   box-sizing: border-box;
   color: #333;
-outline: 1px solid rgba(255,0,0,0.5);
+/* outline: 1px solid rgba(255,0,0,0.5); */
 font-family: "Samsung";
 }
 ul,li{
@@ -48,7 +48,6 @@ button{
   max-width: 1200px;  /* 고정 → max-width로 변경 */
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 0 20px;  /* 양쪽 여백 */
 }
 img {
   max-width: 100%;

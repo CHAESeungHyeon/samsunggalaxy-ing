@@ -14,8 +14,8 @@
   height: 80px;
   background: linear-gradient(to right, #2E69C9, #2E69C9, #33e4e1, #33e4e1);
   box-shadow:
-    inset 0 -40px 40px 10px rgb(255,255,255),
-    inset 0 -20px 16px 0   rgb(255,255,255);
+    inset 0 -50px 40px 0 rgb(255,255,255),
+    inset 0 -30px 20px 0   rgb(255,255,255) ;
 }
 
 #title_banner .container .title {
@@ -85,7 +85,14 @@
   margin: 20px 35px;
   gap: 15px;
 }
-
+.txt, .card-txt{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin: 35px 35px 0;
+  gap: 10px;
+}
 .sub {
   color: #B54C00;
   font-size: 12px;
@@ -111,14 +118,30 @@
   border: 1px solid rgba(0,0,0,.1);
   overflow: hidden;
 }
-.card2{
-    background-color: #f4f4f4;
+
+.card2 {
+  background-color: #f4f4f4;
   border-radius: 10px;
   width: 17vw;
   height: 36vh;
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
+}
+.card img{
+  height: auto;
+  margin: 40px auto auto;
+}
+.itme-name{
+  font-size: 27px;
+  white-space: nowrap;
+}
+.box{
+  display: flex;
+  gap: 30px;
+  position: absolute;
+
 }
 .color-list {
   display: flex;
@@ -137,34 +160,15 @@
    PHONE (#phone)
    ============================================== */
 
-#phone { margin: 65px 0 0; }
 #phone .container { height: 100%; }
 
-#phone .container .box {
-  display: flex;
-  gap: 30px;
-  position: absolute;
+#phone .card img {
+  margin: 48px 0 10px;
 }
 
-#phone .container .box .card .txt {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  margin: 35px 35px 0;
-  gap: 20px;
-  line-height: 1.1;
-}
+#phone .card:nth-child(3) img { margin-top: 10px; }
 
-#phone .container .box .card .txt h1 { font-size: 30px; }
-
-#phone .container .box .card img {
-  width: 400px;
-  height: 238px;
-  margin: 44px 0 10px;
-}
-
-#phone .container .box .card:nth-child(3) img { margin-top: 10px; }
+#phone .container .box .card .color-list { margin: 0; }
 
 #phone .container .box .card .info {
   margin: 30px 35px 0;
@@ -185,68 +189,24 @@
    ACCESSORIES (#accessories)
    ============================================== */
 
-#accessories .container .box {
-  display: flex;
-  gap: 30px;
-  position: absolute;
-}
-
 #accessories .box .card:first-child h2 {
-  font-size: 25px;
   margin: 55px 35px;
-}
-
-#accessories .card img {
-  width: 400px;
-  height: 241px;
-  margin-top: 40px;
-}
-
-#accessories .pic1 img {
-  margin: 0;
-  height: 354px;
-  width: 400px;
-}
-
-/* ==============================================
-   ACCESSORIES ITEM (#accessories_item)
-   ============================================== */
-
-#accessories_item img {
-  margin-top: 40px;
-  width: 400px;
-  height: 217px;
-}
-
-#accessories_item .container .box {
-  display: flex;
-  gap: 30px;
-  position: absolute;
 }
 
 /* ==============================================
    SERVICE (#service)
    ============================================== */
 
-#service .container .box {
-  display: flex;
-  gap: 30px;
-  position: absolute;
-}
-
-#service .container .box .card .txt {
-  margin: 45px 0 0 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
 
 #service .txt h2 {
   display: flex;
   gap: 10px;
-  font-size: 28px;
 }
-
+#service img{
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
 #service .container .box .card:nth-child(1) .txt img {
   width: 37px;
   height: 40px;
@@ -255,11 +215,6 @@
 #service .container .box .card:nth-child(2) .txt img {
   width: 49px;
   height: 37px;
-}
-
-#service .box .card article img {
-  width: 400px;
-  height: 366px;
 }
 
 #service .card .txt p {
@@ -273,358 +228,259 @@
   justify-content: start;
 }
 
-#service .card.background .txt    { margin-top: 50px; }
 #service .card.background .txt h2 { color: #fff; }
 #service .card.background .txt p  { color: #fff; }
 
 /* ==============================================
-   POPUP CARD (#popup_card) — galaxyphone.html
+   POPUP CARD (#popup_card)
    ============================================== */
 
-#popup_card {
-  height: 497px;
+#popup_card .card{
+  height: 450px;
   position: relative;
   overflow: hidden;
   margin-bottom: 124px;
 }
 
-#popup_card .txtcard {
-  position: absolute;
-  display: flex;
-  gap: 40px;
-  left: 0;                  /* JS가 translateX로 위치 처리 */
-}
-
-
-#popup_card .container .txtcard .card2 .card-txt {
-  margin: 25px 30px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-#popup_card .container .txtcard .card2 b {
-  font: bold 14px/1 sans-serif;
+#popup_card .card b {
+  font: bold 14px/1;
   color: #444;
 }
 
-#popup_card .container .txtcard .card2 strong {
-  font: bold 22px/1.2 sans-serif;
+#popup_card .card strong {
+  font: bold 22px/1.2;
 }
 
-#popup_card .container .txtcard .card2 span {
+#popup_card .card span {
   font-size: 12px;
   font-weight: normal;
   color: #666;
 }
-
-/* 이미지 % 기준 → 카드가 줄어도 자동 축소 */
-#popup_card .container .txtcard .card2:nth-child(1) img {
-  width: 100%;
-  position: absolute;
-  bottom: 20px;
+#popup_card .card:nth-child(2) img {
+  width: 80%;
+}
+#popup_card .card:nth-child(5) img {
+  margin-top: 0;
+  width: 90%;
 }
 
-#popup_card .container .txtcard .card2:nth-child(2) img {
-  width: 62.5%;
-  position: absolute;
-  right: 18.75%;
-  bottom: 40px;
-}
-
-#popup_card .container .txtcard .card2:nth-child(3) img {
-  width: 72.5%;
-  position: absolute;
-  right: 13.75%;
-  bottom: 40px;
-}
-
-#popup_card .container .txtcard .card2:nth-child(4) img {
-  width: 89.4%;
-  position: absolute;
-  right: 6.25%;
-  bottom: 20px;
-}
-
-#popup_card .container .txtcard .card2:nth-child(5) img {
-  width: 64.4%;
-  position: absolute;
-  right: 18.1%;
-  bottom: 0;
-}
-
-#popup_card .container .txtcard .card2 i {
+#popup_card .card i {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 /* ==============================================
    MEDIA QUERIES
    ============================================== */
 
-/* ── 1024px ──────────────────────────────────
-   phone:   txt(75)+img(200+14)+color(28)+info(64)     = 381 → section: 64+381=445
-   acc:     h2(58)+img(204+14)+txt_box(120)            = 396 → section: 64+396=460
-   acc_it:  img(186+14)+txt_box(120)                   = 320 → section: 64+320=384
-   service: txt(90)+img(278)                           = 368 → section: 64+368=432
-   ─────────────────────────────────────────────── */
 @media screen and (max-width: 1200px) {
-  .card{
-    width: 33vw;
-  }
-  .card2{
-    width: 26vw;
-  }
-}
 
+}
+ 
+/* ── 1024px ── */
 @media screen and (max-width: 1024px) {
 
-  #title_banner { height: 230px; }
-  #title_banner .gradient { height: 64px; }
-  #title_banner .container .title h1 { font-size: 52px; }
-  #title_banner .container .title img { width: 54px; height: 59px; }
-  #title_banner .container .list { margin-top: 60px; gap: 28px; }
-  #title_banner .container .list li a { font-size: 15px; }
-
-  .list-title { font-size: 28px; margin: 0 0 30px; }
-  .card { height: 50vw;}
-  .name { font-size: 17px; height: 42px; margin-bottom: 12px; }
-  .price { font-size: 13px; }
-  .txt_box { margin: 14px 28px; gap: 10px; }
-  .section{height: 60vw;}
-
-
 }
-
-/* ── 768px ──────────────────────────────────
-   phone:   txt(65)+img(166+12)+color(26)+info(56)     = 325 → section: 53+325=378
-   acc:     h2(50)+img(170+12)+txt_box(108)            = 340 → section: 53+340=393
-   acc_it:  img(154+12)+txt_box(108)                   = 274 → section: 53+274=327
-   service: txt(76)+img(238)                           = 314 → section: 53+314=367
-   ─────────────────────────────────────────────── */
+ 
+/* ── 768px ── */
 @media screen and (max-width: 768px) {
-
-  #title_banner { height: 200px; }
-  #title_banner .gradient { height: 54px; }
-  #title_banner .container .title h1 { font-size: 40px; }
-  #title_banner .container .title img { width: 43px; height: 47px; }
-  #title_banner .container .list { margin-top: 46px; gap: 20px; }
-  #title_banner .container .list li a { font-size: 13px; }
-
-  .list-title { font-size: 24px; margin: 0 0 24px; }
-  .card { width: 300px; }
-  .name { font-size: 15px; height: 38px; margin-bottom: 10px; }
-  .price { font-size: 12px; }
-  .txt_box { margin: 12px 22px; gap: 8px; }
-  .sub { font-size: 11px; }
-
-  #phone { height: 378px; margin: 55px 0 0; }
-  #phone .container .box .card { height: 325px; }
-  #phone .container .box .card .txt { margin: 16px 22px 0; gap: 8px; }
-  #phone .container .box .card .txt h1 { font-size: 22px; }
-  #phone .container .box .card img { width: 300px; height: 166px; margin: 12px 0 6px; }
-  #phone .container .box .card .info { margin: 10px 22px 0; }
-  #phone .container .box .card .info a { font-size: 13px; padding: 8px 14px; }
-
-  #accessories { height: 368px; margin: 55px 0 0; }
-  #accessories .card { height: 315px; }
-  #accessories .card img { width: 300px; height: 170px; margin-top: 12px; }
-  #accessories .pic1 img { height: 236px; width: 300px; }
-  #accessories .box .card:first-child h2 { font-size: 19px; margin: 28px 22px; }
-
-  #accessories_item { height: 305px; margin: 55px 0 0; }
-  #accessories_item .card { height: 252px; }
-  #accessories_item img { width: 300px; height: 154px; margin-top: 12px; }
-
-  #service { height: 367px; margin: 55px 0 0; }
-  #service .card { height: 314px; }
-  #service .txt h2 { font-size: 20px; }
-  #service .container .box .card:nth-child(1) .txt img { width: 26px; height: 28px; }
-  #service .container .box .card:nth-child(2) .txt img { width: 34px; height: 26px; }
-  #service .box .card article img { width: 268px; height: 238px; }
-  #service .container .box .card .txt { margin: 22px 0 0 20px; }
-
-  #popup_card { height: 414px; margin-bottom: 60px; }
-  #popup_card .txtcard { gap: 16px; }
-  #popup_card .container .txtcard .card { width: 250px; height: 300px; }
-  #popup_card .container .txtcard .card .card-txt { margin: 18px 18px 0; gap: 6px; }
-  #popup_card .container .txtcard .card b      { font-size: 12px; }
-  #popup_card .container .txtcard .card strong { font-size: 17px; }
-  #popup_card .container .txtcard .card span   { font-size: 10px; }
-  #popup_card .container .txtcard .card i { font-size: 26px; }
-}
-
-/* ── 657px ──────────────────────────────────
-   phone:   txt(57)+img(140+10)+color(24)+info(48)     = 279 → section: 42+279=321
-   acc:     h2(42)+img(144+10)+txt_box(96)             = 292 → section: 42+292=334
-   acc_it:  img(128+10)+txt_box(96)                    = 234 → section: 42+234=276
-   service: txt(64)+img(200)                           = 264 → section: 42+264=306
-   ─────────────────────────────────────────────── */
-@media screen and (max-width: 657px) {
-
-  #title_banner { height: 175px; }
-  #title_banner .gradient { height: 48px; }
-  #title_banner .container .title h1 { font-size: 32px; }
-  #title_banner .container .title img { width: 35px; height: 38px; }
-  #title_banner .container .list { margin-top: 38px; gap: 14px; flex-wrap: wrap; }
-  #title_banner .container .list li a { font-size: 12px; }
-
-  .list-title { font-size: 20px; margin: 0 0 18px; }
-  .card { width: 256px; }
-  .name { font-size: 13px; height: 30px; margin-bottom: 8px; }
-  .txt_box { margin: 10px 18px; gap: 7px; }
-
-  #phone { height: 321px; margin: 44px 0 0; }
-  #phone .container .box .card { height: 279px; }
-  #phone .container .box .card .txt { margin: 14px 18px 0; gap: 7px; }
-  #phone .container .box .card .txt h1 { font-size: 18px; }
-  #phone .container .box .card img { width: 256px; height: 140px; margin: 10px 0 5px; }
-  #phone .container .box .card .info { margin: 8px 18px 0; }
-  #phone .container .box .card .info a { font-size: 12px; padding: 7px 12px; }
-
-  #accessories { height: 312px; margin: 44px 0 0; }
-  #accessories .card { height: 270px; }
-  #accessories .card img { width: 256px; height: 144px; margin-top: 10px; }
-  #accessories .pic1 img { height: 200px; width: 256px; }
-  #accessories .box .card:first-child h2 { font-size: 16px; margin: 22px 18px; }
-
-  #accessories_item { height: 256px; margin: 44px 0 0; }
-  #accessories_item .card { height: 214px; }
-  #accessories_item img { width: 256px; height: 128px; margin-top: 10px; }
-
-  #service { height: 306px; margin: 44px 0 0; }
-  #service .card { height: 264px; }
-  #service .txt h2 { font-size: 17px; }
-  #service .container .box .card:nth-child(1) .txt img { width: 22px; height: 24px; }
-  #service .container .box .card:nth-child(2) .txt img { width: 29px; height: 22px; }
-  #service .box .card article img { width: 228px; height: 200px; }
-  #service .container .box .card .txt { margin: 18px 0 0 16px; }
-
-  #popup_card { height: 350px; margin-bottom: 44px; }
-  #popup_card .txtcard { gap: 12px; }
-  #popup_card .container .txtcard .card { width: 210px; height: 256px; }
-  #popup_card .container .txtcard .card .card-txt { margin: 14px 14px 0; gap: 5px; }
-  #popup_card .container .txtcard .card b      { font-size: 11px; }
-  #popup_card .container .txtcard .card strong { font-size: 15px; }
-  #popup_card .container .txtcard .card span   { font-size: 9px; }
-  #popup_card .container .txtcard .card i { font-size: 22px; bottom: 12px; right: 12px; }
-}
-
-/* ── 481px ──────────────────────────────────
-   phone:   txt(52)+img(152+10)+color(24)+info(50)     = 288 → section: 38+288=326
-   acc:     h2(38)+img(156+10)+txt_box(90)             = 294 → section: 38+294=332
-   acc_it:  img(140+10)+txt_box(90)                    = 240 → section: 38+240=278
-   service: txt(68)+img(218)                           = 286 → section: 38+286=324
-   ─────────────────────────────────────────────── */
-@media screen and (max-width: 481px) {
-
-  #title_banner { height: 155px; }
-  #title_banner .gradient { height: 42px; }
-  #title_banner .container .title h1 { font-size: 26px; }
-  #title_banner .container .title img { width: 28px; height: 31px; }
-  #title_banner .container .list { margin-top: 28px; gap: 10px; flex-wrap: wrap; }
-  #title_banner .container .list li a { font-size: 11px; }
-
-  .list-title { font-size: 18px; margin: 0 0 16px; }
-  .card { width: 280px; }
-  .name { font-size: 14px; height: auto; white-space: normal; margin-bottom: 8px; }
-  .price { font-size: 12px; }
-  .txt_box { margin: 10px 20px; gap: 7px; }
-
-  #phone { height: 326px; margin: 36px 0 0; }
-  #phone .container .box { gap: 12px; }
-  #phone .container .box .card { height: 288px; }
-  #phone .container .box .card .txt { margin: 14px 20px 0; gap: 7px; }
-  #phone .container .box .card .txt h1 { font-size: 18px; }
-  #phone .container .box .card img { width: 280px; height: 152px; margin: 10px 0 5px; }
-  #phone .container .box .card .info { margin: 8px 20px 0; }
-  #phone .container .box .card .info a { padding: 8px 14px; font-size: 12px; }
-
-  #accessories { height: 314px; margin: 36px 0 0; }
-  #accessories .container .box { gap: 12px; }
-  #accessories .card { height: 276px; }
-  #accessories .card img { width: 280px; height: 156px; margin-top: 10px; }
-  #accessories .pic1 img { height: 218px; width: 280px; margin: 0; }
-  #accessories .box .card:first-child h2 { font-size: 16px; margin: 22px 20px; }
-
-  #accessories_item { height: 260px; margin: 36px 0 0; }
-  #accessories_item .card { height: 222px; }
-  #accessories_item img { width: 280px; height: 140px; margin-top: 10px; }
-  #accessories_item .container .box { gap: 12px; }
-
-  #service { height: 324px; margin: 36px 0 0; }
-  #service .container .box { gap: 12px; }
-  #service .card { height: 286px; }
-  #service .txt h2 { font-size: 17px; }
-  #service .container .box .card:nth-child(1) .txt img { width: 20px; height: 22px; }
-  #service .container .box .card:nth-child(2) .txt img { width: 26px; height: 20px; }
-  #service .box .card article img { width: 248px; height: 218px; }
-  #service .container .box .card .txt { margin: 18px 0 0 18px; }
-
-  #popup_card { height: 430px; margin-bottom: 36px; }
-  #popup_card .txtcard { gap: 12px; }
-  #popup_card .container .txtcard .card { width: 280px; height: 340px; }
-  #popup_card .container .txtcard .card .card-txt { margin: 18px 18px 0; gap: 7px; }
-  #popup_card .container .txtcard .card b      { font-size: 12px; }
-  #popup_card .container .txtcard .card strong { font-size: 17px; }
-  #popup_card .container .txtcard .card span   { font-size: 10px; }
-  #popup_card .container .txtcard .card i { font-size: 24px; bottom: 14px; right: 14px; }
-}
-
-/* ── 391px ──────────────────────────────────
-   phone:   txt(46)+img(130+10)+color(22)+info(44)     = 252 → section: 34+252=286
-   acc:     h2(34)+img(134+10)+txt_box(82)             = 260 → section: 34+260=294
-   acc_it:  img(118+10)+txt_box(82)                    = 210 → section: 34+210=244
-   service: txt(58)+img(186)                           = 244 → section: 34+244=278
-   ─────────────────────────────────────────────── */
-@media (max-width: 391px) {
-  #title_banner .gradient{height: 17vw;}
-  #title_banner { height: 40vw; }
-  #title_banner .container .title h1 { font-size: 22px; }
+  main{padding-top: 52px; padding: 52px 10px 0;}
+  #title_banner { height: 150px; }
+  #title_banner .gradient { height: 60px; }
+  #title_banner .container .title h1 { font-size: 38px; }
   #title_banner .container .title img { width: 24px; height: 26px; }
-  #title_banner .container .list { margin-top: 22px; gap: 8px; }
-  #title_banner .container .list li a { font-size: 10px; }
+  #title_banner .container .list { margin-top: 22px; gap: 20px; }
+  #title_banner .container .list li a { font-size: 15px;}
 
-  .list-title { font-size: 16px; margin: 0 0 14px; }
-  .card { width: 240px; }
-  .name { font-size: 12px; height: auto; margin-bottom: 6px; }
-  .price { font-size: 11px; }
-  .txt_box { margin: 8px 16px; gap: 6px; }
-  .section{height: 80vw;}
+  .section{height: 350px; margin: 50px 0 0; overflow: hidden;}
+  .list-title { font-size: 16px; margin: 0 0 14px; letter-spacing: -1%;}
+  .box{gap: 10px;}
+  .card  { width: 235px; height: 310px;}
+  .card2 { width: 230px; height: 250px; }
+  .name { font-size: 12px; height: 30px; margin: 0;}
+  .price { font-size: 11px;}
+  .txt_box { margin: 10px; gap: 4px; line-height: 1.2;}
+  .sub{font-size: 8px;}
+  .card img{margin-bottom: 10px;}
+  .txt{display: flex; flex-direction: column; align-items: start;  justify-content: center; margin: 10px 15px 0; gap: 5px;}
+  #popup_card .card{height: 300px;}
 
-  #phone { height: 286px; }
-  #phone .container .box .card { height: 252px; }
-  #phone .container .box .card .txt { margin: 12px 16px 0; gap: 6px; }
+  #phone .container .box .card {gap: 15px;}
   #phone .container .box .card .txt h1 { font-size: 16px; }
-  #phone .container .box .card img { width: 240px; height: 130px; margin: 10px 0 5px; }
-  #phone .container .box .card .info { margin: 6px 16px 0; }
+  #phone .container .box .card img { width: 100%; height: auto; flex: 1; object-fit: contain; min-height: 0; margin: 10px 0; }
+  #phone .container .box .card:nth-child(3) img{margin: 0px;}
+  #phone .container .box .card .info { margin: 15px 15px 0; }
   #phone .container .box .card .info a { font-size: 11px; padding: 6px 12px; }
 
-  #accessories { height: 274px; }
-  #accessories .card { height: 240px; }
-  #accessories .card img { width: 240px; height: 134px; margin-top: 10px; }
-  #accessories .pic1 img { height: 186px; width: 240px; margin: 0; }
-  #accessories .box .card:first-child h2 { font-size: 14px; margin: 18px 16px; }
+  #accessories .box .card:first-child h2 { font-size: 14px; margin: 40px 20px; }
 
-  #accessories_item { height: 226px; }
-  #accessories_item .card { height: 192px; }
-  #accessories_item img { width: 240px; height: 118px; margin-top: 10px; }
-
-  #service { height: 278px; }
-  #service .card { height: 244px; }
   #service .txt h2 { font-size: 15px; }
   #service .container .box .card:nth-child(1) .txt img { width: 18px; height: 20px; }
   #service .container .box .card:nth-child(2) .txt img { width: 24px; height: 18px; }
-  #service .box .card article img { width: 212px; height: 186px; }
-  #service .container .box .card .txt { margin: 16px 0 0 14px; }
+  #service .container .box .card .txt { margin: 2.5vw 0 0 3.6vw; }
+  #service .box .card article { flex: 1; display: flex; align-items: center; justify-content: center; overflow: hidden; min-height: 0; }
 
-  #popup_card { height: 392px; margin-bottom: 28px; }
-  #popup_card .container .txtcard .card { width: 240px; height: 308px; }
-  #popup_card .container .txtcard .card .card-txt { margin: 14px 14px 0; gap: 6px; }
-  #popup_card .container .txtcard .card b      { font-size: 11px; }
-  #popup_card .container .txtcard .card strong { font-size: 15px; }
-  #popup_card .container .txtcard .card span   { font-size: 9px; }
-  #popup_card .container .txtcard .card i { font-size: 22px; bottom: 12px; right: 12px; }
+  #popup_card .card2 img {
+  margin: auto;
+  }
+  #popup_card{height: 370px; margin-bottom: 20px;}
+  #popup_card .card{height: 280px; }
+  #popup_card .card .card-txt { margin: 3.6vw 3.6vw 0; gap: 1.5vw; }
+  #popup_card .card b      { font-size: 11px; }
+  #popup_card .card strong { font-size: 15px; }
+  #popup_card .card span   { font-size: 9px; }
+  #popup_card .card i { font-size: 22px; bottom: 3vw; right: 3vw; }
+}
+ 
+/* ── 657px ── */
+@media screen and (max-width: 657px) {
+  main{padding-top: 52px;}
+  #title_banner { height: 150px; }
+  #title_banner .gradient { height: 60px; }
+  #title_banner .container .title h1 { font-size: 28px; }
+  #title_banner .container .title img { width: 24px; height: 26px; }
+  #title_banner .container .list { margin-top: 22px; gap: 15px; }
+  #title_banner .container .list li a { font-size: 14px;}
+
+  .section{height: 350px; margin: 40px 0 0; overflow: hidden;}
+  .list-title { font-size: 16px; margin: 0 0 14px; letter-spacing: -1%;}
+  .box{gap: 10px;}
+  .card  { width: 235px; height: 310px;}
+  .card2 { width: 230px; height: 250px; }
+  .name { font-size: 12px; height: 30px; margin: 0;}
+  .price { font-size: 11px;}
+  .txt_box { margin: 10px; gap: 4px; line-height: 1.2;}
+  .sub{font-size: 8px;}
+  .card img{margin-bottom: 10px;}
+  .txt{display: flex; flex-direction: column; align-items: start;  justify-content: center; margin: 10px 15px 0; gap: 5px;}
+  #popup_card .card{height: 300px;}
+
+  #phone .container .box .card {gap: 15px;}
+  #phone .container .box .card .txt h1 { font-size: 16px; }
+  #phone .container .box .card img { width: 100%; height: auto; flex: 1; object-fit: contain; min-height: 0; margin: 10px 0; }
+  #phone .container .box .card:nth-child(3) img{margin: 0px;}
+  #phone .container .box .card .info { margin: 15px 15px 0; }
+  #phone .container .box .card .info a { font-size: 11px; padding: 6px 12px; }
+
+  #accessories .box .card:first-child h2 { font-size: 14px; margin: 40px 20px; }
+
+  #service .txt h2 { font-size: 15px; }
+  #service .container .box .card:nth-child(1) .txt img { width: 18px; height: 20px; }
+  #service .container .box .card:nth-child(2) .txt img { width: 24px; height: 18px; }
+  #service .container .box .card .txt { margin: 2.5vw 0 0 3.6vw; }
+  #service .box .card article { flex: 1; display: flex; align-items: center; justify-content: center; overflow: hidden; min-height: 0; }
+
+  #popup_card .card2 img {
+  margin: auto;
+  }
+  #popup_card{height: 370px; margin-bottom: 20px;}
+  #popup_card .card{height: 280px; }
+  #popup_card .card .card-txt { margin: 3.6vw 3.6vw 0; gap: 1.5vw; }
+  #popup_card .card b      { font-size: 11px; }
+  #popup_card .card strong { font-size: 15px; }
+  #popup_card .card span   { font-size: 9px; }
+  #popup_card .card i { font-size: 22px; bottom: 3vw; right: 3vw; }
+}
+/* ── 481px ── */
+@media screen and (max-width: 481px) {
+  main{padding-top: 50px;}
+
+  #title_banner { height: 110px; }
+  #title_banner .gradient { height: 50px; box-shadow:
+    inset 0 -30px 30px 0 rgb(255,255,255),
+    inset 0 -20px 20px 0   rgb(255,255,255) ;}
+  #title_banner .container .title h1 { font-size: 22px; }
+  #title_banner .container .title img { width: 24px; height: 26px; }
+  #title_banner .container .list { margin-top: 22px; gap: 12px; }
+  #title_banner .container .list li a { font-size: 10px; letter-spacing: -1%;}
+
+  .list-title { font-size: 13px; margin: 0 0 14px; letter-spacing: -1%;}
+  .card  { width: 235px; height: 310px;}
+  .card2 { width: 230px; height: 250px; }
+  .name { font-size: 12px; height: 30px; margin: 0;}
+  .price { font-size: 11px;}
+  .txt_box { margin: 10px; gap: 4px; line-height: 1.2;}
+  .section{height: 343px; margin: 30px 0 0; overflow: hidden;}
+  .sub{font-size: 8px;}
+  .card img{margin-bottom: 10px;}
+  .txt{display: flex; flex-direction: column; align-items: start;  justify-content: center; margin: 15px 15px 0; gap: 5px;}
+  .box{gap: 10px;}
+  #popup_card .card{height: 300px;}
+
+  #phone .container .box .card {gap: 15px;}
+  #phone .container .box .card .txt h1 { font-size: 16px; }
+  #phone .container .box .card img { width: 100%; height: auto; flex: 1; object-fit: contain; min-height: 0; margin: 10px 0; }
+  #phone .container .box .card:nth-child(3) img{margin: 0px;}
+  #phone .container .box .card .info { margin: 15px 15px 0; }
+  #phone .container .box .card .info a { font-size: 11px; padding: 6px 12px; }
+
+  #accessories .box .card:first-child h2 { font-size: 14px; margin: 40px auto; text-align: center;}
+
+  #service .txt h2 { font-size: 15px; }
+  #service .container .box .card:nth-child(1) .txt img { width: 18px; height: 20px; }
+  #service .container .box .card:nth-child(2) .txt img { width: 24px; height: 18px; }
+  #service .container .box .card .txt { margin: 2.5vw 0 0 3.6vw; }
+  #service .box .card article { flex: 1; display: flex; align-items: center; justify-content: center; overflow: hidden; min-height: 0; }
+
+  #popup_card .card2 img {
+  margin: auto;
+  }
+  #popup_card{height: 370px; margin-bottom: 20px;}
+  #popup_card .card{height: 280px; }
+  #popup_card .card b      { font-size: 11px; }
+  #popup_card .card strong { font-size: 15px; }
+  #popup_card .card span   { font-size: 9px; }
+  #popup_card .card i { font-size: 22px; bottom: 3vw; right: 3vw; }
+}
+/* ── 391px ── */
+@media screen and (max-width: 391px) {
+  main{padding-top: 48px;}
+  #title_banner { height: 110px; }
+  #title_banner .gradient { height: 40px; box-shadow:
+    inset 0 -30px 30px 0 rgb(255,255,255),
+    inset 0 -20px 20px 0   rgb(255,255,255) ;}
+  #title_banner .container .title h1 { font-size: 22px; }
+  #title_banner .container .title img { width: 24px; height: 26px; }
+  #title_banner .container .list { margin-top: 22px; gap: 8px; }
+  #title_banner .container .list li a { font-size: 9px; letter-spacing: -0.7%;}
+
+  .list-title { font-size: 13px; margin: 0 0 14px; letter-spacing: -1%;}
+  .card  { width: 238px; height: 310px;}
+  .card2 { width: 230px; height: 250px; }
+  .name { font-size: 12px; height: 30px; margin: 0;}
+  .price { font-size: 11px;}
+  .txt_box { margin: 10px; gap: 4px; line-height: 1.2;}
+  .section{height: 343px; margin: 20px 0 0; overflow: hidden;}
+  .sub{font-size: 8px;}
+  .card img{margin-bottom: 10px;}
+  .txt{display: flex; flex-direction: column; align-items: start;  justify-content: center; margin: 15px 15px 0; gap: 5px;}
+  .box{gap: 10px;}
+  #popup_card .card{height: 300px;}
+
+  #phone .container .box .card {gap: 15px;}
+  #phone .container .box .card .txt h1 { font-size: 16px; }
+  #phone .container .box .card img { width: 100%; height: auto; flex: 1; object-fit: contain; min-height: 0; margin: 10px 0; }
+  #phone .container .box .card:nth-child(3) img{margin: 0px;}
+  #phone .container .box .card .info { margin: 15px 15px 0; }
+  #phone .container .box .card .info a { font-size: 11px; padding: 6px 12px; }
+
+  #accessories .box .card:first-child h2 { font-size: 14px; margin: 40px auto; text-align: center; }
+
+  #service .txt h2 { font-size: 15px; }
+  #service .container .box .card:nth-child(1) .txt img { width: 18px; height: 20px; }
+  #service .container .box .card:nth-child(2) .txt img { width: 24px; height: 18px; }
+  #service .container .box .card .txt { margin: 2.5vw 0 0 3.6vw; }
+  #service .box .card article { flex: 1; display: flex; align-items: center; justify-content: center; overflow: hidden; min-height: 0; }
+
+  #popup_card .card2 img {
+  margin: auto;
+  }
+  #popup_card{height: 370px; margin-bottom: 20px;}
+  #popup_card .card{height: 280px; }
+  #popup_card .card b      { font-size: 11px; }
+  #popup_card .card strong { font-size: 15px; }
+  #popup_card .card span   { font-size: 9px; }
+  #popup_card .card i { font-size: 22px; bottom: 3vw; right: 3vw; }
 }

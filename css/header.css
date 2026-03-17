@@ -97,7 +97,6 @@ nav > .icon > li:last-child img {
   border: none;
   cursor: pointer;
   padding: 4px;
-  margin-right: 10px;
   z-index: 10000;
 }
 
@@ -182,7 +181,7 @@ nav > .icon > li:last-child img {
   }
 
   header .container {
-    padding: 0 20px;
+    padding: 0 10px;
     height: 60px;
   }
 
@@ -201,7 +200,6 @@ nav > .icon > li:last-child img {
   }
 
   header .container {
-    padding: 0 16px;
     height: 56px;
   }
 
@@ -224,7 +222,6 @@ nav > .icon > li:last-child img {
 
   header .container {
     height: 52px;
-    padding: 0 14px;
   }
 
   .logo a img {
@@ -249,7 +246,6 @@ nav > .icon > li:last-child img {
 
   header .container {
     height: 50px;
-    padding: 0 12px;
   }
 
   .logo a img {
@@ -269,7 +265,6 @@ nav > .icon > li:last-child img {
 
   header .container {
     height: 48px;
-    padding: 0 10px;
   }
 
   .logo a img {

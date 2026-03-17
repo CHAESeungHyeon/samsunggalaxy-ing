@@ -151,6 +151,9 @@
 
 /* 657px */
 @media screen and (max-width: 657px) {
+    #footer{
+    margin-top: 50px;
+  }
   #footer .container { padding: 0 16px; }
 
   #footer .container .top_foot {
@@ -165,6 +168,9 @@
 
 /* 481px */
 @media screen and (max-width: 481px) {
+    #footer{
+    margin-top: 30px;
+  }
   #footer .container { padding: 0 14px; }
 
   #footer .container .top_foot {
@@ -205,6 +211,9 @@
 
 /* 391px */
 @media screen and (max-width: 391px) {
+  #footer{
+    margin-top: 10px;
+  }
   #footer .container { padding: 0 12px; }
 
   #footer .container .top_foot {

@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { section: '#accessories_item', box: '#accessories_item .box'       },
     { section: '#service',          box: '#service .box'                },
     /* 공통 (index.html / galaxyphone.html) */
-    { section: '#popup_card',       box: '#popup_card .txtcard'         },
+    { section: '#popup_card',       box: '#popup_card .box'         },
     /* index.html */
     { section: '#layer_card',       box: '#layer_card .container .box'  },
   ];
