@@ -1,103 +1,120 @@
+html{
+  font-size: 16px;
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* CSS 변수 (반응형 폰트/크기 제어) */
+:root {
+  --banner-h1: clamp(1.5rem, 4vw, 4.375rem);
+  --banner-h2: clamp(1.2rem, 3vw, 3.125rem);
+  --banner-p: clamp(0.75rem, 1.5vw, 1.5625rem);
+
+  --payment-title: clamp(1rem, 2.5vw, 2.5rem);
+
+  --compare-cell: clamp(0.75rem, 2vw, 1.875rem);
+  --compare-cell-span: clamp(0.625rem, 1vw, 1.125rem);
+  --compare-cell-p: clamp(0.625rem, 1vw, 1rem);
+
+  --ssd-title: clamp(0.75rem, 1vw, 1.25rem);
+  --ssd-price: clamp(0.75rem, 1vw, 1.125rem);
+}
+
 /* ==============================================
    BANNER (#banner)
    ============================================== */
 #banner{
-  padding-top: 10px;
+  padding-top: 0.625rem;
 }
-#banner .container .banner_box {
+#banner .banner_box {
   height: 64vh;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   background: #f4f4f4 url(../zfoldimg/zfold.png) no-repeat center / contain;
   display: flex;
   justify-content: center;
   flex-direction: column;
   position: relative;
 }
-
 #banner .box {
   position: absolute;
-  right: 50px;
-  top: 30px;
+  right: 3.125rem;
+  top: 1.875rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
-
-#banner .box h1 { font-size: 70px; }
-
+#banner .box h1 { font-size: var(--banner-h1); }
 #banner .box h2 {
-  font-size: 50px;
+  font-size: var(--banner-h2);
   font-weight: 200;
-  height: 64px;
+  height: 4rem;
   display: flex;
   justify-content: center;
 }
-
+#banner .box p { font-size: var(--banner-p); }
+#banner .box button {
+  position: absolute;
+  right: -3%;
+  bottom: -60%;
+  width: 2.75rem;
+  height: 2.75rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+}
 #banner .box h2 img {
   width: 57px;
   height: 63px;
   margin-top: 0;
   margin-left: 10px;
 }
-
-#banner .box p { font-size: 25px; }
-
-#banner .box button {
-  position: absolute;
-  right: -3%;
-  bottom: -60%;
-  width: 44px;
-  height: 44px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
 #banner .box i {
   font-size: 22px;
   cursor: pointer;
 }
 
 /* 옵션 리스트 */
-#banner .list {
-  margin-top: 40px;
+#banner .option-list {
+ margin-top: 2.5rem;
   display: flex;
   justify-content: space-between;
 }
 
-#banner .list .title {
-  font-size: 22px;
+#banner .option-list .title {
+  font-size: clamp(0.875rem, 1.2vw, 1.375rem);
   margin-bottom: 10px;
 }
 
-#banner .list .option {
+#banner .option-list .option {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 1.25rem;
 }
 
-#banner .list .ssd-select {
+#banner .option-list .ssd-select {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  padding: 16px 20px;
+  padding: 1rem 1.25rem;
+  border-radius: 0.8125rem;
   border: 1px solid #666;
-  border-radius: 13px;
 }
 
-#banner .list .ssd-select h3 {
-  font-size: 20px;
+#banner .option-list .ssd-select h3 {
+  font-size: var(--ssd-title);
   font-weight: 500;
 }
 
-#banner .list .option .ssd {
+#banner .option-list .option .ssd {
   position: relative;
   width: 65px;
 }
 
-#banner .list .option .ssd::after {
+#banner .option-list .option .ssd::after {
   content: "";
   position: absolute;
   right: -11px;
@@ -108,124 +125,124 @@
   background: #666;
 }
 
-#banner .list .option .ram   { color: #666; }
+#banner .option-list .option .ram   { color: #666; }
 
-#banner .list .option .price {
+#banner .option-list .option .price {
   font-weight: 500;
   letter-spacing: 1px;
   color: #666;
-  font-size: 18px;
+  font-size: var(--ssd-price);
   white-space: nowrap;
 }
 
 /* 색상 옵션 */
-#banner .color_option p {
+#banner .color-option p {
   font-size: 22px;
 }
 
-#banner .color_option ul {
+#banner .color-option ul {
   display: flex;
   gap: 36px;
   margin-top: 36px;
 }
 
-#banner .color_option ul li {
+#banner .color-option ul li {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   cursor: pointer;
 }
 
-#banner .color_option ul .blue   { background-color: #485577; }
-#banner .color_option ul .black  { background-color: #1a1a1a; }
-#banner .color_option ul .silver { background-color: #d0d0d0; }
+#banner .color-option ul .blue   { background-color: #485577; }
+#banner .color-option ul .black  { background-color: #1a1a1a; }
+#banner .color-option ul .silver { background-color: #d0d0d0; }
 
 /* ==============================================
-   MIDDLE BANNER (#middle_list)
+   MIDDLE BANNER (#assurance)
    ============================================== */
 
-#middle_list img {
-  width: 22px;
-  height: 17px;
-  margin-top: 2px;
-  margin-left: 5px;
+#assurance img {
+  width: 1.5em;
+  height: auto;
+  margin-top: 0.1em;
+  margin-left: 0.3em;
+  vertical-align: middle;
 }
 
 /* Samsung Care+ 상단 */
-#middle_list .middle_top { margin: 60px 0; }
+#assurance .middle_top { margin: 60px 0; }
 
-#middle_list .title {
+#assurance .title {
   display: flex;
   gap: 5px;
   margin-bottom: 50px;
 }
 
-#middle_list .title img {
-  width: 50px;
-  height: 37px;
-  margin: 6px 6px 0 0;
+#assurance .title img {
+  width: 1.5em;
+  height: auto;
+  margin: 0.2em 0.2em 0 0;
+  vertical-align: middle;
 }
 
-#middle_list .title .blackfont {
+#assurance .title .blackfont {
   display: flex;
   font-size: 32px;
 }
 
-#middle_list .title h4    { font-size: 32px; }
+#assurance .title h4    {  font-size: clamp(1rem, 2vw, 2rem); }
 
-#middle_list .title .grayfont {
-  font-size: 32px;
+#assurance .title .grayfont {
+  font-size: clamp(1rem, 2vw, 2rem);
   color: #666;
   font-weight: 400;
 }
 
 /* Care+ 선택 박스 */
-#middle_list .box {
+#assurance .box {
   display: flex;
   gap: 12px;
   opacity: 50%;
 }
 
-#middle_list .box1.on { opacity: 100%; }
+#assurance .box1.on { opacity: 100%; }
 
-#middle_list .box > button {
-  width: 440px;
-  height: 160px;
-  border-radius: 20px;
+#assurance .box > button {
+  width: 27.5rem;
+  height: 10rem;
+  border-radius: 1.25rem;
   border: 1px solid #999;
 }
 
-#middle_list .box .box1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+#assurance .box .box1 {
+  margin: auto;
   padding: 0 20px;
 }
 
-#middle_list .box .box1 div    { font-size: 12px; }
+#assurance .box .box1 div    { font-size: 12px; }
 
-#middle_list .box .box1 strong {
+#assurance .box .box1 strong {
   display: flex;
   font-size: 16px;
   margin-bottom: 7px;
   color: #333;
 }
 
-#middle_list .box .box1 p {
+#assurance .box .box1 p {
   color: #666;
   font-weight: 400;
 }
 
-#middle_list .box .box1 div:nth-child(1) p { margin-bottom: 10px; }
+#assurance .box .box1 div:nth-child(1) p { margin-bottom: 10px; }
 
-#middle_list .box .box1 .line {
+#assurance .box .box1 .line {
   width: 100%;
   height: 1px;
   background-color: #999;
   margin-bottom: 10px;
 }
 
-#middle_list .box .box1 div:nth-child(3) {
+#assurance .box .box1 div:nth-child(3) {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -233,19 +250,19 @@
   white-space: nowrap;
 }
 
-#middle_list .box2 {
+#assurance .box2 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#middle_list .box2 h4 {
+#assurance .box2 h4 {
   display: flex;
   align-items: center;
   font-size: 18px;
 }
 
-#middle_list .box .box3 {
+#assurance .box .box3 {
   height: 80px;
   display: flex;
   flex-direction: column;
@@ -256,16 +273,16 @@
   position: relative;
 }
 
-#middle_list .box .box3 strong { padding: 14px 14px 0; }
-#middle_list .box .box3 p      { padding: 0 14px 14px; }
+#assurance .box .box3 strong { padding: 14px 14px 0; }
+#assurance .box .box3 p      { padding: 0 14px 14px; }
 
-#middle_list .box3 span {
+#assurance .box3 span {
   width: 20px;
   height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 10px;
+  font-size: 12px;
   position: absolute;
   right: 14px;
   top: 10px;
@@ -275,74 +292,74 @@
 }
 
 /* 구매 요약 하단 */
-#delivery-list{
+#payment{
   background-color: #f4f4f4;
 }
-#delivery-list .container{
+#payment .container{
   display: flex;
-  gap: 50px;
+  flex-wrap: wrap;
+  gap: 3.125rem;
 }
-#delivery-list .img          { padding-top: 40px; }
-#delivery-list .img .txt     { font-size: 40px; }
-#delivery-list .img .pic     { padding: 40px 0 0 45px; }
+#payment .img          { padding-top: 40px; }
+#payment .img .txt     { font-size: var(--payment-title); }
+#payment .img .pic     { padding: 40px 0 0 45px; }
 
-#delivery-list .img .pic img { width: 293px; height: 292px; }
+#payment .img .pic img { width: 293px; height: 292px; }
 
-#delivery-list .description .price {
+#payment .description .price {
   padding: 60px 0 40px;
   border-bottom: 1px solid #bbb;
 }
 
-#delivery-list .description .price h3 {
-  font-size: 20px;
-  color: #333;
+#payment .description .price h3 {
+  font-size: clamp(0.875rem, 1.2vw, 1.25rem);
 }
-#delivery-list .description .bookmark { padding-top: 30px; }
+#payment .description .bookmark { padding-top: 30px; }
 
-#delivery-list .description .bookmark > p {
+#payment .description .bookmark > p {
   color: #666;
   opacity: 50%;
 }
 
-#delivery-list .description .bookmark .symbol {
+#payment .description .bookmark .symbol {
   display: flex;
   padding: 20px 0;
   border-bottom: 1px solid #bbb;
 }
 
-#delivery-list .symbol i {
+#payment .symbol i {
   margin-top: 5px;
   color: #0075d5;
   opacity: 50%;
 }
 
-#delivery-list .symbol p {
+#payment .symbol p {
   color: #0075d5;
   opacity: 50%;
 }
 
-#delivery-list .description .info p {
+#payment .description .info p {
   padding-top: 27px;
   color: #444;
   font-weight: 500;
 }
 
-#delivery-list .buy {
+#payment .buy {
   padding-top: 60px;
   display: flex;
   flex-direction: column;
 }
 
-#delivery-list .buy .delivery {
+#payment .buy .delivery {
   display: flex;
   gap: 5px;
   padding-bottom: 24px;
 }
 
-#delivery-list .buy .delivery img { width: 30px; height: 18px; }
-#delivery-list .buy .delivery p   { color: #333; font-size: 14px; }
+#payment .buy .delivery img { width: 30px; height: 18px; }
+#payment .buy .delivery p   { color: #333; font-size: 14px; }
 
-#delivery-list .buy .store {
+#payment .buy .store {
   display: flex;
   gap: 5px;
   padding-bottom: 48px;
@@ -350,16 +367,18 @@
   font-size: 13px;
 }
 
-#delivery-list .buy .store img { width: 30px; height: 18px; }
+#payment .buy .store img { width: 30px; height: 18px; }
 
-#delivery-list .buy .continue {
-  padding: 13px 135px;
+#payment .buy .continue {
+  padding: 0.8125rem 2rem;
+  width: 100%;
+  border-radius: 0.625rem;
   background-color: #0084f0;
-  border-radius: 10px;
   opacity: 50%;
+  text-align: center;
 }
 
-#delivery-list .buy .continue p {
+#payment .buy .continue p {
   white-space: nowrap;
   color: #fff;
   font-size: 13px;
@@ -371,8 +390,8 @@
 
 #config .container {
   width: 100%;
-  min-width: 1200px;
-  padding: 0;
+  max-width: 1200px;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -380,13 +399,14 @@
 }
 
 #config .container > h1 {
-  font-size: 40px;
-  padding: 65px 0;
+  font-size: clamp(1.25rem, 2.5vw, 2.5rem);
+  padding: 4.0625rem 0;
 }
 
 #config .container .item_box {
-  width: 989px;
-  height: 472px;
+  max-width: 989px;
+  width: 100%;
+  min-height: 472px;
   background-color: #f4f4f4;
   display: flex;
   justify-content: center;
@@ -401,13 +421,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 200px;
-  margin: 30px 0 127px 120px;
+  gap: clamp(2rem, 10vw, 12.5rem);
+  margin: 30px 0 127px clamp(1rem, 6vw, 7.5rem);
 }
 
 #config .container .item_card ul li {
-  font-size: 18px;
-  color: #333;
+  font-size: clamp(0.75rem, 1.2vw, 1.125rem);
 }
 
 #config .container > p {
@@ -425,7 +444,8 @@
    ============================================== */
 
 #compare {
-  width: 1200px;
+  max-width: 75rem;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -450,20 +470,19 @@
   text-align: center;
   margin: 0 14px;
   white-space: nowrap;
-  font-size: 30px;
+  font-size: var(--compare-cell);
   font-weight: bold;
   position: relative;
 }
 
 .cell span {
-  font-size: 18px;
-  color: #333;
+  font-size: var(--compare-cell-span);
   font-weight: normal;
 }
 
 .cell p {
   color: #666;
-  font-size: 16px;
+  font-size: var(--compare-cell-p);
   font-weight: 400;
 }
 
@@ -519,17 +538,19 @@
    ============================================== */
 
 #faq {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: auto;
 }
 
 #faq .container {
   padding: 120px 0;
-  width: 1000px;
+  max-width: 1000px;
+  width: 100%;
 }
 
 #faq h1 {
-  font-size: 50px;
+  font-size: clamp(1.25rem, 3vw, 3.125rem);
   padding-bottom: 40px;
   border-bottom: 1px solid #ccc;
 }
@@ -542,8 +563,7 @@
 #faq .faq_question article {
   border-bottom: 1px solid #ccc;
   padding: 25px 0;
-  font-size: 16px;
-  color: #333;
+  font-size: clamp(0.75rem, 1.2vw, 1rem);
   font-weight: bold;
   position: relative;
 }
@@ -564,7 +584,7 @@
 .faq_answer {
   display: none;
   padding: 16px 0 20px;
-  font-size: 14px;
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
   color: #666;
   font-weight: normal;
   line-height: 1.7;
@@ -584,29 +604,38 @@
 /* ── 1024px ─────────────────────────────────── */
 @media screen and (max-width: 1024px) {
 
+  :root {
+    --banner-h1: 52px;
+    --banner-h2: 38px;
+    --banner-p: 20px;
+
+    --payment-title: 30px;
+
+    --compare-cell: 22px;
+    --compare-cell-span: 14px;
+    --compare-cell-p: 13px;
+
+    --ssd-title: 17px;
+    --ssd-price: 15px;
+  }
+
   /* banner */
   #banner .box { right: 30px; top: 20px; }
-  #banner .box h1 { font-size: 52px; }
-  #banner .box h2 { font-size: 38px; height: 50px; }
+  #banner .box h2 { height: 50px; }
   #banner .box h2 img { width: 44px; height: 48px; }
-  #banner .box p { font-size: 20px; }
-  #banner .list .title { font-size: 18px; }
-  #banner .list .ssd-select { padding: 12px 16px; gap: 14px; }
-  #banner .list .ssd-select h3 { font-size: 17px; }
-  #banner .list .option .price { font-size: 15px; }
-  #banner .color_option p { font-size: 18px; }
-  #banner .color_option ul { gap: 24px; margin-top: 24px; }
-  #banner .color_option ul li { width: 32px; height: 32px; }
+  #banner .option-list .title { font-size: 18px; }
+  #banner .option-list .ssd-select { padding: 12px 16px; gap: 14px; }
+  #banner .color-option p { font-size: 18px; }
+  #banner .color-option ul { gap: 24px; margin-top: 24px; }
+  #banner .color-option ul li { width: 32px; height: 32px; }
 
   /* middle_banner */
-  #middle_list .title .blackfont,
-  #middle_list .title h4,
-  #middle_list .title .grayfont { font-size: 26px; }
-  #middle_list .box > button { width: 360px; }
-  #middle_list .middle_bottom { gap: 30px; }
-  .middle_bottom .img .txt { font-size: 30px; }
-  #middle_list .middle_bottom .img .pic img { width: 230px; height: 229px; }
-  #middle_list .middle_bottom .buy .continue { padding: 13px 90px; }
+  #assurance .title .blackfont,
+  #assurance .title h4,
+  #assurance .title .grayfont { font-size: 26px; }
+  #assurance .box > button { width: 360px; }
+  #assurance { gap: 30px; }
+  #payment .img .pic img { width: 230px; height: 229px; }
 
   /* config */
   #config .container { min-width: 0; }
@@ -621,9 +650,6 @@
   /* compare */
   #compare { width: 100%; padding: 0 20px; box-sizing: border-box; }
   #compare .container h1 { font-size: 34px; }
-  .cell { margin: 0 8px; font-size: 22px; }
-  .cell span { font-size: 14px; }
-  .cell p    { font-size: 13px; }
   #compare .container .row img { width: 84px; }
   #compare .container .row:nth-child(2) .cell img { width: 200px; }
 
@@ -636,27 +662,47 @@
 /* ── 768px ─────────────────────────────────── */
 @media screen and (max-width: 768px) {
 
+  :root {
+    --banner-h1: 40px;
+    --banner-h2: 30px;
+    --banner-p: 16px;
+
+    --payment-title: 32px;
+
+    --compare-cell: 18px;
+    --compare-cell-span: 12px;
+    --compare-cell-p: 11px;
+
+    --ssd-title: 14px;
+    --ssd-price: 13px;
+  }
+
   /* banner */
-  #banner .box h1 { font-size: 40px; }
-  #banner .box h2 { font-size: 30px; height: 40px; }
-  #banner .box h2 img { width: 34px; height: 37px; }
-  #banner .box p  { font-size: 16px; }
-  #banner .list   { flex-direction: column; gap: 24px; }
-  #banner .list .option { gap: 12px; }
-  #banner .list .ssd-select { padding: 10px 14px; }
+  #banner .option-list   { flex-direction: column; gap: 24px; }
+  #banner .option-list .option {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  #banner .option-list .ssd-select { padding: 10px 14px; }
 
   /* middle_banner */
-  #middle_list .container { height: auto; }
-  #middle_list .title { flex-direction: column; gap: 8px; }
-  #middle_list .title .blackfont,
-  #middle_list .title h4,
-  #middle_list .title .grayfont { font-size: 22px; }
-  #middle_list .box { flex-direction: column; align-items: flex-start; }
-  #middle_list .box > button { width: 100%; }
-  #middle_list .middle_bottom { flex-direction: column; gap: 20px; }
-  .middle_bottom .img .pic { padding: 20px 0 0 20px; }
-  #middle_list .middle_bottom .img .pic img { width: 200px; height: 200px; }
-  .middle_bottom .img .txt { font-size: 28px; }
+  #assurance .container { height: auto; }
+  #assurance .title { flex-direction: column; gap: 8px; }
+  #assurance .title .blackfont,
+  #assurance .title h4,
+  #assurance .title .grayfont { font-size: 22px; }
+  #assurance .box { flex-direction: column; align-items: stretch; }
+  #assurance .box > button { width: 100%; }
+  #assurance .box .box1 { width: 100%; height: auto; padding: 0; }
+  #assurance .box .box1 div { padding: 0 14px; }
+  #assurance .box .box1 div:nth-child(3) { white-space: normal; }
+  #assurance .box .box3 { margin-left: 0; width: 100%; height: auto; }
+  #assurance .box .box3 div:nth-child(3) { white-space: normal; }
+  #assurance { flex-direction: column; gap: 20px; }
+  #payment .container { flex-direction: column; align-items: center; }
+  #payment .img { display: flex; flex-direction: column; align-items: center; text-align: center; }
+  #payment .img .pic { padding: 20px 0 0; }
+  #payment .img .pic img { width: 270px; height: 270px; }
 
   /* config */
   #config .container .item_box { width: 100%; height: auto; padding: 30px 0; }
@@ -667,9 +713,7 @@
   #compare .container { padding: 50px 0; }
   #compare .container h1 { font-size: 28px; }
   .row { min-width: 640px; }
-  .cell { padding: 36px 0; font-size: 18px; margin: 0 6px; }
-  .cell span { font-size: 12px; }
-  .cell p    { font-size: 11px; }
+  .cell { padding: 36px 0; margin: 0 6px; }
   #compare .container .row img { width: 70px; }
   #compare .container .row:nth-child(2) .cell img { width: 160px; }
 
@@ -682,24 +726,34 @@
 /* ── 657px ─────────────────────────────────── */
 @media screen and (max-width: 657px) {
 
+  :root {
+    --banner-h1: 30px;
+    --banner-h2: 22px;
+    --banner-p: 13px;
+
+    --payment-title: 28px;
+
+    --compare-cell: 14px;
+    --compare-cell-span: 11px;
+    --compare-cell-p: 11px;
+
+    --ssd-title: 14px;
+    --ssd-price: 13px;
+  }
+
   /* banner */
   #banner .box { right: 16px; top: 14px; }
-  #banner .box h1 { font-size: 30px; }
-  #banner .box h2 { font-size: 22px; height: 32px; }
+  #banner .box h2 { height: 32px; }
   #banner .box h2 img { width: 26px; height: 28px; }
-  #banner .box p  { font-size: 13px; }
-  #banner .list .title { font-size: 16px; }
-  #banner .list .ssd-select h3 { font-size: 14px; }
-  #banner .list .option .price { font-size: 13px; }
+  #banner .option-list .title { font-size: 16px; }
+  #banner .option-list .option .price { font-size: 13px; }
 
   /* middle_banner */
-  #middle_list .title .blackfont,
-  #middle_list .title h4,
-  #middle_list .title .grayfont { font-size: 18px; }
-  .middle_bottom .img .txt { font-size: 22px; }
-  #middle_list .middle_bottom .img .pic img { width: 170px; height: 170px; }
-  #middle_list .middle_bottom .description .price h3 { font-size: 17px; }
-  #middle_list .middle_bottom .buy .continue { padding: 12px 60px; }
+  #assurance .title .blackfont,
+  #assurance .title h4,
+  #assurance .title .grayfont { font-size: 18px; }
+  #payment .img .pic img { width: 230px; height: 230px; }
+  #payment .description .price h3 { font-size: 17px; }
 
   /* config */
   #config .container > h1 { font-size: 28px; padding: 36px 0; }
@@ -709,10 +763,6 @@
   #config .container .item_card ul { gap: 60px; margin: 16px 0 50px 20px; }
   #config .container .item_card ul li { font-size: 14px; }
   #config .container > p { font-size: 11px; }
-
-  /* compare */
-  .cell { font-size: 14px; }
-  .cell span { font-size: 11px; }
 
   /* faq */
   #faq .container { padding: 44px 0; }
@@ -724,26 +774,38 @@
 /* ── 481px ─────────────────────────────────── */
 @media screen and (max-width: 481px) {
 
+  :root {
+    --banner-h1: 22px;
+    --banner-h2: 17px;
+    --banner-p: 12px;
+
+    --payment-title: 24px;
+
+    --compare-cell: 12px;
+    --compare-cell-span: 10px;
+    --compare-cell-p: 11px;
+
+    --ssd-title: 12px;
+    --ssd-price: 11px;
+  }
+
   /* banner */
-  #banner .box h1 { font-size: 22px; }
-  #banner .box h2 { font-size: 17px; height: 26px; }
+  #banner .banner_box { height: 40vh; background-size: cover; }
+  #banner .box button { width: 2rem; height: 2rem; }
+  #banner .box h2 { height: 26px; }
   #banner .box h2 img { width: 20px; height: 22px; }
-  #banner .box p  { font-size: 11px; }
-  #banner .list .ssd-select { padding: 8px 10px; gap: 8px; }
-  #banner .list .ssd-select h3 { font-size: 12px; }
-  #banner .list .option .price { font-size: 11px; }
-  #banner .color_option ul { gap: 16px; }
-  #banner .color_option ul li { width: 26px; height: 26px; }
+  #banner .option-list .ssd-select { padding: 8px 10px; gap: 8px; }
+  #banner .color-option ul { gap: 16px; }
+  #banner .color-option ul li { width: 26px; height: 26px; }
 
   /* middle_banner */
-  #middle_list .middle_top { margin: 36px 0; }
-  #middle_list .title .blackfont,
-  #middle_list .title h4,
-  #middle_list .title .grayfont { font-size: 16px; }
-  #middle_list .box .box1 strong { font-size: 13px; }
-  #middle_list .box2 h4 { font-size: 14px; }
-  .middle_bottom .img .txt { font-size: 18px; }
-  #middle_list .middle_bottom .img .pic img { width: 140px; height: 140px; }
+  #assurance .middle_top { margin: 36px 0; }
+  #assurance .title .blackfont,
+  #assurance .title h4,
+  #assurance .title .grayfont { font-size: 16px; }
+  #assurance .box .box1 strong { font-size: 13px; }
+  #assurance .box2 h4 { font-size: 14px; }
+  #payment .img .pic img { width: 190px; height: 190px; }
 
   /* config */
   #config .container > h1 { font-size: 24px; }
@@ -759,8 +821,8 @@
 
   /* compare */
   #compare { padding: 0 12px; }
-  .cell { padding: 24px 0; font-size: 12px; }
-  .cell span { font-size: 10px; }
+  .row { min-width: 480px; }
+  .cell { padding: 24px 0; white-space: normal; }
   #compare .container .row img { width: 56px; }
   #compare .container .row:nth-child(2) .cell img { width: 130px; }
 
@@ -774,25 +836,53 @@
 
 /* ── 391px ─────────────────────────────────── */
 @media screen and (max-width: 391px) {
+  main{padding: 48px 10px 0;}
+
+  :root {
+    --banner-h1: 18px;
+    --banner-h2: 14px;
+    --banner-p: 12px;
+
+    --payment-title: 20px;
+
+    --compare-cell: 13px;
+    --compare-cell-span: 11px;
+    --compare-cell-p: 12px;
+
+    --ssd-title: 12px;
+    --ssd-price: 10px;
+  }
 
   /* banner */
-  #banner .box h1 { font-size: 18px; }
-  #banner .box h2 { font-size: 14px; height: 22px; }
-  #banner .box h2 img { width: 16px; height: 18px; }
-  #banner .list .option { gap: 8px; }
+  #banner .banner_box{height: 25vh; border-radius: 15px; background-size: cover;}
+  #banner .box h2 { height: 22px; }
+  #banner .box h2 img { width: 16px; height: 18px; margin-left: 5px;}
+  #banner .box button{width: 24px; height: 24px;}
+  #banner .box i{font-size: 12px;}
+  #banner .option-list .option { gap: 8px; }
+  #banner .option-list .ssd-select {
+    padding: 6px 8px;
+    border-radius: 8px;
+  }
+  #banner .option-list .option .ssd {
+    position: relative;
+    width: 20px;
+  }
+  #banner .option-list .option .price {
+    letter-spacing: 1px;
+    white-space: nowrap;
+  }
 
   /* middle_banner */
-  .middle_bottom .img .txt { font-size: 15px; }
-  #middle_list .middle_bottom .img .pic img { width: 120px; height: 120px; }
-  #middle_list .middle_bottom .buy .continue { padding: 10px 40px; }
+  #payment .img .pic img { width: 160px; height: 160px; }
 
   /* config */
   #config .container > h1 { font-size: 20px; padding: 28px 0; }
 
   /* compare */
   #compare { padding: 0 8px; }
-  .cell { font-size: 11px; margin: 0 4px; }
-  .cell span { font-size: 9px; }
+  .row { min-width: 340px; }
+  .cell { margin: 0 4px; white-space: normal; }
   #compare .container .row img { width: 48px; }
   #compare .container .row:nth-child(2) .cell img { width: 110px; }
 

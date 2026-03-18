@@ -355,14 +355,14 @@
   margin-bottom: 70px;
 }
 
-#popup_card .txtcard {
+#popup_card .box {
   position: absolute;
   display: flex;
   gap: 40px;
   left: 0;                  /* JS가 translateX로 위치 처리 */
 }
 
-#popup_card .container .txtcard .card {
+#popup_card .container .box .card {
   background-color: #f4f4f4;
   border-radius: 10px;
   width: 320px;
@@ -372,64 +372,64 @@
   position: relative;
 }
 
-#popup_card .container .txtcard .card .card-txt {
+#popup_card .container .box .card .card-txt {
   margin: 25px 30px 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-#popup_card .container .txtcard .card b {
+#popup_card .container .box .card b {
   font: bold 14px/1 sans-serif;
   color: #444;
 }
 
-#popup_card .container .txtcard .card strong {
+#popup_card .container .box .card strong {
   font: bold 22px/1.2 sans-serif;
 }
 
-#popup_card .container .txtcard .card span {
+#popup_card .container .box .card span {
   font-size: 12px;
   font-weight: normal;
   color: #666;
 }
 
 /* 이미지 비율: 카드 너비(320px) 기준 % → 카드가 줄어도 자동 축소 */
-#popup_card .container .txtcard .card:nth-child(1) img {
+#popup_card .container .box .card:nth-child(1) img {
   width: 100%;                     /* 320/320 = 100% */
   position: absolute;
   bottom: 20px;
 }
 
-#popup_card .container .txtcard .card:nth-child(2) img {
+#popup_card .container .box .card:nth-child(2) img {
   width: 62.5%;                    /* 200/320 = 62.5% */
   position: absolute;
   right: 18.75%;                   /* 60/320 */
   bottom: 40px;
 }
 
-#popup_card .container .txtcard .card:nth-child(3) img {
+#popup_card .container .box .card:nth-child(3) img {
   width: 72.5%;                    /* 232/320 = 72.5% */
   position: absolute;
   right: 13.75%;                   /* 44/320 */
   bottom: 40px;
 }
 
-#popup_card .container .txtcard .card:nth-child(4) img {
+#popup_card .container .box .card:nth-child(4) img {
   width: 89.4%;                    /* 286/320 = 89.4% */
   position: absolute;
   right: 6.25%;                    /* 20/320 */
   bottom: 20px;
 }
 
-#popup_card .container .txtcard .card:nth-child(5) img {
+#popup_card .container .box .card:nth-child(5) img {
   width: 64.4%;                    /* 206/320 = 64.4% */
   position: absolute;
   right: 18.1%;                    /* 58/320 */
   bottom: 0;
 }
 
-#popup_card .container .txtcard .card i {
+#popup_card .container .box .card i {
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -487,12 +487,12 @@
   /* popup_card */
   #popup_card { height: auto; min-height: 500px; }
   #popup_card .container .title { font-size: 38px; margin-bottom: 50px; }
-  #popup_card .txtcard { gap: 20px; }
-  #popup_card .container .txtcard .card { width: 260px; height: 320px; }
-  #popup_card .container .txtcard .card .card-txt { margin: 20px 20px 0; gap: 8px; }
-  #popup_card .container .txtcard .card b      { font-size: 13px; }
-  #popup_card .container .txtcard .card strong { font-size: 18px; }
-  #popup_card .container .txtcard .card span   { font-size: 11px; }
+  #popup_card .box { gap: 20px; }
+  #popup_card .container .box .card { width: 260px; height: 320px; }
+  #popup_card .container .box .card .card-txt { margin: 20px 20px 0; gap: 8px; }
+  #popup_card .container .box .card b      { font-size: 13px; }
+  #popup_card .container .box .card strong { font-size: 18px; }
+  #popup_card .container .box .card span   { font-size: 11px; }
 }
 
 /* ── 768px ─────────────────────────────────── */
@@ -523,12 +523,12 @@
 
   #popup_card { min-height: 440px; }
   #popup_card .container .title { font-size: 32px; }
-  #popup_card .txtcard { gap: 16px; }
-  #popup_card .container .txtcard .card { width: 220px; height: 280px; }
-  #popup_card .container .txtcard .card .card-txt { margin: 18px 18px 0; gap: 7px; }
-  #popup_card .container .txtcard .card b      { font-size: 12px; }
-  #popup_card .container .txtcard .card strong { font-size: 16px; }
-  #popup_card .container .txtcard .card span   { font-size: 10px; }
+  #popup_card .box { gap: 16px; }
+  #popup_card .container .box .card { width: 220px; height: 280px; }
+  #popup_card .container .box .card .card-txt { margin: 18px 18px 0; gap: 7px; }
+  #popup_card .container .box .card b      { font-size: 12px; }
+  #popup_card .container .box .card strong { font-size: 16px; }
+  #popup_card .container .box .card span   { font-size: 10px; }
 }
 
 /* ── 657px ─────────────────────────────────── */
@@ -568,13 +568,13 @@
 
   #popup_card { min-height: 380px; }
   #popup_card .container .title { font-size: 26px; margin-bottom: 36px; }
-  #popup_card .txtcard { gap: 12px; }
-  #popup_card .container .txtcard .card { width: 185px; height: 240px; }
-  #popup_card .container .txtcard .card .card-txt { margin: 16px 16px 0; gap: 6px; }
-  #popup_card .container .txtcard .card b      { font-size: 11px; }
-  #popup_card .container .txtcard .card strong { font-size: 14px; }
-  #popup_card .container .txtcard .card span   { font-size: 9px; }
-  #popup_card .container .txtcard .card i { font-size: 22px; bottom: 14px; right: 14px; }
+  #popup_card .box { gap: 12px; }
+  #popup_card .container .box .card { width: 185px; height: 240px; }
+  #popup_card .container .box .card .card-txt { margin: 16px 16px 0; gap: 6px; }
+  #popup_card .container .box .card b      { font-size: 11px; }
+  #popup_card .container .box .card strong { font-size: 14px; }
+  #popup_card .container .box .card span   { font-size: 9px; }
+  #popup_card .container .box .card i { font-size: 22px; bottom: 14px; right: 14px; }
 }
 
 /* ── 481px — 1장씩 ─────────────────────────── */
@@ -614,15 +614,15 @@
   #layer_card .container .box .card:last-child img   { height: 110px; }
 
   /* popup_card — 1장씩 */
-  #popup_card { min-height: 420px; }
+  #popup_card { min-height: 450px; }
   #popup_card .container .title { font-size: 22px; margin-bottom: 28px; }
-  #popup_card .txtcard { gap: 12px; }
-  #popup_card .container .txtcard .card { width: 280px; height: 340px; }
-  #popup_card .container .txtcard .card .card-txt { margin: 22px 22px 0; gap: 8px; }
-  #popup_card .container .txtcard .card b      { font-size: 13px; }
-  #popup_card .container .txtcard .card strong { font-size: 18px; }
-  #popup_card .container .txtcard .card span   { font-size: 11px; }
-  #popup_card .container .txtcard .card i { font-size: 26px; }
+  #popup_card .box { gap: 12px; }
+  #popup_card .container .box .card { width: 280px; height: 340px; }
+  #popup_card .container .box .card .card-txt { margin: 22px 22px 0; gap: 8px; }
+  #popup_card .container .box .card b      { font-size: 13px; }
+  #popup_card .container .box .card strong { font-size: 18px; }
+  #popup_card .container .box .card span   { font-size: 11px; }
+  #popup_card .container .box .card i { font-size: 26px; }
 }
 
 /* ── 391px ─────────────────────────────────── */
@@ -661,10 +661,10 @@
 
   /* popup_card */
   #popup_card .container .title { font-size: 19px; }
-  #popup_card .container .txtcard .card { width: 240px; height: 300px; }
-  #popup_card .container .txtcard .card .card-txt { margin: 18px 18px 0; gap: 7px; }
-  #popup_card .container .txtcard .card b      { font-size: 12px; }
-  #popup_card .container .txtcard .card strong { font-size: 16px; }
-  #popup_card .container .txtcard .card span   { font-size: 10px; }
-  #popup_card .container .txtcard .card i { font-size: 24px; }
+  #popup_card .container .box .card { width: 240px; height: 300px; }
+  #popup_card .container .box .card .card-txt { margin: 18px 18px 0; gap: 7px; }
+  #popup_card .container .box .card b      { font-size: 12px; }
+  #popup_card .container .box .card strong { font-size: 16px; }
+  #popup_card .container .box .card span   { font-size: 10px; }
+  #popup_card .container .box .card i { font-size: 24px; }
 }
