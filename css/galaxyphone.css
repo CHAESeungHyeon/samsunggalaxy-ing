@@ -444,7 +444,7 @@
   #title_banner .container .title h1 { font-size: 22px; }
   #title_banner .container .title img { width: 24px; height: 26px; }
   #title_banner .container .list { margin-top: 22px; gap: 8px; }
-  #title_banner .container .list li a { font-size: 9px; letter-spacing: -0.7%;}
+  #title_banner .container .list li a { font-size: 9px; letter-spacing: -0.5px;}
 
   .list-title { font-size: 13px; margin: 0 0 14px; letter-spacing: -1%;}
   .card  { width: 238px; height: 310px;}
