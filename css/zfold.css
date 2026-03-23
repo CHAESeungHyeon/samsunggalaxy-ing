@@ -1,10 +1,4 @@
-html{
-  font-size: 16px;
-  box-sizing: border-box;
-}
-*, *::before, *::after {
-  box-sizing: inherit;
-}
+
 
 /* CSS 변수 (반응형 폰트/크기 제어) */
 :root {
@@ -406,7 +400,7 @@ html{
 #config .container .item_box {
   max-width: 989px;
   width: 100%;
-  min-height: 472px;
+  height: 472px;
   background-color: #f4f4f4;
   display: flex;
   justify-content: center;
@@ -693,19 +687,19 @@ html{
   #assurance .title .grayfont { font-size: 22px; }
   #assurance .box { flex-direction: column; align-items: stretch; }
   #assurance .box > button { width: 100%; }
-  #assurance .box .box1 { width: 100%; height: auto; padding: 0; }
+  #assurance .box .box1 { width: 100%; padding: 0; }
   #assurance .box .box1 div { padding: 0 14px; }
   #assurance .box .box1 div:nth-child(3) { white-space: normal; }
   #assurance .box .box3 { margin-left: 0; width: 100%; height: auto; }
   #assurance .box .box3 div:nth-child(3) { white-space: normal; }
   #assurance { flex-direction: column; gap: 20px; }
-  #payment .container { flex-direction: column; align-items: center; }
+  #payment .container { flex-direction: column; align-items: center; gap: 0px;}
   #payment .img { display: flex; flex-direction: column; align-items: center; text-align: center; }
   #payment .img .pic { padding: 20px 0 0; }
   #payment .img .pic img { width: 270px; height: 270px; }
 
   /* config */
-  #config .container .item_box { width: 100%; height: auto; padding: 30px 0; }
+  #config .container .item_box { width: 100%; height: auto; padding: 30px; }
   #config .container .item_card ul { gap: 80px; margin: 20px 0 60px 40px; }
 
   /* compare — 가로 스크롤 */
@@ -810,10 +804,8 @@ html{
   /* config */
   #config .container > h1 { font-size: 24px; }
   #config .container .item_box {
-    flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 24px;
   }
   #config .container .item_box img:first-child { width: 180px; height: 198px; }
   #config .container .item_box img:last-child  { width: 48px;  height: 166px; }
@@ -866,7 +858,7 @@ html{
   }
   #banner .option-list .option .ssd {
     position: relative;
-    width: 20px;
+    width: 42px;
   }
   #banner .option-list .option .price {
     letter-spacing: 1px;
