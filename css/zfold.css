@@ -398,8 +398,7 @@
 }
 
 #config .container .item_box {
-  max-width: 989px;
-  width: 100%;
+  width: 1000px;
   height: 472px;
   background-color: #f4f4f4;
   display: flex;
@@ -699,7 +698,7 @@
   #payment .img .pic img { width: 270px; height: 270px; }
 
   /* config */
-  #config .container .item_box { width: 100%; height: auto; padding: 30px; }
+  #config .container .item_box { width: 100%; height: auto; padding: 30px 30px 0; }
   #config .container .item_card ul { gap: 80px; margin: 20px 0 60px 40px; }
 
   /* compare — 가로 스크롤 */
